@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="" />
+    <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" afterPath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-impression.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-large-teaser.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-lookbook.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" afterPath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio.htm" afterPath="$PROJECT_DIR$/Malu – Portfolio.htm" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,18 +21,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DESIGNAFFAIRS - Roda.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4151">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="DESIGNAFFAIRS - Roda.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-657">
+                  <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+                  <folding>
+                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1544077158443" expanded="true" signature="10845:10853" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="392">
+                  <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +66,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Malu – Portfolio.htm" />
+        <option value="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" />
+        <option value="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" />
       </list>
     </option>
   </component>
@@ -43,9 +78,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
     <option name="y" value="23" />
-    <option name="width" value="1288" />
+    <option name="width" value="1411" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectView">
@@ -69,6 +103,11 @@
             <path>
               <item name="adidididi.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="adidididi.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adidididi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adidididi.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="DESIGNAFFAIRS - Roda_files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -111,18 +150,18 @@
       <updated>1544011398356</updated>
       <workItem from="1544011402268" duration="7229000" />
       <workItem from="1544028084401" duration="147000" />
-      <workItem from="1544063436502" duration="25000" />
+      <workItem from="1544063436502" duration="13594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7401000" />
+    <option name="totallyTimeSpent" value="20970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="23" width="1288" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1411" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185559" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16725726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -157,8 +196,24 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1544020708036" expanded="true" signature="73262:73294" ph="..." />
-            <marker date="1544020708036" expanded="true" signature="88695:88727" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
           </folding>
         </state>
       </provider>
@@ -168,27 +223,90 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1544020708036" expanded="true" signature="73262:73294" ph="..." />
-            <marker date="1544020708036" expanded="true" signature="88695:88727" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nitzan Ron_files/nitzanron.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2786">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nitzan Ron.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="70" column="73" lean-forward="true" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Malu – Portfolio.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="759" column="8" lean-forward="false" selection-start-line="759" selection-start-column="8" selection-end-line="759" selection-end-column="8" />
+        <state relative-caret-position="537">
+          <caret line="246" column="12" lean-forward="true" selection-start-line="244" selection-start-column="8" selection-end-line="246" selection-end-column="12" />
           <folding>
-            <marker date="1544020708036" expanded="true" signature="73262:73294" ph="..." />
-            <marker date="1544020708036" expanded="true" signature="88695:88727" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
+            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4151">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-657">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1544077158443" expanded="true" signature="10845:10853" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
           <folding />
         </state>
       </provider>
