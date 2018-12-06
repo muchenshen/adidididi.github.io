@@ -1,95 +1,103 @@
 <!DOCTYPE html>
-<!-- saved from url=(0015)http://malu.im/ -->
-<html data-semplice="4.3.2" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
+<!-- -->
+<html data-semplice="4.3.2" class=" ">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<title>Malu – Portfolio</title>
-<meta name="robots" content="noindex,follow">
-<link rel="dns-prefetch" href="http://s.w.org/">
+		<title>Ningyuan – Portfolio</title>
+		<meta name="robots" content="noindex,follow">
+		<link rel="dns-prefetch" href="http://s.w.org/">
 <!-- This site uses the Google Analytics by MonsterInsights plugin v7.0.9 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-<script type="text/javascript" async="" src="./Malu – Portfolio_files/linkid.js"></script><script async="" src="./Malu – Portfolio_files/analytics.js"></script><script type="text/javascript" data-cfasync="false">
-	var mi_track_user      = true;
-	var mi_no_track_reason = '';
-	
-	var disableStr = 'ga-disable-UA-100506667-1';
+		<script type="text/javascript" async="" src="./Malu – Portfolio_files/linkid.js"></script>
+		<script async="" src="./Malu – Portfolio_files/analytics.js"></script>
+		<script type="text/javascript" data-cfasync="false">
 
-	/* Function to detect opted out users */
-	function __gaTrackerIsOptedOut() {
-		return document.cookie.indexOf(disableStr + '=true') > -1;
-	}
+			var mi_track_user      = true;
+			var mi_no_track_reason = '';
+			var disableStr = 'ga-disable-UA-100506667-1';
 
-	/* Disable tracking if the opt-out cookie exists. */
-	if ( __gaTrackerIsOptedOut() ) {
-		window[disableStr] = true;
-	}
+			/* Function to detect opted out users */
+			function __gaTrackerIsOptedOut() {
+				return document.cookie.indexOf(disableStr + '=true') > -1;
+			}
 
-	/* Opt-out function */
-	function __gaTrackerOptout() {
-	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-	  window[disableStr] = true;
-	}
-	
-	if ( mi_track_user ) {
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+			/* Disable tracking if the opt-out cookie exists. */
+			if ( __gaTrackerIsOptedOut() ) {
+				window[disableStr] = true;
+			}
 
-		__gaTracker('create', 'UA-100506667-1', 'auto');
-		__gaTracker('set', 'forceSSL', true);
-		__gaTracker('require', 'displayfeatures');
-		__gaTracker('require', 'linkid', 'linkid.js');
-		__gaTracker('send','pageview');
-	} else {
-		console.log( "" );
-		(function() {
-			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-			var noopfn = function() {
-				return null;
-			};
-			var noopnullfn = function() {
-				return null;
-			};
-			var Tracker = function() {
-				return null;
-			};
-			var p = Tracker.prototype;
-			p.get = noopfn;
-			p.set = noopfn;
-			p.send = noopfn;
-			var __gaTracker = function() {
-				var len = arguments.length;
-				if ( len === 0 ) {
-					return;
+			/* Opt-out function */
+			function __gaTrackerOptout() {
+			  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+			  window[disableStr] = true;
+			}
+
+			if ( mi_track_user ) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+				__gaTracker('create', 'UA-100506667-1', 'auto');
+				__gaTracker('set', 'forceSSL', true);
+				__gaTracker('require', 'displayfeatures');
+				__gaTracker('require', 'linkid', 'linkid.js');
+				__gaTracker('send','pageview');
+			} else {
+				console.log( "" );
+				(function() {
+					/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+					var noopfn = function() {
+						return null;
+					};
+					var noopnullfn = function() {
+						return null;
+					};
+					var Tracker = function() {
+						return null;
+					};
+					var p = Tracker.prototype;
+					p.get = noopfn;
+					p.set = noopfn;
+					p.send = noopfn;
+					var __gaTracker = function() {
+						var len = arguments.length;
+						if ( len === 0 ) {
+							return;
+						}
+						var f = arguments[len-1];
+						if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+							console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+							return;
+						}
+						try {
+							f.hitCallback();
+						} catch (ex) {
+
+						}
+					};
+					__gaTracker.create = function() {
+						return new Tracker();
+					};
+					__gaTracker.getByName = noopnullfn;
+					__gaTracker.getAll = function() {
+						return [];
+					};
+					__gaTracker.remove = noopfn;
+					window['__gaTracker'] = __gaTracker;
+							})();
 				}
-				var f = arguments[len-1];
-				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
-					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
-					return;
-				}
-				try {
-					f.hitCallback();
-				} catch (ex) {
+		</script>
 
-				}
-			};
-			__gaTracker.create = function() {
-				return new Tracker();
-			};
-			__gaTracker.getByName = noopnullfn;
-			__gaTracker.getAll = function() {
-				return [];
-			};
-			__gaTracker.remove = noopfn;
-			window['__gaTracker'] = __gaTracker;
-					})();
-		}
-</script>
 <!-- / Google Analytics by MonsterInsights -->
+
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/malu.im\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script><script src="./Malu – Portfolio_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		</script>
+
+        <script src="./Malu – Portfolio_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+
 		<style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -103,42 +111,52 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-</style>
+        </style>
 <link rel="stylesheet" id="contact-form-7-css" href="./Malu – Portfolio_files/styles.css" type="text/css" media="all">
 <link rel="stylesheet" id="woocommerce-layout-css" href="./Malu – Portfolio_files/woocommerce-layout.css" type="text/css" media="all">
 <link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Malu – Portfolio_files/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
 <link rel="stylesheet" id="woocommerce-general-css" href="./Malu – Portfolio_files/woocommerce.css" type="text/css" media="all">
+
 <style id="woocommerce-inline-inline-css" type="text/css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
+
 <link rel="stylesheet" id="semplice-stylesheet-css" href="./Malu – Portfolio_files/style.css" type="text/css" media="all">
 <link rel="stylesheet" id="semplice-frontend-stylesheet-css" href="./Malu – Portfolio_files/frontend.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="mediaelement-css" href="./Malu – Portfolio_files/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/malu.im","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
 /* ]]> */
 </script>
+
 <script type="text/javascript" src="./Malu – Portfolio_files/frontend.min.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/jquery.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/jquery-migrate.min.js"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/malu.im","is_cart":"","cart_redirect_after_add":"no"};
 /* ]]> */
 </script>
+
 <script type="text/javascript" src="./Malu – Portfolio_files/add-to-cart.min.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/woocommerce-add-to-cart.js"></script>
+
 <script type="text/javascript">
 var mejsL10n = {"language":"en","strings":{"mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen-off":"Turn off Fullscreen","mejs.fullscreen-on":"Go Fullscreen","mejs.download-video":"Download Video","mejs.fullscreen":"Fullscreen","mejs.time-jump-forward":["Jump forward 1 second","Jump forward %1 seconds"],"mejs.loop":"Toggle Loop","mejs.play":"Play","mejs.pause":"Pause","mejs.close":"Close","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.time-skip-back":["Skip back 1 second","Skip back %1 seconds"],"mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.mute-toggle":"Mute Toggle","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.ad-skip":"Skip ad","mejs.ad-skip-info":["Skip in 1 second","Skip in %1 seconds"],"mejs.source-chooser":"Source Chooser","mejs.stop":"Stop","mejs.speed-rate":"Speed Rate","mejs.live-broadcast":"Live Broadcast","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
 </script>
+
 <script type="text/javascript" src="./Malu – Portfolio_files/mediaelement-and-player.min.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/mediaelement-migrate.min.js"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
 /* ]]> */
 </script>
+
 <link rel="https://api.w.org/" href="http://malu.im/wp-json/">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://malu.im/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://malu.im/wp-includes/wlwmanifest.xml"> 
@@ -148,8 +166,12 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 <link rel="shortlink" href="http://malu.im/">
 <link rel="alternate" type="application/json+oembed" href="http://malu.im/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmalu.im%2F">
 <link rel="alternate" type="text/xml+oembed" href="http://malu.im/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmalu.im%2F&amp;format=xml">
-<link href="./Malu – Portfolio_files/css" rel="stylesheet"><style type="text/css" id="semplice-webfonts-css">.font_vqo4t9vjr, [data-font="font_vqo4t9vjr"], [data-font="font_vqo4t9vjr"] li a, #content-holder h1 {font-family: "Playfair Display", serif;font-weight: 900;font-style: normal;}.font_1pqmjo28m, [data-font="font_1pqmjo28m"], [data-font="font_1pqmjo28m"] li a, #content-holder h2 {font-family: "Playfair Display", serif;font-weight: 700;font-style: normal;}.font_ivwasoeb6, [data-font="font_ivwasoeb6"], [data-font="font_ivwasoeb6"] li a {font-family: "Lato", sans-serif;font-weight: 700;font-style: normal;}.font_pu6wkt77n, [data-font="font_pu6wkt77n"], [data-font="font_pu6wkt77n"] li a, #content-holder p, #content-holder li {font-family: "Lato", sans-serif;font-weight: 300;font-style: normal;}.font_t8jbio3kb, [data-font="font_t8jbio3kb"], [data-font="font_t8jbio3kb"] li a {font-family: "Playfair Display", serif;font-weight: 400;font-style: normal;}</style>
-		<style type="text/css" id="semplice-custom-css">
+<link href="./Malu – Portfolio_files/css" rel="stylesheet">
+
+<style type="text/css" id="semplice-webfonts-css">.font_vqo4t9vjr, [data-font="font_vqo4t9vjr"], [data-font="font_vqo4t9vjr"] li a, #content-holder h1 {font-family: "Playfair Display", serif;font-weight: 900;font-style: normal;}.font_1pqmjo28m, [data-font="font_1pqmjo28m"], [data-font="font_1pqmjo28m"] li a, #content-holder h2 {font-family: "Playfair Display", serif;font-weight: 700;font-style: normal;}.font_ivwasoeb6, [data-font="font_ivwasoeb6"], [data-font="font_ivwasoeb6"] li a {font-family: "Lato", sans-serif;font-weight: 700;font-style: normal;}.font_pu6wkt77n, [data-font="font_pu6wkt77n"], [data-font="font_pu6wkt77n"] li a, #content-holder p, #content-holder li {font-family: "Lato", sans-serif;font-weight: 300;font-style: normal;}.font_t8jbio3kb, [data-font="font_t8jbio3kb"], [data-font="font_t8jbio3kb"] li a {font-family: "Playfair Display", serif;font-weight: 400;font-style: normal;}
+</style>
+
+<style type="text/css" id="semplice-custom-css">
 			.container {
 			max-width: 1320px;
 		}
@@ -186,9 +208,9 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 			text-transform: none;
 		}
 	
-		</style>
+</style>
 	
-		<style type="text/css" id="2454-post-css">
+<style type="text/css" id="2454-post-css">
 			#content-2454 #section_c0rbso542 {padding-top: 6.333333333333333rem;}@media screen and (max-width: 543.9px) { #content-2454 #section_c0rbso542 {padding-top: 2.7777777777777777rem;}}#content-2454 #column_00ddefbd5 {padding-top: 0rem;}#content-2454 #content_6c238615a {padding-top: 0rem;padding-bottom: 2.7777777777777777rem;z-index: 5;}#content-2454 #content_6c238615a .is-content {}@media screen and (max-width: 543.9px) { #content-2454 #content_6c238615a {padding-bottom: 2.2222222222222223rem;}#content-2454 #content_6c238615a .is-content {}}#content-2454 #content_3ebd082cd {padding-top: 0.2777777777777778rem;padding-bottom: 3.3333333333333335rem;z-index: 3;}#content-2454 #content_3ebd082cd .is-content {}@media screen and (max-width: 543.9px) { #content-2454 #content_3ebd082cd {padding-top: 0.3333333333333333rem;padding-bottom: 0.8888888888888888rem;}#content-2454 #content_3ebd082cd .is-content {}}@media screen and (max-width: 543.9px) { #content-2454 #column_ypxz6wpnl {height: 2.7777777777777777rem;}}#content-2454 #section_ae2d57a15 {padding-top: 0rem;margin-top: 0rem;padding-bottom: 0rem;}#content-2454 #column_y6685jdfw {padding-top: 0rem;padding-bottom: 0rem;}#content-2454 #content_v45cmzi6m {padding-top: 0rem;margin-top: -14.166666666666666rem;padding-right: 0rem;margin-right: 0rem;margin-bottom: 0rem;margin-left: 5.111111111111111rem;}#content-2454 #content_v45cmzi6m .is-content {}@media screen and (max-width: 543.9px) { #content-2454 #content_v45cmzi6m {margin-top: 16.666666666666668rem;margin-bottom: 0rem;margin-left: 0rem;}#content-2454 #content_v45cmzi6m .is-content {}}#content-2454 #section_a617a486e {padding-top: 5.555555555555555rem;margin-top: 0rem;padding-bottom: 11.11111111111111rem;margin-bottom: 0rem;}@media screen and (max-width: 543.9px) { #content-2454 #section_a617a486e {padding-top: 0rem;margin-top: -11.11111111111111rem;padding-bottom: 0rem;}}#content-2454 #content_ddf18983b {padding-right: 0rem;margin-right: 0rem;padding-bottom: 0rem;margin-bottom: 3.3333333333333335rem;padding-left: 0rem;}#content-2454 #content_ddf18983b .is-content {}
 				#content-2454 #content_656ae1a6d .is-content {border-color: #191919 !important;border-width: 0.05555555555555555rem !important;border-radius: 0rem !important;background-color: transparent;}
 				#content-2454 #content_656ae1a6d .is-content:hover {color: #191919 !important;background-color: #191919 !important;border-color: #ffffff !important;}
@@ -201,23 +223,31 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 				#content-2454 #content_7ab02a77e .is-content:hover a {color: #191919 !important;letter-spacing: 0.16666666666666666rem !important;margin-right: -0.16666666666666666rem;}
 			#content-2454 #content_7ab02a77e {margin-top: 0rem;margin-bottom: 0rem;}#content-2454 #content_7ab02a77e .is-content {}
 			.nav_imcgxi8nw { background-color: rgba(255, 255, 255, 0);; }.nav_imcgxi8nw { height: 5.555555555555555rem; }.is-frontend #content-2454 .sections { margin-top: 5.555555555555555rem; }.nav_imcgxi8nw { padding-top: 0rem; }.nav_imcgxi8nw { padding-bottom: 0rem; }.nav_imcgxi8nw .logo img, .nav_imcgxi8nw .logo svg { width: 1.7777777777777777rem; }.nav_imcgxi8nw .navbar-inner .logo { align-items: center; }.nav_imcgxi8nw .navbar-inner .hamburger { align-items: center; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { background-color: #4c4c4c; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { width: 2.611111111111111rem; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { height: 1px; }.nav_imcgxi8nw .navbar-inner .hamburger a.open-menu span::before { transform: translateY(-7px); }.nav_imcgxi8nw .navbar-inner .hamburger a.open-menu span::after { transform: translateY(7px); }.nav_imcgxi8nw .navbar-inner .hamburger a.open-menu:hover span::before { transform: translateY(-9px); }.nav_imcgxi8nw .navbar-inner .hamburger a.open-menu:hover span::after { transform: translateY(9px); }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { height: 15px; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { margin-top: 7.5px; }.nav_imcgxi8nw .navbar-inner .hamburger { display: flex; }.nav_imcgxi8nw .navbar-inner nav ul li a span { font-size: 5.444444444444445rem; }.nav_imcgxi8nw .navbar-inner nav ul li a span { color: #191919; }.nav_imcgxi8nw .navbar-inner nav ul li a span { text-transform: uppercase; }.nav_imcgxi8nw .navbar-inner nav ul li a span { letter-spacing: 0.05555555555555555rem; }.nav_imcgxi8nw .navbar-inner nav.standard ul { align-items: center; }.nav_imcgxi8nw .navbar-inner nav ul li a:hover span, .navbar-inner nav ul li.current-menu-item a span, .navbar-inner nav ul li.current_page_item a span, .nav_imcgxi8nw .navbar-inner nav ul li.wrap-focus a span { color: #1f7bee; }.nav_imcgxi8nw .navbar-inner nav ul li.current-menu-item a span { color: #1f7bee; }.nav_imcgxi8nw .navbar-inner nav ul li.current_page_item a span { color: #1f7bee; }[data-post-type="project"] .navbar-inner nav ul li.portfolio-grid a span, [data-post-type="post"] .navbar-inner nav ul li.blog-overview a span { color: #1f7bee; }#overlay-menu { background-color: rgba(25, 25, 25, 1); }#overlay-menu .overlay-menu-inner nav { text-align: center; }#overlay-menu .overlay-menu-inner nav ul li a span { font-size: 2.7777777777777777rem; }#overlay-menu .overlay-menu-inner nav ul li a span { color: #a8a8a8; }#overlay-menu .overlay-menu-inner nav ul li a { padding-top: 1.25rem; }#overlay-menu .overlay-menu-inner nav ul li a { padding-bottom: 1.25rem; }#overlay-menu .overlay-menu-inner nav ul li a span { text-transform: uppercase; }#overlay-menu .overlay-menu-inner nav ul li a span { letter-spacing: 0.4rem; }#overlay-menu .overlay-menu-inner nav ul li a span { border-bottom-color: #c9c9c9; }#overlay-menu .overlay-menu-inner nav ul li a span { border-bottom-width: 0rem; }#overlay-menu .overlay-menu-inner nav ul li a:hover span { color: #ffffff; }#overlay-menu .overlay-menu-inner nav ul li.current-menu-item a span { color: #ffffff; }#overlay-menu .overlay-menu-inner nav ul li.current_page_item a span { color: #ffffff; }[data-post-type="project"] #overlay-menu .overlay-menu-inner nav ul li.portfolio-grid a span, [data-post-type="post"] #overlay-menu .overlay-menu-inner nav ul li.blog-overview a span { color: #ffffff; }#overlay-menu nav ul li a:hover span { border-bottom-color: #ffffff; }#overlay-menu .overlay-menu-inner nav ul li.current-menu-item a span { border-bottom-color: #ffffff; }#overlay-menu .overlay-menu-inner nav ul li.current_page_item a span { border-bottom-color: #ffffff; }[data-post-type="project"] #overlay-menu .overlay-menu-inner nav ul li.portfolio-grid a span, [data-post-type="post"] #overlay-menu .overlay-menu-inner nav ul li.blog-overview a span { border-bottom-color: #ffffff; }@media screen and (min-width: 992px) and (max-width: 1169.9px) { .nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { height: 15px; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { margin-top: 7.5px; }}@media screen and (min-width: 768px) and (max-width: 991.9px) { .nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { height: 15px; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { margin-top: 7.5px; }}@media screen and (min-width: 544px) and (max-width: 767.9px) { .nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { height: 15px; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { margin-top: 7.5px; }}@media screen and (max-width: 543.9px) { .nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon { height: 15px; }.nav_imcgxi8nw .navbar-inner .hamburger a.menu-icon span { margin-top: 7.5px; }}
-		</style>
-		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
-<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://malu.im/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		<style>html{margin-top:0px!important;}#wpadminbar{top:auto!important;bottom:0;}</style>
-		<link rel="shortcut icon" type="image/png" href="http://malu.im/wp-content/uploads/2018/01/favicon_black.png" sizes="32x32">	<style id="content_b5014e09d-style" type="text/css">#masonry-content_b5014e09d{ margin: auto -15px !important; } .masonry-content_b5014e09d-item { margin: 0px; padding-left: 15px; padding-right: 15px; padding-bottom: 30px; }#content-holder .thumb .thumb-inner .thumb-hover {background-color: rgba(0, 0, 0, 0.1);}.is-frontend #content-holder .thumb .thumb-inner img { transition: all 3.5s ease; }.is-frontend #content-holder .thumb .thumb-inner:hover img, .is-frontend #content-holder .thumb .wrap-focus img { transform: scale(1.10); }#content-holder .thumb .thumb-hover-meta { padding: 2.22rem; }#content-holder .thumb .thumb-hover-meta .title { color: #ffffff; font-size: 2.2222222222222223rem; text-transform: uppercase; }#content-holder .thumb .thumb-hover-meta .category { color: #999999; font-size: 1rem; text-transform: none; }#content-holder #project-2384 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 0, 0, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2384 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2384 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2384 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2524 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2524 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2524 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2524 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2512 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(25, 25, 25, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2512 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2512 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2512 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2554 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(25, 25, 25, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2554 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2554 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2554 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2502 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2502 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2502 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2502 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2631 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 0, 0, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2631 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2631 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2631 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2681 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2681 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2681 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2681 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #content_b5014e09d .thumb .post-title { padding-top: 1rem; } #content_b5014e09d .thumb .post-title, #content_b5014e09d .thumb .post-title a { color: #000000; font-size: 16px; text-transform: none; } #content_b5014e09d .thumb .post-title span, #content_b5014e09d .thumb .post-title a span { color: #999999; font-size: 14px; text-transform: none; padding-top: 0.4444444444444444rem; }@media screen and (max-width: 543.9px) {#masonry-content_b5014e09d{ margin: auto -10px !important; }.masonry-content_b5014e09d-item {padding-left: 10px; padding-right: 10px;padding-bottom:  30px;}}</style></head>
+</style>
+
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="http://malu.im/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+    <style>html{margin-top:0px!important;}#wpadminbar{top:auto!important;bottom:0;}</style>
+	<link rel="shortcut icon" type="image/png" href="http://malu.im/wp-content/uploads/2018/01/favicon_black.png" sizes="32x32">
+    <style id="content_b5014e09d-style" type="text/css">#masonry-content_b5014e09d{ margin: auto -15px !important; } .masonry-content_b5014e09d-item { margin: 0px; padding-left: 15px; padding-right: 15px; padding-bottom: 30px; }#content-holder .thumb .thumb-inner .thumb-hover {background-color: rgba(0, 0, 0, 0.1);}.is-frontend #content-holder .thumb .thumb-inner img { transition: all 3.5s ease; }.is-frontend #content-holder .thumb .thumb-inner:hover img, .is-frontend #content-holder .thumb .wrap-focus img { transform: scale(1.10); }#content-holder .thumb .thumb-hover-meta { padding: 2.22rem; }#content-holder .thumb .thumb-hover-meta .title { color: #ffffff; font-size: 2.2222222222222223rem; text-transform: uppercase; }#content-holder .thumb .thumb-hover-meta .category { color: #999999; font-size: 1rem; text-transform: none; }#content-holder #project-2384 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 0, 0, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2384 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2384 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2384 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2524 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2524 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2524 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2524 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2512 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(25, 25, 25, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2512 .thumb-hover-meta { padding: 3.3333333333333335rem; }#content-holder #project-2512 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2512 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2554 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(25, 25, 25, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2554 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2554 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2554 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2502 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2502 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2502 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2502 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2631 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 0, 0, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2631 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2631 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2631 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #project-2681 .thumb-inner .thumb-hover {background-image: none;background-color: rgba(2, 1, 1, 0.1);background-size: cover;background-position: 50% 50%;}#content-holder #project-2681 .thumb-hover-meta { padding: 4.444444444444445rem; }#content-holder #project-2681 .thumb-hover-meta .title { color: #ffffff; font-size: 2.7777777777777777rem; text-transform: uppercase; }#content-holder #project-2681 .thumb-hover-meta .category { color: #ffffff; font-size: 1.2222222222222223rem; text-transform: none; }#content-holder #content_b5014e09d .thumb .post-title { padding-top: 1rem; } #content_b5014e09d .thumb .post-title, #content_b5014e09d .thumb .post-title a { color: #000000; font-size: 16px; text-transform: none; } #content_b5014e09d .thumb .post-title span, #content_b5014e09d .thumb .post-title a span { color: #999999; font-size: 14px; text-transform: none; padding-top: 0.4444444444444444rem; }@media screen and (max-width: 543.9px) {#masonry-content_b5014e09d{ margin: auto -10px !important; }.masonry-content_b5014e09d-item {padding-left: 10px; padding-right: 10px;padding-bottom:  30px;}}
+    </style>
+
+    </head>
+
 	<body class="home page-template-default page page-id-2454 woocommerce-js is-frontend dynamic-mode mejs-semplice-ui wpb-js-composer js-comp-ver-5.1 vc_responsive" bgcolor="#000000" data-post-type="page" data-breakpoint-js="xl">
+
 		<div id="content-holder" data-active-post="2454">
-			
-						
-						
-				
-			
-					
-			<div id="content-2454" class="content-container active-content "><header class="nav_imcgxi8nw semplice-navbar active-navbar sticky-nav  menu-type-hamburger scroll-to-top" data-cover-transparent="enabled" data-bg-overlay-visibility="visible" style="opacity: 1; transform: none;">
-							<div class="container" data-nav="logo-left-menu-right">
-								<div class="navbar-inner menu-type-hamburger" data-xl-width="12" data-navbar-type="container">
-									<div class="logo navbar-left"><a href="http://malu.im/" title="Malu"><svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+			<div id="content-2454" class="content-container active-content ">
+                <header class="nav_imcgxi8nw semplice-navbar active-navbar sticky-nav  menu-type-hamburger scroll-to-top" data-cover-transparent="enabled" data-bg-overlay-visibility="visible" style="opacity: 1; transform: none;">
+					<div class="container" data-nav="logo-left-menu-right">
+						<div class="navbar-inner menu-type-hamburger" data-xl-width="12" data-navbar-type="container">
+							<div class="logo navbar-left">
+                                <a href="http://malu.im/" title="Malu">
+                                    <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#262626;}
 </style>
@@ -228,203 +258,303 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 	<path class="st0" d="M26,8.1c-1.6-0.6-3.3,0.2-3.8,1.8L16,26.8c-0.6,1.6,0.2,3.3,1.8,3.8c1.6,0.6,3.3-0.2,3.8-1.8L27.8,12
 		C28.4,10.4,27.6,8.7,26,8.1z"></path>
 </g>
-</svg>
+                                    </svg>
 
-</a></div>
+                                </a>
+                            </div>
 									
-									<div class="hamburger navbar-right semplice-menu"><a class="open-menu menu-icon"><span></span></a></div>
-								</div>
-							</div>
-						</header><div id="overlay-menu">
+							<div class="hamburger navbar-right semplice-menu"><a class="open-menu menu-icon"><span></span>
+                            </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+
+                <div id="overlay-menu">
 					<div class="overlay-menu-inner" data-xl-width="12">
 						<nav class="overlay-nav" data-justify="center" data-align="align-middle" data-font="font_pu6wkt77n">
-							<ul class="container"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2454 current_page_item menu-item-2490"><a href="http://malu.im/"><span>Home</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2516"><a href="http://malu.im/aboutme"><span>About</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626"><a href="http://malu.im/designapproach"><span>Approach</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2411"><a href="http://malu.im/fun"><span>Fun</span></a></li>
-</ul>
+							<ul class="container">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2454 current_page_item menu-item-2490">
+                                    <a href="http://malu.im/"><span>Home</span></a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2516">
+                                    <a href="http://malu.im/aboutme"><span>About</span></a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626">
+                                    <a href="http://malu.im/designapproach"><span>Approach</span></a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2411">
+                                    <a href="http://malu.im/fun"><span>Fun</span></a></li>
+                            </ul>
 						</nav>
 					</div>
 				</div>
+
 				<div class="sections">
-					
-					<section id="section_c0rbso542" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-layout="grid" data-gutter="yes" data-justify="space-around">
+                    <section id="section_c0rbso542" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-layout="grid" data-gutter="yes" data-justify="space-around">
+                        <div class="container">
+						    <div id="row_90354pm8a" class="row">
+                                <div id="column_00ddefbd5" class="column" data-xl-width="6" data-valign="bottom">
+					                <div class="content-wrapper">
 						
-						<div class="container">
-						<div id="row_90354pm8a" class="row"><div id="column_00ddefbd5" class="column" data-xl-width="6" data-valign="bottom">
-					<div class="content-wrapper">
-						
-				<div id="content_6c238615a" class="column-content" data-module="paragraph">
-					<div class="is-content has-xs"><div data-content-for="xl"><h1 style="line-height: 5.05556rem; font-size: 5.55556rem;" data-mce-style="line-height: 5.05556rem; font-size: 5.55556rem;"><span style="letter-spacing: 0.0333333rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0333333rem; color: #191919;" class="font_vqo4t9vjr">Hello,</span></h1><h1 style="line-height: 5.05556rem; font-size: 5.55556rem;" data-mce-style="line-height: 5.05556rem; font-size: 5.55556rem;"><span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_vqo4t9vjr"><span style="letter-spacing: 0.0333333rem;" data-mce-style="letter-spacing: 0.0333333rem;">I’m Malu</span>.</span></h1></div><div data-content-for="xs"><h1 style="line-height: 3.16667rem; font-size: 3.88889rem;" data-mce-style="line-height: 3.16667rem; font-size: 3.88889rem;"><span style="letter-spacing: 0.0333333rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0333333rem; color: #191919;" class="font_vqo4t9vjr">Hello,</span></h1><h1 style="line-height: 3.16667rem; font-size: 3.88889rem;" data-mce-style="line-height: 3.16667rem; font-size: 3.88889rem;"><span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_vqo4t9vjr"><span style="letter-spacing: 0.0333333rem;" data-mce-style="letter-spacing: 0.0333333rem;">I’m Malu</span>.</span></h1></div></div>
-				</div>
+				                        <div id="content_6c238615a" class="column-content" data-module="paragraph">
+					                        <div class="is-content has-xs">
+                                                <div data-content-for="xl">
+                                                <h1 style="line-height: 5.05556rem; font-size: 5.55556rem;" data-mce-style="line-height: 5.05556rem; font-size: 5.55556rem;">
+                                                    <span style="letter-spacing: 0.0333333rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0333333rem; color: #191919;" class="font_vqo4t9vjr">Hello,</span>
+                                                </h1>
+                                                <h1 style="line-height: 5.05556rem; font-size: 5.55556rem;" data-mce-style="line-height: 5.05556rem; font-size: 5.55556rem;">
+                                                    <span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_vqo4t9vjr">
+                                                    <span style="letter-spacing: 0.0333333rem;" data-mce-style="letter-spacing: 0.0333333rem;">I’m Ningyuan</span>.</span>
+                                                </h1>
+                                                </div>
+                                                <div data-content-for="xs">
+                                                <h1 style="line-height: 3.16667rem; font-size: 3.88889rem;" data-mce-style="line-height: 3.16667rem; font-size: 3.88889rem;">
+                                                    <span style="letter-spacing: 0.0333333rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0333333rem; color: #191919;" class="font_vqo4t9vjr">Hello,</span>
+                                                </h1>
+                                                <h1 style="line-height: 3.16667rem; font-size: 3.88889rem;" data-mce-style="line-height: 3.16667rem; font-size: 3.88889rem;">
+                                                    <span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_vqo4t9vjr">
+                                                    <span style="letter-spacing: 0.0333333rem;" data-mce-style="letter-spacing: 0.0333333rem;">I’m Ningyuan</span>.</span>
+                                                </h1>
+                                                </div>
+                                            </div>
+				                        </div>
 			
-				<div id="content_3ebd082cd" class="column-content" data-module="paragraph">
-					<div class="is-content"><div data-content-for="xl"><h3 data-mce-style="line-height: 0.555556rem; font-size: 1.33333rem;" style="line-height: 0.555556rem; font-size: 1.33333rem;"><span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_pu6wkt77n">Interaction Designer</span></h3><h3 data-mce-style="line-height: 0.555556rem; font-size: 1.33333rem;" style="line-height: 0.555556rem; font-size: 1.33333rem;"><span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_pu6wkt77n">UX/UI Designer</span></h3></div></div>
-				</div>
+                                        <div id="content_3ebd082cd" class="column-content" data-module="paragraph">
+					                        <div class="is-content">
+                                                <div data-content-for="xl">
+                                                <h3 data-mce-style="line-height: 0.555556rem; font-size: 1.33333rem;" style="line-height: 0.555556rem; font-size: 1.33333rem;">
+                                                    <span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_pu6wkt77n">Product and Interaction Designer</span>
+                                                </h3>
+                                                <h3 data-mce-style="line-height: 0.555556rem; font-size: 1.33333rem;" style="line-height: 0.555556rem; font-size: 1.33333rem;">
+                                                    <span style="color: rgb(25, 25, 25);" data-mce-style="color: #191919;" class="font_pu6wkt77n">UX/UI Designer</span>
+                                                </h3>
+                                                </div>
+                                            </div>
+				                        </div>
 			
-					</div>
-				</div><div id="column_ypxz6wpnl" class="column spacer-column" data-xl-width="4">
-					<div class="content-wrapper">
+					                </div>
+				                </div>
+                                <div id="column_ypxz6wpnl" class="column spacer-column" data-xl-width="4">
+					                 <div class="content-wrapper">
 						
-					</div>
-				</div></div>
-						</div>
-					</section>				
+					                </div>
+				                </div>
+                            </div>
+					    </div>
+				    </section>
 				
 					<section id="section_ae2d57a15" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-valign="stretch" data-justify="space-around" data-height="dynamic" data-gutter="yes" data-layout="grid" data-xs-visibility="visbile">
 						
 						<div class="container">
-						<div id="row_y04wbndv3" class="row"><div id="column_y6685jdfw" class="column" data-xl-width="10" data-valign="bottom">
-					<div class="content-wrapper">
+						    <div id="row_y04wbndv3" class="row">
+                                <div id="column_y6685jdfw" class="column" data-xl-width="10" data-valign="bottom">
+					                <div class="content-wrapper">
 						
-				<div id="content_v45cmzi6m" class="column-content" data-module="image" style="transform: matrix(1, 0, 0, 1, 0, -308);">
-					<div class="ce-image" data-align="center"><img class="is-content" src="./Malu – Portfolio_files/IMG_4104-min.jpg" width="6515" height="4000" alt="IMG_4104-min" caption="" data-width="original" data-scaling="no"></div>
-				</div>
+				                        <div id="content_v45cmzi6m" class="column-content" data-module="image" style="transform: matrix(1, 0, 0, 1, 0, -308);">
+					                        <div class="ce-image" data-align="center">
+                                            <img class="is-content" src="./Malu – Portfolio_files/IMG_4104-min.jpg" width="6515" height="4000" alt="IMG_4104-min" caption="" data-width="original" data-scaling="no">
+                                            </div>
+				                        </div>
 			
-					</div>
-				</div></div>
+					                </div>
+				                </div>
+                            </div>
 						</div>
 					</section>				
 				
 					<section id="section_a617a486e" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-justify="space-around" data-valign="center" data-gutter="yes" data-height="dynamic" data-layout="grid" style="opacity: 1;">
 						
 						<div class="container">
-						<div id="row_3e6ba65cd" class="row"><div id="column_39b793864" class="column" data-xl-width="6" data-valign="center">
-					<div class="content-wrapper">
+						    <div id="row_3e6ba65cd" class="row">
+                                <div id="column_39b793864" class="column" data-xl-width="6" data-valign="center">
+					                <div class="content-wrapper">
 						
-				<div id="content_ddf18983b" class="column-content" data-module="paragraph" style="opacity: 0.5;">
-					<div class="is-content has-xs"><div data-content-for="xl"><h3 style="font-size: 1.22222rem; line-height: 1.66667rem;" data-mce-style="font-size: 1.22222rem; line-height: 1.66667rem;"><span style="letter-spacing: 0.0111111rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0111111rem; color: #191919;" class="font_pu6wkt77n">﻿I'm an interaction designer and now based in Berlin. I like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the user-centered design.</span></h3></div><div data-content-for="xs"><h3 style="font-size: 1.22222rem; line-height: 1.66667rem;" data-mce-style="font-size: 1.22222rem; line-height: 1.66667rem;"><span style="letter-spacing: 0.0111111rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0111111rem; color: #191919;" class="font_pu6wkt77n">I'm an interaction designer and now based in Berlin. I like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the user-centered design.</span></h3></div></div>
-				</div>
+                                        <div id="content_ddf18983b" class="column-content" data-module="paragraph" style="opacity: 0.5;">
+					                        <div class="is-content has-xs">
+                                                <div data-content-for="xl">
+                                                <h3 style="font-size: 1.22222rem; line-height: 1.66667rem;" data-mce-style="font-size: 1.22222rem; line-height: 1.66667rem;">
+                                                <span style="letter-spacing: 0.0111111rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0111111rem; color: #191919;" class="font_pu6wkt77n">﻿I'm an interaction designer and now based in Berlin. I like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the user-centered design.</span>
+                                                </h3>
+                                                </div>
+
+                                                <div data-content-for="xs">
+                                                <h3 style="font-size: 1.22222rem; line-height: 1.66667rem;" data-mce-style="font-size: 1.22222rem; line-height: 1.66667rem;">
+                                                <span style="letter-spacing: 0.0111111rem; color: rgb(25, 25, 25);" data-mce-style="letter-spacing: 0.0111111rem; color: #191919;" class="font_pu6wkt77n">I'm an interaction designer and now based in Berlin. I like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the user-centered design.</span>
+                                                </h3>
+                                                </div>
+                                            </div>
+				                        </div>
 			
-				<div id="content_656ae1a6d" class="column-content" data-module="button">
+				                        <div id="content_656ae1a6d" class="column-content" data-module="button">
 					
-				<div class="ce-button" data-align="left">
-					<div class="is-content" data-width="auto">
-						<a data-font="font_ivwasoeb6" href="http://malu.im/aboutme" target="_self">ABOUT ME</a>
-					</div>
-				</div>
+				                        <div class="ce-button" data-align="left">
+					                        <div class="is-content" data-width="auto">
+						                    <a data-font="font_ivwasoeb6" href="http://malu.im/aboutme" target="_self">ABOUT ME</a>
+					                        </div>
+				                        </div>
 			
-				</div>
-			
-					</div>
-				</div><div id="column_e4173f481" class="column spacer-column" data-xl-width="4">
-					<div class="content-wrapper">
-						
-					</div>
-				</div></div>
-						</div>
-					</section>				
+				                        </div>
+					                </div>
+				                </div>
+
+                                <div id="column_e4173f481" class="column spacer-column" data-xl-width="4">
+					                <div class="content-wrapper">
+					                </div>
+				                </div>
+                            </div>
+				        </div>
+			        </section>
 				
 					<section id="section_6711b4f1d" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-justify="space-around" data-xs-visibility="visbile">
 						
 						<div class="container">
-						<div id="row_25899ab82" class="row"><div id="column_53f0b941a" class="column" data-xl-width="11">
-					<div class="content-wrapper">
+						    <div id="row_25899ab82" class="row"><div id="column_53f0b941a" class="column" data-xl-width="11">
+					            <div class="content-wrapper">
 						
-				<div id="content_b5014e09d" class="column-content" data-module="portfoliogrid">
+				                    <div id="content_b5014e09d" class="column-content" data-module="portfoliogrid">
 					
-		<div id="masonry-content_b5014e09d" class="masonry" style="position: relative; height: 3599.45px;">
-			<div class="masonry-item-width"></div>
-			<div id="project-2384" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 0px; opacity: 1;"><a href="http://malu.im/project/meinwlan">
-				<div class="thumb-inner">
+		                                <div id="masonry-content_b5014e09d" class="masonry" style="position: relative; height: 3599.45px;">
+			                                <div class="masonry-item-width">
+
+                                            </div>
+			                                <div id="project-2384" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 0px; opacity: 1;">
+                                            <a href="http://malu.im/project/meinwlan">
+				                                <div class="thumb-inner">
 					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                                        <div class="thumb-hover">
+				                                        <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">MeinWLAN</span><br>
 						<span class="category" data-font="font_36kj0npbw">Mobile Application</span>
 					</p>			
-				</div>
-			</div>
+				                                        </div>
+			                                        </div>
 		
 					
 					<img src="./Malu – Portfolio_files/wlanometer_cover-1.jpg" width="2520" height="1302" alt="MeinWLAN">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/meinwlan" title="MeinWLAN"></a></div><div id="project-2524" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="7" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 625px; opacity: 1;"><a href="http://malu.im/project/cammaster">
-				<div class="thumb-inner">
+			                                    </div>
+                                            </a>
+                                            <a class="pg-title-link regular" href="http://malu.im/project/meinwlan" title="MeinWLAN">
+                                            </a>
+                                         </div>
+                                         <div id="project-2524" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="7" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 625px; opacity: 1;">
+                                         <a href="http://malu.im/project/cammaster">
+				                            <div class="thumb-inner">
 					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                                    <div class="thumb-hover">
+				                                    <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">Cam master</span><br>
 						<span class="category" data-font="font_36kj0npbw">Application</span>
 					</p>			
-				</div>
-			</div>
+				                                    </div>
+			                                    </div>
 		
 					
 					<img src="./Malu – Portfolio_files/cam_cover.jpg" width="1446" height="1768" alt="Cam master">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/cammaster" title="Cam master"></a></div><div id="project-2512" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="5" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 58.2664%; top: 625px; opacity: 1;"><a href="http://malu.im/project/plantplayer">
-				<div class="thumb-inner">
-					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                                </div>
+                                         </a>
+                                         <a class="pg-title-link regular" href="http://malu.im/project/cammaster" title="Cam master">
+                                         </a>
+                                      </div>
+                                      <div id="project-2512" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="5" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 58.2664%; top: 625px; opacity: 1;">
+                                      <a href="http://malu.im/project/plantplayer">
+                                          <div class="thumb-inner">
+                                              <div class="thumb-hover">
+				                                  <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">Plant Player</span><br>
 						<span class="category" data-font="font_36kj0npbw">IoT</span>
 					</p>			
-				</div>
-			</div>
+				                                  </div>
+			                                  </div>
 		
 					
 					<img src="./Malu – Portfolio_files/plantplayer_cover-2.jpg" width="1014" height="1768" alt="Plant Player">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/plantplayer" title="Plant Player"></a></div><div id="project-2554" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 1462px; opacity: 1;"><a href="http://malu.im/project/triaid">
-				<div class="thumb-inner">
-					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                               </div>
+                                       </a>
+                                       <a class="pg-title-link regular" href="http://malu.im/project/plantplayer" title="Plant Player">
+                                       </a>
+                                   </div>
+                                   <div id="project-2554" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 1462px; opacity: 1;">
+                                   <a href="http://malu.im/project/triaid">
+                                       <div class="thumb-inner">
+                                           <div class="thumb-hover">
+				                                <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">Triaid</span><br>
 						<span class="category" data-font="font_36kj0npbw">Application</span>
 					</p>			
-				</div>
-			</div>
+				                                </div>
+			                                </div>
 		
 					
 					<img src="./Malu – Portfolio_files/triaid_cover-1.jpg" width="2518" height="1508" alt="Triaid">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/triaid" title="Triaid"></a></div><div id="project-2502" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="7" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 2182px; opacity: 1;"><a href="http://malu.im/project/overtone">
-				<div class="thumb-inner">
+			                            </div>
+                                   </a>
+                                   <a class="pg-title-link regular" href="http://malu.im/project/triaid" title="Triaid">
+                                   </a>
+                               </div>
+                               <div id="project-2502" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="7" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 2182px; opacity: 1;">
+                               <a href="http://malu.im/project/overtone">
+                               <div class="thumb-inner">
 					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                        <div class="thumb-hover">
+				                        <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">Overtone</span><br>
 						<span class="category" data-font="font_36kj0npbw">Exhibition design</span>
 					</p>			
-				</div>
-			</div>
+				                        </div>
+			                        </div>
 		
 					
 					<img src="./Malu – Portfolio_files/overtone_cover.jpg" width="1444" height="1768" alt="Overtone">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/overtone" title="Overtone"></a></div><div id="project-2631" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="5" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 58.2664%; top: 2182px; opacity: 1;"><a href="http://malu.im/project/bvgdiscovery">
-				<div class="thumb-inner">
+                               </div>
+                               </a>
+                               <a class="pg-title-link regular" href="http://malu.im/project/overtone" title="Overtone">
+                               </a>
+                           </div>
+                           <div id="project-2631" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="5" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 58.2664%; top: 2182px; opacity: 1;">
+                           <a href="http://malu.im/project/bvgdiscovery">
+				                <div class="thumb-inner">
 					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                        <div class="thumb-hover">
+				                        <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">BVG Discovery</span><br>
 						<span class="category" data-font="font_36kj0npbw">Mobile Application</span>
 					</p>			
-				</div>
-			</div>
+				                        </div>
+                                    </div>
 		
 					
 					<img src="./Malu – Portfolio_files/berlindiscovery_cover-1.jpg" width="1016" height="1768" alt="BVG Discovery">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/bvgdiscovery" title="BVG Discovery"></a></div><div id="project-2681" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 3020px; opacity: 1;"><a href="http://malu.im/project/hotwordsaboutcar">
-				<div class="thumb-inner">
+			                    </div>
+                           </a>
+                           <a class="pg-title-link regular" href="http://malu.im/project/bvgdiscovery" title="BVG Discovery">
+                           </a>
+                        </div>
+                        <div id="project-2681" class="masonry-item thumb masonry-content_b5014e09d-item below" data-xl-width="12" data-sm-width="6" data-xs-width="12" style="position: absolute; left: 0%; top: 3020px; opacity: 1;">
+                        <a href="http://malu.im/project/hotwordsaboutcar">
+				            <div class="thumb-inner">
 					
-			<div class="thumb-hover">
-				<div class="thumb-hover-meta top-left show-title move-bottom">
+			                    <div class="thumb-hover">
+				                    <div class="thumb-hover-meta top-left show-title move-bottom">
 					<p>
 						<span class="title" data-font="font_ivwasoeb6">Hot words about car</span><br>
 						<span class="category" data-font="font_36kj0npbw">Project type</span>
 					</p>			
-				</div>
-			</div>
+				                    </div>
+			                    </div>
 		
 					
 					<img src="./Malu – Portfolio_files/carwords_cover-2.jpg" width="2518" height="1200" alt="Hot words about car">
-			</div></a><a class="pg-title-link regular" href="http://malu.im/project/hotwordsaboutcar" title="Hot words about car"></a></div>
-		</div>
+                            </div>
+                        </a>
+                        <a class="pg-title-link regular" href="http://malu.im/project/hotwordsaboutcar" title="Hot words about car">
+                        </a>
+                        </div>
+		            </div>
 	
 		<script type="text/javascript">
 			(function ($) {
@@ -472,79 +602,127 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 			})(jQuery);
 		</script>
 	
-				</div>
-			
-					</div>
-				</div></div>
-						</div>
-					</section>				
+				                        </div>
+                                    </div>
+				                </div>
+                            </div>
+				        </div>
+				    </section>
 				
 					<section id="section_623aabc53" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-height="fullscreen" data-valign="center" data-justify="space-around">
 						
 						<div class="container">
-						<div id="row_73c200c60" class="row"><div id="column_f5958d223" class="column" data-xl-width="7">
-					<div class="content-wrapper">
+						    <div id="row_73c200c60" class="row"><div id="column_f5958d223" class="column" data-xl-width="7">
+					            <div class="content-wrapper">
 						
-				<div id="content_a42379d04" class="column-content" data-module="paragraph">
-					<div class="is-content has-xs"><div data-content-for="xl"><h2 style="font-size: 2.22222rem; line-height: 2.94444rem;" data-mce-style="font-size: 2.22222rem; line-height: 2.94444rem;"><span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;" class="font_t8jbio3kb"><span style="color: rgb(102, 102, 102);" data-mce-style="color: #666666;">﻿I’m always up for adventure and international opportunities. Feel free to say hello via </span>malumyj@gmail.com.</span></h2><p>&nbsp;<br></p></div><div data-content-for="xs"><h2 style="font-size: 1.66667rem; line-height: 2.05556rem; text-align: left;" data-mce-style="font-size: 1.66667rem; line-height: 2.05556rem; text-align: left;"><span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;" class="font_t8jbio3kb"><span style="color: rgb(168, 168, 168);" data-mce-style="color: #a8a8a8;">I’m always up for adventure and international opportunities. Feel free to say hello via </span>malumyj@gmail.com.</span></h2><p>&nbsp;<br></p></div></div>
-				</div>
+				                    <div id="content_a42379d04" class="column-content" data-module="paragraph">
+                                        <div class="is-content has-xs">
+                                            <div data-content-for="xl">
+                                            <h2 style="font-size: 2.22222rem; line-height: 2.94444rem;" data-mce-style="font-size: 2.22222rem; line-height: 2.94444rem;">
+                                            <span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;" class="font_t8jbio3kb">
+                                            <span style="color: rgb(102, 102, 102);" data-mce-style="color: #666666;">﻿I’m always up for adventure and international opportunities. Feel free to say hello via </span>malumyj@gmail.com.</span>
+                                            </h2>
+                                            <p>&nbsp;
+                                            <br>
+                                            </p>
+                                            </div>
+                                        <div data-content-for="xs">
+                                        <h2 style="font-size: 1.66667rem; line-height: 2.05556rem; text-align: left;" data-mce-style="font-size: 1.66667rem; line-height: 2.05556rem; text-align: left;">
+                                        <span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;" class="font_t8jbio3kb">
+                                        <span style="color: rgb(168, 168, 168);" data-mce-style="color: #a8a8a8;">I’m always up for adventure and international opportunities. Feel free to say hello via </span>malumyj@gmail.com.</span>
+                                        </h2>
+                                        <p>&nbsp;
+                                        <br>
+                                        </p>
+                                        </div>
+                                    </div>
+				                </div>
 			
-				<div id="content_b615c65b2" class="column-content" data-module="paragraph">
-					<div class="is-content has-xs"><div data-content-for="xl"><p><span class="font_ivwasoeb6" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;"><a data-mce-href="https://www.linkedin.com/in/mayujia/" href="https://www.linkedin.com/in/mayujia/" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Linkedin</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a data-mce-href="https://dribbble.com/malu" href="https://dribbble.com/malu" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Dribbble</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a data-mce-href="https://www.behance.net/mayujia" href="https://www.behance.net/mayujia" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Behance﻿</a>&nbsp;</span></p></div><div data-content-for="xs"><p style="text-align: left; font-size: 0.888889rem;" data-mce-style="text-align: left; font-size: 0.888889rem;"><span class="font_ivwasoeb6" style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;"><a data-mce-href="https://www.linkedin.com/in/mayujia/" href="https://www.linkedin.com/in/mayujia/" style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;"><span style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Linkedin</span></a><span style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">&nbsp; &nbsp; &nbsp; <a data-mce-href="https://dribbble.com/malu" href="https://dribbble.com/malu" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Dribbble</a>&nbsp; &nbsp; &nbsp;<a data-mce-href="https://www.behance.net/mayujia" href="https://www.behance.net/mayujia" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Behance</a>&nbsp;</span></span></p></div></div>
-				</div>
+				                <div id="content_b615c65b2" class="column-content" data-module="paragraph">
+					                <div class="is-content has-xs">
+                                        <div data-content-for="xl">
+                                        <p>
+                                        <span class="font_ivwasoeb6" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">
+                                        <a data-mce-href="https://www.linkedin.com/in/mayujia/" href="https://www.linkedin.com/in/mayujia/" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Linkedin</a>
+                                        <a data-mce-href="https://dribbble.com/malu" href="https://dribbble.com/malu" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Dribbble</a>
+                                        <a data-mce-href="https://www.behance.net/mayujia" href="https://www.behance.net/mayujia" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Behance﻿</a>
+                                        </span>
+                                        </p>
+                                        </div>
+                                    <div data-content-for="xs">
+                                    <p style="text-align: left; font-size: 0.888889rem;" data-mce-style="text-align: left; font-size: 0.888889rem;">
+                                    <span class="font_ivwasoeb6" style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">
+                                    <a data-mce-href="https://www.linkedin.com/in/mayujia/" href="https://www.linkedin.com/in/mayujia/" style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">
+                                    <span style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Linkedin</span>
+                                    </a>
+                                    <span style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">
+                                    <a data-mce-href="https://dribbble.com/malu" href="https://dribbble.com/malu" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Dribbble</a>
+                                    <a data-mce-href="https://www.behance.net/mayujia" href="https://www.behance.net/mayujia" style="color: rgb(76, 76, 76);" data-mce-style="color: #4c4c4c;">Behance</a>
+                                    </span>
+                                    </span>
+                                    </p>
+                                    </div>
+                                </div>
+				            </div>
 			
-					</div>
-				</div><div id="column_72a7c7204" class="column" data-xl-width="4" data-valign="center">
-					<div class="content-wrapper">
+					    </div>
+				    </div>
+                    <div id="column_72a7c7204" class="column" data-xl-width="4" data-valign="center">
+					    <div class="content-wrapper">
 						
-				<div id="content_6331868f8" class="column-content" data-module="image">
-					<div class="ce-image" data-align="center"><img class="is-content" src="./Malu – Portfolio_files/resume2-1.png" width="712" height="556" alt="resume2" caption="" data-width="original" data-scaling="no"></div>
-				</div>
+				            <div id="content_6331868f8" class="column-content" data-module="image">
+					            <div class="ce-image" data-align="center">
+                                <img class="is-content" src="./Malu – Portfolio_files/resume2-1.png" width="712" height="556" alt="resume2" caption="" data-width="original" data-scaling="no">
+                                </div>
+				            </div>
 			
-				<div id="content_7ab02a77e" class="column-content" data-module="button">
+				            <div id="content_7ab02a77e" class="column-content" data-module="button">
 					
-				<div class="ce-button" data-align="center">
-					<div class="is-content" data-width="auto">
-						<a data-font="font_ivwasoeb6" href="https://www.dropbox.com/s/lqouzjdt0ezsckg/Resume_YujiaMa.pdf?dl=0" target="_blank">DOWNLOAD CV</a>
-					</div>
-				</div>
+				                <div class="ce-button" data-align="center">
+					                <div class="is-content" data-width="auto">
+						            <a data-font="font_ivwasoeb6" href="https://www.dropbox.com/s/lqouzjdt0ezsckg/Resume_YujiaMa.pdf?dl=0" target="_blank">DOWNLOAD CV</a>
+					                </div>
+				                </div>
 			
-				</div>
+				                        </div>
 			
-					</div>
-				</div></div>
-						</div>
-					</section>				
+					                </div>
+				                </div>
+                            </div>
+			            </div>
+		            </section>
 				
 				</div>
 			</div>
 		</div>
+
 		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="pswp__bg"></div>
-	<div class="pswp__scroll-wrap">
-		<div class="pswp__container">
-			<div class="pswp__item"></div>
-			<div class="pswp__item"></div>
-			<div class="pswp__item"></div>
-		</div>
-		<div class="pswp__ui pswp__ui--hidden">
-			<div class="pswp__top-bar">
-				<div class="pswp__counter"></div>
-				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-				<button class="pswp__button pswp__button--share" title="Share"></button>
-				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-				<div class="pswp__preloader">
-					<div class="pswp__preloader__icn">
-					  <div class="pswp__preloader__cut">
-						<div class="pswp__preloader__donut"></div>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-				<div class="pswp__share-tooltip"></div> 
-			</div>
+	        <div class="pswp__bg">
+            </div>
+            <div class="pswp__scroll-wrap">
+		        <div class="pswp__container">
+			        <div class="pswp__item"></div>
+			        <div class="pswp__item"></div>
+			        <div class="pswp__item"></div>
+		        </div>
+		        <div class="pswp__ui pswp__ui--hidden">
+			        <div class="pswp__top-bar">
+				        <div class="pswp__counter"></div>
+				        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				        <button class="pswp__button pswp__button--share" title="Share"></button>
+				        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				        <div class="pswp__preloader">
+					        <div class="pswp__preloader__icn">
+					            <div class="pswp__preloader__cut">
+						            <div class="pswp__preloader__donut"></div>
+					            </div>
+					        </div>
+				        </div>
+			        </div>
+			        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				        <div class="pswp__share-tooltip"></div>
+			        </div>
 			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
 			</button>
 			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
@@ -554,26 +732,32 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 			</div>
 		</div>
 	</div>
-</div>	<div class="back-to-top" style="display: none; opacity: 1;">
-		<a class="semplice-event" data-event-type="helper" data-event="scrollToTop"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-<g id="Ebene_3">
-</g>
-<g>
-	<polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
-</g>
-</svg>
-</a>
-	</div>
-		<script type="text/javascript">
+</div>
+
+        <div class="back-to-top" style="display: none; opacity: 1;">
+		<a class="semplice-event" data-event-type="helper" data-event="scrollToTop">
+        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+        <g id="Ebene_3">
+        </g>
+        <g>
+	        <polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
+        </g>
+        </svg>
+        </a>
+	    </div>
+
+    <script type="text/javascript">
 		var c = document.body.className;
 		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
 		document.body.className = c;
 	</script>
+
 	<script type="text/javascript">
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"http:\/\/malu.im\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
 /* ]]> */
-</script>
+    </script>
+        
 <script type="text/javascript" src="./Malu – Portfolio_files/scripts.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/jquery.blockUI.min.js"></script>
 <script type="text/javascript" src="./Malu – Portfolio_files/js.cookie.min.js"></script>
