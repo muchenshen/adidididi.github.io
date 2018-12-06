@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://nitzan-ron.com/_jsapps/ecommerce/checkout.html?18-12-5 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+
+	<script src="./saved_resource"></script>
+	<script src="./jquery-2.1.3.min.js"></script>
+	<script src="./backbone-underscore-packaged.js"></script>
+	<script src="./require.min.js"></script>
+	
+	<link rel="stylesheet" href="./following.min(1).css">
+
+	<link rel="stylesheet" href="./gr8.css">
+	<link rel="stylesheet" href="./bs-layout.css">
+	<link rel="stylesheet" href="./bs-grid.css">
+	<link rel="stylesheet" href="./bs-design.css">
+	<link rel="stylesheet" href="./checkout.css">
+
+	<title>Checkout</title>
+
+	<style>
+		html {
+			background-color: #fff;
+		}
+		.StripeElement--focus {
+			border-color: transparent;
+			outline: 0;
+			box-shadow: none;
+		}
+		input:focus {
+			outline: 0;
+			border: 0;
+			border-color: transparent;
+			box-shadow: none;
+		}
+		input:-webkit-autofill {
+			-webkit-box-shadow: 0 0 0px 1000px #4C4C4C inset;
+			-webkit-text-fill-color: #fff;
+		}
+		#card-number.form-control,
+		#card-cvc.form-control,
+		#card-exp.form-control {
+			display:inline-block;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		$(function(){
+
+			requirejs.config({
+				baseUrl: '/_jsapps/ecommerce',
+				
+				paths: {
+					text 	: "//static.cargocollective.com/libs/require/text.min",
+					css 	: "//static.cargocollective.com/libs/require/css.min"
+				}
+
+			});
+
+			function formatPriceForCurrency(price, currencyCode, amount) {
+
+				var res;
+
+				if (amount !== undefined) {
+					price = price * amount;	
+				}
+
+				if (typeof currencyCode !== 'string') {
+				
+					res = (price / 100) + '';
+				
+				} else {
+
+					var zeroDecimalCurrencies = ["BIF", "CLP", "DJF", "GNF", "JPY", "KMF", "KRW", "MGA", "PYG", "RWF", "VND", "VUV", "XAF", "XOF", "XPF"],
+						currencyCodes =  {'AED': 'د.إ','AFN': '؋','ALL': 'L','AMD': '֏','ANG': 'ƒ','AOA': 'Kz','ARS': '$','AUD': '$','AWG': 'ƒ','AZN': '₼','BAM': 'KM','BBD': '$','BDT': '৳','BGN': 'лв','BHD': '.د.ب','BIF': 'FBu','BMD': '$','BND': '$','BOB': '$b','BRL': 'R$','BSD': '$','BTC': '฿','BTN': 'Nu.','BWP': 'P','BYR': 'p.','BZD': 'BZ$','CAD': '$','CDF': 'FC','CHF': 'CHF','CLP': '$','CNY': '¥','COP': '$','CRC': '₡','CUC': '$','CUP': '₱','CVE': '$','CZK': 'Kč','DJF': 'Fdj','DKK': 'kr','DOP': 'RD$','DZD': 'دج','EEK': 'kr','EGP': '£','ERN': 'Nfk','ETB': 'Br','ETH': 'Ξ','EUR': '€','FJD': '$','FKP': '£','GBP': '£','GEL': '₾','GGP': '£','GHC': '₵','GHS': 'GH₵','GIP': '£','GMD': 'D','GNF': 'FG','GTQ': 'Q','GYD': '$','HKD': '$','HNL': 'L','HRK': 'kn','HTG': 'G','HUF': 'Ft','IDR': 'Rp','ILS': '₪','IMP': '£','INR': '₹','IQD': 'ع.د','IRR': '﷼','ISK': 'kr','JEP': '£','JMD': 'J$','JOD': 'JD','JPY': '¥','KES': 'KSh','KGS': 'лв','KHR': '៛','KMF': 'CF','KPW': '₩','KRW': '₩','KWD': 'KD','KYD': '$','KZT': 'лв','LAK': '₭','LBP': '£','LKR': '₨','LRD': '$','LSL': 'M','LTC': 'Ł','LTL': 'Lt','LVL': 'Ls','LYD': 'LD','MAD': 'MAD','MDL': 'lei','MGA': 'Ar','MKD': 'ден','MMK': 'K','MNT': '₮','MOP': 'MOP$','MRO': 'UM','MUR': '₨','MVR': 'Rf','MWK': 'MK','MXN': '$','MYR': 'RM','MZN': 'MT','NAD': '$','NGN': '₦','NIO': 'C$','NOK': 'kr','NPR': '₨','NZD': '$','OMR': '﷼','PAB': 'B/.','PEN': 'S/.','PGK': 'K','PHP': '₱','PKR': '₨','PLN': 'zł','PYG': 'Gs','QAR': '﷼','RMB': '￥','RON': 'lei','RSD': 'Дин.','RUB': '₽','RWF': 'R₣','SAR': '﷼','SBD': '$','SCR': '₨','SDG': 'ج.س.','SEK': 'kr','SGD': '$','SHP': '£','SLL': 'Le','SOS': 'S','SRD': '$','SSP': '£','STD': 'Db','SVC': '$','SYP': '£','SZL': 'E','THB': '฿','TJS': 'SM','TMT': 'T','TND': 'د.ت','TOP': 'T$','TRL': '₤','TRY': '₺','TTD': 'TT$','TVD': '$','TWD': 'NT$','TZS': 'TSh','UAH': '₴','UGX': 'USh','USD': '$','UYU': '$U','UZS': 'лв','VEF': 'Bs','VND': '₫','VUV': 'VT','WST': 'WS$','XAF': 'FCFA','XBT': 'Ƀ','XCD': '$','XOF': 'CFA','XPF': '₣','YER': '﷼','ZAR': 'R','ZWD': 'Z$'};
+
+					currencyCode = currencyCode.toUpperCase();
+
+					// if a currency supports decimals, it's price is in cents. Divide by 100 to get the amount in full units.
+					if(zeroDecimalCurrencies.indexOf(currencyCode) === -1) {
+						price /= 100;
+					}
+
+					if(typeof Intl !== "undefined") {
+							
+						// proper way
+						res = new Intl.NumberFormat('en-US', {
+							style: 'currency',
+							currency: currencyCode,
+							currencyDisplay: "symbol",
+							useGrouping: true,
+							minimumFractionDigits: 0
+						}).format(price);
+
+					} else {
+
+						// fallback to currency code map for the symbol and regex based thousands separator
+						res = (currencyCodes.hasOwnProperty(currencyCode) ? currencyCodes[currencyCode] : currencyCode + ' ') + '' + price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+
+					}
+				}
+
+				// pad single decimal numbers to double decimals (2.1 > 2.10)
+				if(typeof res === "string" && res.indexOf('.') !== -1) {
+					var parts = res.split('.');
+
+					if(parts.length === 2 && parts[1].length === 1) {
+						parts[1] = parts[1] + '0';
+						res = parts.join('.');
+					}
+				}
+
+				return res;
+
+			};
+
+			require([
+				'text!_templates/checkout.html' + window.location.search // window.location.search contains the cache break version.
+			], function(
+				checkoutTemplate
+			){
+
+				var CheckoutView = Backbone.View.extend({
+
+					template: _.template(checkoutTemplate),
+
+					currentOrderNote: '',
+
+					events: {
+						'change input[name="shipping_method"]'	: 'applyShippingMethod',
+						'click [data-finalize-order]'			: 'finalizeOrder',
+						'click [data-complete-payment]'			: 'finalizePayment',
+						'click [data-cancel-checkout]'			: 'cancelCheckout',
+						'click [data-cancel-payment]'			: 'cancelPayment',
+						'click [data-edit-address]'				: 'editAddress',
+						'click [data-download-link]'			: 'downloadDigitalFiles'
+					},
+
+					initialize: function(){
+
+						this.currentRenderOption = {};
+						this.setupMessageListener();
+
+						this.currentOrderNote = '';
+
+					},
+
+					setupMessageListener: function(){
+
+						window.addEventListener('message', _.bind(function(e) {
+
+							try {
+								var msg = JSON.parse(e.data);
+							} catch(e) {
+								console.info('message error', e);
+								return;
+							}
+
+							if(msg.type) {
+								this.onMessage(msg.type, msg.options);
+							}
+
+						}, this));
+
+					},
+
+					onMessage: function(action, options){
+
+						if(action == 'open-checkout') {
+
+							if(options.order_id) {
+
+								this.fetchOrder(options.order_id, function(order){
+
+									// have the cart show this (the checkout)
+									parent.postMessage(JSON.stringify({
+										type: 'show-frame',
+										data: {}
+									}), '*');
+
+									this.render();
+
+									var u = parseInt(_.uniqueId()) % 10;
+									
+									// Safari desktop needs this to keep the frame scrollable. Wtf?
+									$('[data-paymentframe]').css('z-index', u);
+
+									// Fix safari scroll after cancelling and coming back
+									$('[data-paymentframe]').css('overflow', 'hidden')
+									setTimeout(_.bind(function(){
+										$('[data-paymentframe]').css('overflow', 'auto')
+									},this), 250)
+
+									// IOS safari needs this to show 
+									// the bottom bar.
+									$('[data-bottom-bar]').hide().show();
+									$('[data-bottom-bar]').css('z-index', u);
+
+
+								});
+
+							} else {
+								alert('no order');
+							}
+
+						} else if(action == 'init-checkout') {
+
+							if(options.site_id === undefined || options.currency === undefined || options.public_stripe_key === undefined) {
+								return;
+							}
+
+							this.site_id = options.site_id;
+
+							this.stripe = Stripe(options.public_stripe_key);
+							this.elements = this.stripe.elements();
+
+						}
+
+					},
+
+					downloadDigitalFiles: function(e){
+						
+						if(e) {
+							e.preventDefault();
+						}
+
+						$('[data-order-success-message]').html('Your download will begin shortly')
+						$('[data-download-button-wrapper]').hide();
+
+						_.each(document.body.querySelectorAll('[data-download-form]'), function(form, count){
+
+							setTimeout(_.bind(function() {
+
+								var iframe = document.createElement('iframe');
+								
+								iframe.style.visibility = 'collapse';
+
+								document.body.append(iframe);
+
+								iframe.contentDocument.write(
+									form.outerHTML
+								);
+
+								iframe.contentDocument.forms[0].submit();
+
+								// remove after 60 seconds
+								setTimeout(_.bind(function(){
+									this.remove();
+								}, iframe), 60000);
+
+							},this), count * 100)
+							
+
+						});
+
+
+					},
+
+					applyShippingMethod: function(e){
+
+						if(!this.currentOrder) {
+							return;
+						}
+
+						var newShippingId = e.currentTarget.getAttribute('value');
+
+						if(newShippingId !== this.currentOrder.selected_shipping_method) {
+
+							$('[data-processing-overlay]', this.el).removeClass('hidden');
+
+							var scrollY = $('[data-paymentframe]').scrollTop();
+
+							this.updateCurrentOrder({
+								selected_shipping_method: newShippingId
+							}, _.bind(function(order){
+
+								$('[data-processing-overlay]', this.el).removeClass('hidden');
+
+								this.currentOrder = order;
+								this.render();
+
+								$('[data-paymentframe]').scrollTop(scrollY);
+
+							}, this));
+
+						}
+
+					},
+
+					updateCurrentOrder: function(data, callback) {
+
+						if(!this.currentOrder || !data) {
+							return;
+						}
+
+						$.ajax({
+							url: '/_api/v0/ecommerce/order/' + this.site_id + '/' + this.currentOrder.id,
+							type: "PUT",
+							data: JSON.stringify(data),
+							contentType: "application/json",
+							dataType: "json",
+							success: _.bind(function(order){
+
+								order = this.checkOrderShippingCost(order);
+
+								if(callback) {
+									callback(order);
+								}
+
+							}, this)
+						});
+
+					},
+
+					fetchOrder: function(id, callback){
+
+						$.ajax({
+							url: '/_api/v0/ecommerce/order/' + this.site_id + '/' + id,
+							dataType: "json",
+							contentType: "application/json",
+							type: "GET",
+							success: _.bind(function(order){
+
+								order = this.checkOrderShippingCost(order);
+
+								this.currentOrder = order;
+
+								if(callback) {
+									callback.call(this, order);
+								}
+
+							}, this)
+						});
+
+					},
+
+					checkOrderShippingCost: function(order){
+
+						// if there's no shipping set, don't attempt to charge shipping costs. This only works because
+						// the same routine is implemented in the backend.
+						if(order && order.shipping === null) {
+
+							var totalShippingCost = 0;
+
+							for (var i = order.items.length - 1; i >= 0; i--) {
+
+								if(order.items[i].type == 'shipping') {
+									totalShippingCost += order.items[i].amount;
+									order.items.splice(i, 1);
+								}
+
+							}
+
+							if(totalShippingCost !== 0) {
+								order.amount -= totalShippingCost;
+								order.shipping_cost_adjusted = true;
+							}
+
+						}
+
+						return order;
+
+					},
+
+					finalizeOrder: function() {
+
+						if(!this.currentOrder) {
+							return;
+						}
+
+						this.renderPayment();
+
+					},
+
+					editAddress: function(){
+
+						this.currentOrder = undefined;
+						this.el.innerHTML = '';
+
+						parent.postMessage(JSON.stringify({
+							type: 'hide-frame',
+							data: {
+								load_address: true
+							}
+						}), '*');
+
+					},
+
+					cancelCheckout: function(){
+
+						this.currentOrder = undefined;
+						this.el.innerHTML = '';
+
+						parent.postMessage(JSON.stringify({
+							type: 'hide-frame',
+							data: {
+								load_address: false
+							}
+						}), '*');
+
+					},
+
+					cancelPayment: function(){
+
+						this.render();
+
+					},
+
+					render: function(options) {
+
+						if(this.cardNumber && !this.cardNumber._destroyed) {
+							this.cardNumber.destroy();
+						}
+
+						if(this.cardExpiry && !this.cardExpiry._destroyed) {
+							this.cardExpiry.destroy();
+						}
+
+						if(this.cardCvc && !this.cardCvc._destroyed) {
+							this.cardCvc.destroy();
+						}
+
+						if(this.cardPostalCode && !this.cardPostalCode._destroyed) {
+							this.cardPostalCode.destroy();
+						}
+
+						this.currentRenderOptions = options = options || {};
+
+						var shippingContainerIsOpen = this.$el.find('[data-shipping-method-container]').attr('open') !== undefined,
+							taxItems = _.where(this.currentOrder.items, {type: "tax"}), 
+							shippingItems = _.where(this.currentOrder.items, {type: "shipping"}),
+							skuItems = _.where(this.currentOrder.items, {type: "sku"}),
+							totalTax = _.reduce(taxItems, function(memo, item){ return memo + item.amount; }, 0),
+							totalShipping = _.reduce(shippingItems, function(memo, item){ return memo + item.amount; }, 0),
+							totalSkus = _.reduce(skuItems, function(memo, item){ return memo + item.amount; }, 0);
+
+						this.el.innerHTML = this.template({
+							order: this.currentOrder,
+							taxItems: taxItems,
+							shippingItems: shippingItems,
+							skuItems: skuItems,
+							totalTax: totalTax,
+							totalShipping: totalShipping,
+							totalSkus: totalSkus,
+							order_status: options.order_status,
+							downloadable_items: options.downloadable_items,
+							finalizedPayment: options.finalizedPayment,
+							formatPriceForCurrency: formatPriceForCurrency,
+							noteText: this.currentOrderNote
+						});
+
+						if(shippingContainerIsOpen) {
+							this.$el.find('[data-shipping-method-container]').attr('open', '');
+						}
+
+						var _this = this;
+
+						// autogrow notes element
+						jQuery.each(jQuery('[data-order-note]'), function() {
+							
+							var offset = this.offsetHeight - this.clientHeight;
+						 
+							var resizeTextarea = function(el) {
+								jQuery(el).css('height', '80px').css('height', el.scrollHeight + offset);
+							};
+
+							jQuery(this).on('keyup input', function() { 
+								resizeTextarea(this); 
+								_this.currentOrderNote = this.value;
+							});
+
+							setTimeout(_.bind(function(){
+								resizeTextarea(this);
+							}, this));
+
+						});
+
+					},
+
+					renderPayment: function(){
+
+						this.render({
+							order_status: 'payment'
+						});
+
+						this.$el.find('button').text('Pay ' + formatPriceForCurrency(
+							this.currentOrder.amount, 
+							this.currentOrder.currency
+						));
+
+						// Custom styling can be passed to options when creating an Element.
+						// (Note that this demo uses a wider set of styles than the guide below.)
+						var style = {
+							base: {
+								color: '#fff',
+								lineHeight: '1.6',
+								fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif',
+								fontSmoothing: 'antialiased',
+								fontSize: '16px',
+								'::placeholder': {
+									color: '#999'
+								},
+								iconColor: '#fff',
+								':-webkit-autofill': {
+									
+								}
+							},
+							invalid: {
+								color: '#fff',
+								iconColor: '#fff'
+							}
+
+						};
+
+
+						var elementClasses = {
+							focus: 'focus',
+							empty: 'empty',
+							invalid: 'invalid',
+						};
+
+						var options = {
+							style: style,
+							classes: elementClasses,
+						}
+
+						this.cardNumber = this.elements.create('cardNumber', _.extend(options, {placeholder: 'Card Number'}));
+						this.cardNumber.mount('#cardnumber-element');
+
+						this.cardExpiry = this.elements.create('cardExpiry', _.extend(options, {placeholder: 'MM / YY'}));
+						this.cardExpiry.mount('#cardexpiry-element');
+
+						this.cardCvc = this.elements.create('cardCvc', _.extend(options, {placeholder: 'CVC'}));
+						this.cardCvc.mount('#cardcvc-element');
+
+						this.cardPostalCode = this.elements.create('postalCode', _.extend(options, {placeholder: 'Zip'}));
+						this.cardPostalCode.mount('#cardpostalcode-element');
+
+					},
+
+					finalizePayment: function(e){
+
+						if(this.paymentInprogress === true) {
+							return;
+						}
+						
+						if(e) {
+							e.preventDefault();
+						}
+
+						var emailInput = $("[name='email']", this.el);
+
+						this.hideErrorMessage();
+
+						// validate email
+						if(emailInput.val().trim() == "" || !this.validateEmail(emailInput.val().trim())) {
+							emailInput.closest('.col').addClass('error');
+							this.displayErrorMessage('Please enter a valid Email Address');
+							return false;
+						}
+
+						emailInput.closest('.col').removeClass('error');
+
+						var email = emailInput.val().trim();
+
+						this.paymentInprogress = true;
+
+						this.stripe.createToken(this.cardNumber).then(_.bind(function(result) {
+							
+							if (result.error) {
+								
+								$('.error').removeClass('error');
+								this.targetErrorField(result.error.code);
+								this.displayErrorMessage(result.error.message);
+								this.paymentInprogress = false;
+
+							} else {
+								this.handlePaymentSuccess(result.token, email);
+							}
+
+						}, this));
+
+					},
+
+					targetErrorField: function(code) {
+						if(code.match(/expiry/)) {
+							$('#cardexpiry-element').addClass('error');
+						} else if (code.match(/number/)) {
+							$('#cardnumber-element').addClass('error');
+						} else if (code.match(/cvc/)) {
+							$('#cardcvc-element').addClass('error');
+						} else if (code.match(/postal/) || code.match(/zip/)) {
+							$('#cardpostalcode-element').addClass('error');
+						}
+					},
+
+					validateEmail: function(email) {
+						
+						var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							return re.test(email);
+
+					},
+
+					displayErrorMessage: function(msg){
+
+						this.hasErrorMessage = true;
+
+						var messageContainer = $('[data-error-message]'),
+							messageText = messageContainer.find('[data-error-text]');
+
+						messageText.text(msg);
+						messageContainer.show();
+
+					},
+
+					hideErrorMessage: function(){
+						$('[data-error-message]').hide();
+					},
+
+					handlePaymentSuccess: function(token, email){
+
+						this.render({
+							order_status: 'pending'
+						});
+
+						$.ajax({
+							url: '/_api/v0/ecommerce/pay/' + this.site_id + '/' + this.currentOrder.id,
+							type: "POST",
+							data: JSON.stringify({
+								email: email,
+								payment_token: token.id,
+								order_note: this.currentOrderNote,
+								shipping_cost_adjusted: this.currentOrder.shipping_cost_adjusted === true
+							}),
+							contentType: "application/json",
+							dataType: "json",
+							success: _.bind(function(data){
+
+								var downloadable_items = [];
+
+								if(data && data.order && data.downloadable_items) {
+
+									_.each(data.order.items, function(orderItem){
+
+										if(orderItem.type == 'sku' && data.downloadable_items.hasOwnProperty(orderItem.parent)) {
+
+											var downloadableItemAttributes = data.downloadable_items[orderItem.parent];
+
+											downloadable_items.push({
+												title: orderItem.description,
+												attributes: _.values(_.omit(downloadableItemAttributes, 'link_to_file')).join(', '),
+												link: downloadableItemAttributes.link_to_file
+											});
+
+										}
+
+									});
+
+								}
+
+								this.render({
+									order_status: 'success',
+									downloadable_items: downloadable_items,
+									finalizedPayment: data.payment
+								});
+
+								this.currentOrder = undefined;
+								this.currentOrderNote = '';
+
+								parent.postMessage(JSON.stringify({
+									type: 'payment-success',
+									data: {
+									}
+								}), '*');
+
+							}, this)
+						}).fail(_.bind(function() {
+							
+							this.render({
+								order_status: 'fail'
+							});
+
+						}, this))
+						.always(_.bind(function() {
+							this.paymentInprogress = false;
+						}, this));
+
+					}
+
+				});
+
+				var checkout = new CheckoutView();
+
+				document.body.appendChild(checkout.el);
+
+				/*checkout.site_id = 180997;
+				checkout.onMessage('open-checkout', {
+					order_id: 'or_1AaTqaJwLO4j0yWNt3fWGnwl'
+				});*/
+
+			});
+
+		});
+
+	</script>
+
+	
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./text.min.js"></script></head>
+
+<body>
+
+
+<div></div></body></html>

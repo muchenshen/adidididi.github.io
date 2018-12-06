@@ -1,0 +1,370 @@
+/**
+ * Slide Panel & Wrapper
+ */
+#following-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+}
+
+#slide-container {
+	position: absolute;
+	width: 200vw;
+	top: 0;
+	/*right: 0;*/
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+#slide-container.noscroll {
+	overflow-y: hidden;
+}
+
+#slide-container.open {
+	transform: translateX(-100vw);
+	-webkit-transform: translateX(-100vw);
+}
+
+#slide-container.opening {
+	transform: translate(-50%, 0) translateZ(0);
+	-webkit-transform: translate(-50%, 0) translateZ(0);
+	transition: transform 250ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-webkit-transition: -webkit-transform 250ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+#slide-container.closing {
+	transform: translate(0%, 0) translateZ(0);
+	-webkit-transform: translate(0%, 0) translateZ(0);
+	transition: transform 250ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	-webkit-transition: -webkit-transform 250ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.following {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	width: 100vw !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+.slide-panel {
+	min-height: 100%;
+	overflow: hidden;
+	position: absolute;
+	margin-left: 100vw;
+	top: 0;
+	width: 100vw !important;
+}
+
+#close_panel {
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    right: 0px;
+    font-weight: normal;
+    padding: 0;
+    width: 41px;
+    height: 44px;
+    font-size: 40px;
+    line-height: 20px;
+}
+
+#close_panel.isMobile {
+	font-size: 50px;
+	line-height: 25px;
+}
+
+#send-new-message .processing .loading_animation {
+	margin: 0;
+	right: 1rem;
+	left: auto;
+}
+
+#slide-container #processing .loading_animation {
+	left: calc(50% - 53px);
+	top: calc(50% - 68px);
+	z-index: 1;
+}
+
+#slide-container #processing .loading_animation div {
+	width: 100px;
+	height: 100px;
+}
+
+#slide-container #processing .loading_animation div svg {
+    width: 100px;
+    height: 100px;
+}
+
+#slide-container #processing .message {
+	top: calc(50% - 40px);
+	position: absolute;
+	width: 100%;
+	height: 40px;
+}
+
+
+/**
+ * Navigation Primary
+ */
+
+.bs-navigation-primary {
+	line-height: 1.4;
+}
+
+.bs-navigation-primary > div {
+	background: #333;
+	border-right: 1px solid #1a1a1a;
+	color: #999;
+	text-align: center;
+}
+
+.bs-navigation-primary > div.active {
+	background: #1a1a1a;
+}
+
+.bs-navigation-primary > div:last-child {
+	border-right: 0;
+}
+
+/**
+ * Star
+ */
+
+[data-container="star"] svg {
+	/*margin-left: 1px;*/
+}
+
+/**
+ * Media
+ */
+.image-auto-height {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/**
+ * Message
+ */
+
+.message .message-delete {
+	display: none;
+}
+
+.message:hover .message-delete {
+	display: block;
+}
+
+body.mobile .message .message-delete {
+	display: block;
+}
+
+.message-line {
+	background: #1a1a1a;
+	height: 200%;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	width: 1px;
+}
+
+.message-line:first-child {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.message-line:last-child {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+/**
+ * Delete
+ */
+
+.delete-top-right {
+	top: 5px;
+	right: 5px;
+	position: absolute;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+	line-height: 13px;
+	font-size: 20px;
+	color: rgba(0,0,0,.3);
+}
+
+.delete-top-right:hover {
+	color: rgba(0,0,0,.6);
+}
+
+.delete-top-right:active {
+	color: rgba(0,0,0,.45);
+}
+
+/**
+ * Messages
+ */
+
+[data-message-list] > div:first-child .message {
+	padding-top: 0;
+}
+
+.new-message-height {
+	min-height: 9rem;
+}
+
+[data-section="contact"] .new-message-height {
+	min-height: calc(100% - 20px);
+}
+
+.image-bucket [data-update-image-preview] {
+	display: none;
+	width: 100%;
+	height: auto;
+}
+
+/**
+ * Spotlight / Search
+ */
+
+.spotlight-visible,
+.search-visible {
+	display: none;
+}
+
+[data-container="spotlight"] [data-search-edit-toggle].onopened {
+	display: none;
+}
+
+[data-container="spotlight"].editing [data-search-edit-toggle].onclosed {
+	display: none;
+}
+
+[data-container="spotlight"].editing [data-search-edit-toggle].onopened {
+	display: inline;
+}
+
+[data-container="spotlight"] [data-edit-menu] {
+	display: none;
+}
+
+[data-container="spotlight"].editing [data-edit-menu] {
+	display: inline;
+}
+
+[data-container-spotlight] .spotlight-profile { width: 25% }
+[data-container-spotlight] .spotlight-visible { display: block }
+
+[data-search-spotlight] .spotlight-profile { width: 100% }
+[data-search-spotlight] .search-visible { display: block }
+
+/*[data-container-spotlight] {
+	height: 190px;
+	overflow: hidden;
+}*/
+
+.spotlight-move {
+	cursor: move;
+}
+
+[data-container-spotlight] .spotlight-profile {
+	position: relative;
+}
+
+.spotlight-remove {
+	display: none;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background: rgba(0,0,0,.5);
+	width: 20px;
+	padding-left: 2px;
+	height: 20px;
+	font-size: 26px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 17px;
+}
+
+[data-container="spotlight"].editing.manual .spotlight-profile .spotlight-remove:hover {
+	background: #000;
+}
+
+[data-container="spotlight"].editing.manual .spotlight-profile:hover .spotlight-remove {
+	display: block;
+}
+
+/**
+ * Persona Tag
+ */
+.persona-tag {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	line-height: 1;
+	font-size: 1.5rem;
+	padding: 0.75rem 1.5rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+	padding-bottom: 10px;
+	text-decoration: none;
+	border-bottom: 0;
+}
+
+/**
+ * Drag Overlay
+ */
+#drag_overlay {
+	display: none;
+	background: rgba(0, 0, 0, 0.65);
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0px;
+	top: 0;
+	height: 100vh;
+	z-index: 1001;
+}
+
+#drag_overlay:before {
+	content: 'Upload';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 0;
+	margin-left: -102px;
+	margin-top: -29px;
+	color: #fff;
+	line-height: 56px;
+	text-align: center;
+	border-radius: 2px;
+	border: 2px solid #fff;
+	line-height: 0px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 30px 0px;
+}
+
+/**
+ * Avatar Mousedown
+ */
+[data-follow-id]:active {
+	opacity: .8;
+}
+
+.fan-name {
+	overflow: hidden;
+    max-height: 4.5em;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://nitzan-ron.com/followingframe/nitzanron?18-12-5 -->
+<html lang="en" class="bg-black"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>Cargo Following</title>
+
+	<link rel="stylesheet" href="./global(1).css">
+
+			<link rel="stylesheet" href="./following.min.css">
+		
+	<script src="./jquery-2.1.3.min.js"></script>
+	<script src="./backbone-underscore-packaged.js"></script>
+	<script src="./require.min.js"></script>
+	<script src="./functions.js"></script>
+
+	
+	<script type="text/json" data-set="Following">[]</script>
+	<script type="text/json" data-set="FollowedBy">[]</script>
+	<script type="text/json" data-set="SitesAsEditor"></script>
+	<script type="text/template" id="loading_animation"><div class="loading_animation pulsing <%= extra_class %> {{ extra_class }}">
+	<div>
+		<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"/></svg>
+	</div>
+</div></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/_jsapps/following/dist/following.js?18-12-5" src="./following.js"></script><link type="text/css" rel="stylesheet" href="./foundation.css"></head>
+<body>
+
+<div class="page-overlay" data-follow-modal="">
+	<div class="page-modal">
+		
+
+	</div>
+</div>
+
+<div id="following-wrapper">
+	<div id="following_loading" style="top: 26px; left: 26px; position: absolute; z-index: 99999; display: none;">
+		<div class="loading_animation pulsing gray">
+			<div>
+				<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"></path></svg>
+			</div>
+		</div>
+	</div>
+	<!-- <a href="//cargocollective.com" class="cargo-logo" target="_blank"></a> -->
+	<div id="slide-container" class="">
+		<div class="bs container following color-white bg-black" style="display: none;">
+			<div data-container="navigation"></div>
+			<div data-section="follow-section"></div>
+			<div data-section="following-feed"></div>
+		</div>
+
+		<div class="slide-panel bs container bg-black color-white">
+			<div data-section="contact" class="hidden psa t0 r0 b0 l0"><!-- <div id="close_panel" class="clickable type-size-big color-grey-light ">×</div> -->
+<div class="row os psa t0 r0 b0 l0 py1" style="bottom: 42px; padding-left: 2rem; padding-right: 2rem;" data-message-wrapper="">
+	<div class="xa py2 cursor-default lh-1" style="border-bottom: 1px solid #333; height: 42px;" data-to-address="">
+		<span class="type-size-medium">
+			<span class="color-grey">To:</span> Nitzan Ron
+		</span>
+	</div>
+
+	<div class="col-xs-6 psr" id="new-message-area" style="height: calc(100% - 42px);" data-new-message="">
+		<div class="box color-black type-lh-1-2 pos-relative" style="height: 42px;" data-from-address="">
+			
+			<div class="c12 text-wrapper pos-relative type-size-medium xa x lh-1" data-input-parent="" style="border-bottom: 1px solid #333; height: 42px;">
+				<div class="x xn py2">
+					<span class="color-grey focus-field">From:&nbsp;</span>	
+				</div>
+
+				<div class="psr x xa pr3">
+					<input class="input-reset py2 type-size-medium color-white bg-black p-right-0 type-truncate" type="email" value="" placeholder="Enter Your Email Address" name="sender" data-validate="not-empty email" style="padding: 1rem 0rem calc(1rem + 2px) 0">
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="x psr pt2" data-input-parent="" style="height: calc(100vh - 132px);">
+			<textarea id="new-message" placeholder="Message:" data-validate="not-empty" class="psa hf bb3 type-size-medium new-message-height bg-black color-white" rows="4" style="vertical-align: top; -webkit-overflow-scrolling: touch;"></textarea>
+		</div>
+
+	</div>
+</div>
+
+<div class="x c12 psa b0 bg-black" data-following-footer="">
+	<div class="c8 bg-blue type-bold color-white clickable noselect x" id="send-new-message" style=" border-left: 1px solid #1a1a1a;">
+		<div class="py2 px3 c6">
+			Send Email
+		</div>
+		<div class="processing c2 py2 px2 color-white type-right type-bold pos-relative">
+			<div class="loading_animation pulsing loading_animation pulsing white inline right hidden ">
+	<div>
+		<svg class="loading" width="500" height="500" viewBox="0 0 500 500"><path d="M137.78 362.22c-61.975 0-112.214-50.24-112.214-112.217 0-123.954 100.478-224.432 224.43-224.432 123.955 0 224.433 100.48 224.433 224.436 0-61.977-50.24-112.216-112.22-112.216s-112.216 50.24-112.216 112.215c0 61.976-50.24 112.216-112.216 112.216M249.998 500c138.074 0 249.997-111.93 249.997-249.997 0-138.075-111.924-249.998-250-249.998C111.93.005 0 111.928 0 250.003 0 388.07 111.93 500 249.997 500" fill-rule="evenodd"></path></svg>
+	</div>
+</div>
+		</div>
+	</div>
+
+	<div class="xa bg-grey-medium-dark color-black py2 px3 clickable noselect" data-cancel-message="" style="margin-left: 1px;">
+		Cancel
+	</div>
+</div>
+</div>
+			<div data-section="cart" class="hidden psa t0 r0 b0 l0 mobile"><div class="oa psa t0 r0 b0 l0 p4 ">
+	
+	<div class="x xdc" style="min-height: 100%">
+
+		
+			<div class="pr3 pt0 pb4">
+				<div class="col col-full color-grey-light">
+					Your Cart is Empty
+				</div>
+			</div>
+		
+		
+		<div class="stripe_button_wrapper col col-full psr">
+			<a data-powerdbystripe="" href="http://stripe.com/" target="_blank">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 26" style="enable-background:new 0 0 119 26;" xml:space="preserve">
+				<style type="text/css">
+					.st0{clip-path:url(#SVGID_2_);}
+					.st1{clip-path:url(#SVGID_4_);}
+					.st2{clip-path:url(#SVGID_6_);fill:#fff;}
+					.st3{clip-path:url(#SVGID_8_);fill:#fff;}
+					.st4{clip-path:url(#SVGID_10_);fill:#fff;}
+				</style>
+				<g>
+					<defs>
+						<rect id="SVGID_1_" width="119" height="26"></rect>
+					</defs>
+					<clippath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+					</clippath>
+					<g class="st0">
+						<defs>
+							<rect id="SVGID_3_" width="119" height="26"></rect>
+						</defs>
+						<clippath id="SVGID_4_">
+							<use xlink:href="#SVGID_3_" style="overflow:visible;"></use>
+						</clippath>
+						<g class="st1">
+							<defs>
+								<rect id="SVGID_5_" width="119" height="26"></rect>
+							</defs>
+							<clippath id="SVGID_6_">
+								<use xlink:href="#SVGID_5_" style="overflow:visible;"></use>
+							</clippath>
+							<path class="st2" d="M113,26H6c-3.3,0-6-2.7-6-6V6c0-3.3,2.7-6,6-6h107c3.3,0,6,2.7,6,6v14C119,23.3,116.3,26,113,26 M118,6
+								c0-2.8-2.2-5-5-5H6C3.2,1,1,3.2,1,6v14c0,2.8,2.2,5,5,5h107c2.8,0,5-2.2,5-5V6z"></path>
+						</g>
+						<g class="st1">
+							<defs>
+								<rect id="SVGID_7_" x="8.6" y="8.6" width="55.1" height="9.9"></rect>
+							</defs>
+							<clippath id="SVGID_8_">
+								<use xlink:href="#SVGID_7_" style="overflow:visible;"></use>
+							</clippath>
+							<path class="st3" d="M60.7,18.4h-1.3l1-2.5l-2-5.1h1.4l1.3,3.5l1.3-3.5h1.4L60.7,18.4z M55.7,16.3c-0.5,0-0.9-0.2-1.3-0.5v0.4H53
+								V8.6h1.3v2.7c0.4-0.3,0.9-0.5,1.3-0.5c1.4,0,2.4,1.1,2.4,2.8C58.1,15.1,57.1,16.3,55.7,16.3 M55.4,11.9c-0.4,0-0.7,0.2-1.1,0.5
+								v2.3c0.3,0.3,0.7,0.5,1.1,0.5c0.8,0,1.3-0.7,1.3-1.6S56.2,11.9,55.4,11.9 M47.6,15.8c-0.4,0.3-0.9,0.5-1.3,0.5
+								c-1.4,0-2.4-1.1-2.4-2.8c0-1.6,1-2.8,2.4-2.8c0.5,0,0.9,0.2,1.3,0.5V8.6h1.4v7.6h-1.4V15.8z M47.6,12.4c-0.3-0.3-0.7-0.5-1-0.5
+								c-0.8,0-1.3,0.7-1.3,1.6s0.5,1.6,1.3,1.6c0.4,0,0.7-0.2,1-0.5V12.4z M39.5,13.9c0.1,0.8,0.7,1.3,1.6,1.3c0.5,0,1-0.2,1.6-0.5v1.1
+								c-0.6,0.3-1.2,0.4-1.8,0.4c-1.6,0-2.7-1.2-2.7-2.8c0-1.6,1.1-2.7,2.6-2.7c1.4,0,2.3,1.1,2.3,2.6c0,0.1,0,0.3,0,0.5H39.5z
+								 M40.8,11.8c-0.7,0-1.2,0.5-1.2,1.2h2.3C41.8,12.3,41.4,11.8,40.8,11.8 M36,12.6v3.5h-1.3v-5.3H36v0.5c0.4-0.4,0.8-0.7,1.3-0.7
+								c0.1,0,0.3,0,0.4,0.1V12c-0.1,0-0.3-0.1-0.5-0.1C36.8,11.9,36.3,12.2,36,12.6 M30,13.9c0.1,0.8,0.7,1.3,1.6,1.3
+								c0.5,0,1-0.2,1.6-0.5v1.1c-0.6,0.3-1.2,0.4-1.8,0.4c-1.6,0-2.7-1.2-2.7-2.8c0-1.6,1.1-2.7,2.6-2.7c1.4,0,2.3,1.1,2.3,2.6
+								c0,0.1,0,0.3,0,0.5H30z M31.2,11.8c-0.7,0-1.2,0.5-1.2,1.2h2.3C32.2,12.3,31.8,11.8,31.2,11.8 M25.3,16.1l-1.1-3.6l-1.1,3.6h-1.2
+								l-1.8-5.3h1.3l1.1,3.6l1.1-3.6h1.2l1.1,3.6l1.1-3.6h1.3l-1.8,5.3H25.3z M17,16.3c-1.6,0-2.7-1.1-2.7-2.8c0-1.6,1.1-2.8,2.7-2.8
+								s2.7,1.1,2.7,2.8C19.7,15.1,18.6,16.3,17,16.3 M17,11.9c-0.8,0-1.3,0.7-1.3,1.6s0.5,1.6,1.3,1.6c0.8,0,1.3-0.7,1.3-1.6
+								S17.8,11.9,17,11.9 M11.1,13.5H9.9v2.6H8.6V8.9h2.6c1.5,0,2.5,1,2.5,2.3S12.6,13.5,11.1,13.5 M10.9,10h-1v2.5h1
+								c0.8,0,1.3-0.5,1.3-1.2C12.3,10.5,11.7,10,10.9,10"></path>
+						</g>
+						<g class="st1">
+							<defs>
+								<rect id="SVGID_9_" x="69.3" y="4.2" width="41.9" height="17"></rect>
+							</defs>
+							<clippath id="SVGID_10_">
+								<use xlink:href="#SVGID_9_" style="overflow:visible;"></use>
+							</clippath>
+							<path class="st4" d="M111.1,14.1h-5.6c0.1,1.3,1.1,1.7,2.2,1.7c1.1,0,2-0.2,2.8-0.6v2.3c-0.8,0.4-1.8,0.7-3.1,0.7
+								c-2.8,0-4.7-1.7-4.7-5.2c0-2.9,1.6-5.2,4.3-5.2c2.7,0,4.1,2.3,4.1,5.2C111.2,13.3,111.1,13.9,111.1,14.1 M107,10.1
+								c-0.7,0-1.5,0.5-1.5,1.8h2.9C108.5,10.7,107.7,10.1,107,10.1 M98.1,18.2c-1,0-1.6-0.4-2-0.7l0,3.2l-2.8,0.6l0-13.3h2.5l0.1,0.7
+								c0.4-0.4,1.1-0.9,2.2-0.9c2,0,3.9,1.8,3.9,5.1C102,16.5,100.1,18.2,98.1,18.2 M97.4,10.3c-0.7,0-1.1,0.2-1.4,0.6l0,4.2
+								c0.3,0.3,0.7,0.5,1.3,0.5c1,0,1.8-1.1,1.8-2.7C99.2,11.5,98.5,10.3,97.4,10.3 M89.1,8H92v10h-2.9V8z M89.1,4.8L92,4.2v2.3
+								l-2.9,0.6V4.8z M86.1,11.2V18h-2.8V8h2.5l0.2,0.8c0.7-1.2,2-1,2.4-0.8v2.6C87.9,10.5,86.8,10.3,86.1,11.2 M80,14.5
+								c0,1.7,1.8,1.2,2.2,1v2.3c-0.4,0.2-1.1,0.4-2,0.4c-1.7,0-2.9-1.2-2.9-2.9l0-9.1L80,5.5L80,8h2.2v2.4H80V14.5z M76.5,15
+								c0,2-1.6,3.2-4,3.2c-1,0-2-0.2-3.1-0.6v-2.7c1,0.5,2.2,0.9,3.1,0.9c0.6,0,1.1-0.2,1.1-0.7c0-1.4-4.3-0.8-4.3-4
+								c0-2,1.5-3.2,3.8-3.2c0.9,0,1.9,0.1,2.8,0.5V11c-0.9-0.5-2-0.7-2.8-0.7c-0.6,0-1,0.2-1,0.6C72.1,12.2,76.5,11.6,76.5,15"></path>
+						</g>
+					</g>
+				</g>
+				</svg>
+
+
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="x c12 psa b0 bg-black " data-following-footer="">
+	
+</div></div>
+			<div data-section="import" class="hidden psa t0 r0 b0 l0 admin-wrapper"></div>
+			<div id="processing" style="display:none;">
+				<div class="processing color-white type-center type-bold">
+					<div class="loading_animation_placeholder">
+					</div>
+					<div class="message type-size-big type-normal" style="display: none; z-index: 2;">
+						Sent
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	<script type="text/javascript">
+
+		var Following  = window.Following || { };
+		var Cargo = Cargo || { };
+
+		_.extend( Following.Events = {}, Backbone.Events );
+
+		// moved here because Safari back button cache
+					require(["/_jsapps/following/dist/following.js?18-12-5"]);
+			</script>
+
+<iframe src="./checkout.html" data-checkout-frame=""></iframe></body></html>
