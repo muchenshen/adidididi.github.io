@@ -2,13 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/w3.css" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" afterPath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" />
-      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-impression.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-large-teaser.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/roda-lookbook.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" afterPath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" />
-      <change beforePath="$PROJECT_DIR$/Malu – Portfolio.htm" afterPath="$PROJECT_DIR$/Malu – Portfolio.htm" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/creative.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/eye3mrx.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/helpers.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/jquery.easing.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio.htm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/IMG_4104-min.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/add-to-cart.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/analytics.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/berlindiscovery_cover-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/cam_cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/cart-fragments.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/carwords_cover-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/frontend.min(1).js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/frontend.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/frontend.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/jquery-migrate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/jquery.blockUI.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/js.cookie.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/linkid.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/mediaelement-and-player.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/mediaelement-migrate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/mediaelementplayer-legacy.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/overtone_cover.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/plantplayer_cover-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/resume2-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/scripts.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/styles.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/triaid_cover-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/wlanometer_cover-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/woocommerce-add-to-cart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/woocommerce-layout.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/woocommerce-smallscreen.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/woocommerce.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/woocommerce.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/wp-embed.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Malu – Portfolio_files/wp-emoji-release.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/25.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/IMG_8671thumb.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/IMG_8822.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/Inga_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/N02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/Nitzan-Lamp_v1_l-res.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/Ugandathumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/_MG_0739.JPG" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/analytics.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/apipackage.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/backbone-underscore-packaged.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/bs-design.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/bs-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/bs-layout.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/cargo.apicore.package.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/checkout.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/checkout.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/design.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/following.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/following.min(1).css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/following.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/foundation.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/functions.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/global(1).css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/global.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/gr8.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/illus-main.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/jquery-2.1.3.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/layout.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/main.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/nitzanron.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/pointer.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/require.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/scrollMonitor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/stylesheet" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/text.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/wazethumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Nitzan Ron_files/zzappthumb.png" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,43 +106,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DESIGNAFFAIRS - Roda.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-657">
-                  <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-                  <folding>
-                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1544077158443" expanded="true" signature="10845:10853" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,8 +150,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Malu – Portfolio.htm" />
-        <option value="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" />
         <option value="$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css" />
+        <option value="$PROJECT_DIR$/Malu – Portfolio_files/frontend.min.css" />
+        <option value="$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html" />
+        <option value="$PROJECT_DIR$/w3.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -77,10 +165,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1411" />
-    <option name="height" value="873" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="300" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,11 +191,6 @@
               <item name="adidididi.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="adidididi.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="adidididi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adidididi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="DESIGNAFFAIRS - Roda_files" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -122,6 +204,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,27 +234,28 @@
       <updated>1544011398356</updated>
       <workItem from="1544011402268" duration="7229000" />
       <workItem from="1544028084401" duration="147000" />
-      <workItem from="1544063436502" duration="13594000" />
+      <workItem from="1544063436502" duration="13943000" />
+      <workItem from="1544105769365" duration="21345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20970000" />
+    <option name="totallyTimeSpent" value="42664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1411" height="873" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16725726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16620879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -191,30 +276,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Malu – Portfolio.htm">
+    <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -222,26 +302,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Malu – Portfolio.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -249,7 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2786">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -257,7 +323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="721">
           <caret line="70" column="73" lean-forward="true" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -265,49 +330,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="246" column="12" lean-forward="true" selection-start-line="244" selection-start-column="8" selection-end-line="246" selection-end-column="12" />
-          <folding>
-            <marker date="1544072877151" expanded="false" signature="60308:60355" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60480:60506" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="60622:60648" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61177:61242" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61381:61407" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="61519:61545" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62345:62368" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62551:62574" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62747:62770" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="62955:62978" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63276:63317" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63451:63477" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63656:63682" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63767:63790" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="63931:63954" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64111:64134" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="64315:64338" ph="..." />
-            <marker date="1544072877151" expanded="false" signature="67498:67524" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
+    <entry file="file://$PROJECT_DIR$/Malu – Portfolio_files/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1544077158443" expanded="true" signature="10845:10853" ph="..." />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Malu – Portfolio_files/frontend.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda_files/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+        <state relative-caret-position="287">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/w3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="232" column="174" lean-forward="false" selection-start-line="232" selection-start-column="174" selection-end-line="232" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DESIGNAFFAIRS - Roda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="118" column="20" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
