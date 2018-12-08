@@ -1,7 +1,7 @@
 body{
     padding-left:40px;
     padding-right:20px;
-    padding-bottom: 100px;
+    padding-bottom: 14px;
 }
 
 /* navbar : when hover, no bg color */
@@ -22,10 +22,14 @@ ul.nav a:hover {
     /*padding-right: 0px;*/
     padding-top: 4px;
     position:fixed;
-    right:12px;
+    right:11px;
     z-index: 9999;
 }
-
+.navbar-toggle:hover {
+    -ms-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
 
 /* make title in two lines */
 .navbar-brand {
@@ -44,7 +48,7 @@ ul.nav a:hover {
 /* fix the navbar on the right */
 .navbar-right{
     position:fixed;
-    right:40px;
+    right:36px;
 }
 
 
@@ -122,16 +126,35 @@ ul.nav a:hover {
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    /*border: none; !* Remove borders *!*/
-    /*outline: none; !* Remove outline *!*/
-    /*background-color: red; !* Set a background color *!*/
-    /*color: white; !* Text color *!*/
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    /*color: grey; !* Text color *!*/
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    /*padding: 15px; !* Some padding *!*/
     /*border-radius: 10px; !* Rounded corners *!*/
     /*font-size: 18px; !* Increase font size *!*/
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    /*background-color: #555; !* Add a dark-grey background on hover *!*/
+    -ms-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+/* footer and copyright */
+.containerCenter {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding-left: 16px;
+}
+
+#bottom {
+    letter-spacing: .04em;
+    font-size: small;
+    margin-top: 45px;
+    margin-bottom: 12px;
 }
