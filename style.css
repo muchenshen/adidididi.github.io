@@ -1,8 +1,29 @@
-body{
-    padding-left:40px;
-    padding-right:20px;
-    padding-bottom: 14px;
+
+/*body{*/
+    /*padding-left:40px;*/
+    /*padding-right:20px;*/
+    /*padding-bottom: 14px;*/
+/*}*/
+
+body, html {
+    height: 100%;
+    margin: 0;
 }
+
+.bg1 {
+    /* The image used */
+    background-image: url("wedding.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 /* navbar : when hover, no bg color */
 ul.nav a:hover {
@@ -158,3 +179,5 @@ ul.nav a:hover {
     margin-top: 45px;
     margin-bottom: 12px;
 }
+
+
