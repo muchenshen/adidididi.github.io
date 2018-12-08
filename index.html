@@ -18,12 +18,13 @@
 </head>
 <body>
 
+<!-- this navbar is using bootstrap 3 -->
 <nav class="navbar">
     <div class="container-fluid">
 
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span>
+
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="24px" viewBox="0 0 16 24" enable-background="new 0 0 16 24" xml:space="preserve">
 <rect x="12" y="5" width="4" height="2"></rect>
 <rect x="6" y="5" width="4" height="2"></rect>
@@ -35,10 +36,10 @@
 <rect x="6" y="17" width="4" height="2"></rect>
 <rect y="17" width="4" height="2"></rect>
 </svg>
-            </span>
+
             </button>
 
-            <a class="navbar-brand" href="#">NINGYUAN XU <small>Product Interaction Designer</small></a>
+            <a class="navbar-brand" href="#">NINGYUAN XU<small>Product Interaction Designer</small></a>
 
         </div>
 
@@ -46,7 +47,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#">Projects</a></li>
                 <li><a href="#">Playground</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Info</a></li>
             </ul>
         </div>
 
@@ -54,53 +55,101 @@
 </nav>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+
+<!-- width of the content -->
+<!--<div class="w3-content w3-padding" style="max-width:1564px">-->
 
     <!-- Project Section -->
-    <div class="w3-container w3-padding-32" id="projects">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"> </h3>
+    <div class="w3-container w3-padding-16" id="projects">
+        <h3 class="w3-padding-16"> </h3>
+    </div>
+
+    <!-- row 1 -->
+    <div class="w3-row-padding">
+
+        <div class="w3-col l6 m7 w3-section ">
+            <div class="w3-display-container hovereffect">
+                <img src="wedding.jpg" alt="House"  style="width:100%">
+                <div class="w3-display-topleft w3-padding overlay ">
+                    <h2>Summer House</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col l4 m5 w3-section ">
+            <div class="w3-display-container hovereffect">
+                <img src="wedding.jpg" alt="House"  style="width:100%">
+                <div class="w3-display-topleft w3-padding overlay ">
+                    <h2>Renovated</h2>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
     <div class="w3-row-padding">
-        <div class="w3-col l6 m7 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                <img src="wedding.jpg" alt="House" style="width:100%">
-            </div>
-        </div>
 
-        <div class="w3-col l4 m5 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                <img src="rocks.jpg" alt="House" style="width:100%">
+        <div class="w3-col l10 m12 w3-section ">
+            <div class="w3-display-container hovereffect">
+                <img src="wedding.jpg" alt="House"  style="width:100%">
+                <div class="w3-display-topleft w3-padding overlay ">
+                    <h2>Renovated</h2>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- row 2 -->
     <div class="w3-row-padding">
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                <img src="wedding.jpg" alt="House" style="width:99%">
+
+        <div class="w3-col l4 m6 w3-section ">
+            <div class="w3-display-container hovereffect">
+                <img src="wedding.jpg" alt="House"  style="width:100%">
+                <div class="w3-display-topleft w3-padding overlay ">
+                    <h2>Renovated</h2>
+                </div>
             </div>
         </div>
 
-        <div class="w3-col l6 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                <img src="wedding.jpg" alt="House" style="width:99%">
+        <div class="w3-col l6 m6 w3-section ">
+            <div class="w3-display-container hovereffect">
+                <img src="wedding.jpg"  alt="House" style="width:100%">
+                <div class="w3-display-topleft w3-padding overlay ">
+                    <h2>House</h2>
+                </div>
             </div>
         </div>
+
     </div>
+
 </div>
 
 
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg height="210" width="500">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+    </svg>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
 
-
-
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 
 </body>

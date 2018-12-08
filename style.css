@@ -1,11 +1,7 @@
-
-/*body {*/
-    /*padding-left: 80px;*/
-    /*padding-right:40px;*/
-/*}*/
-
 body{
-    margin:20px 10px 20px 40px;
+    padding-left:40px;
+    padding-right:20px;
+    padding-bottom: 100px;
 }
 
 /* navbar : when hover, no bg color */
@@ -14,30 +10,128 @@ ul.nav a:hover {
     color: black;
     !important; }
 
+
 /* make navbar more space */
 .navbar {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-top: 20px;
+    z-index: 9999; /* OMG! this keeps navbar always on top */
+    /*padding-left: 20px;*/
+    /*padding-right: 10px;*/
 }
 .navbar-toggle {
     /*padding-right: 0px;*/
-    padding-top: 3px;
+    padding-top: 4px;
+    position:fixed;
+    right:12px;
+    z-index: 9999;
 }
 
 
-/* make title in two lines*/
+/* make title in two lines */
 .navbar-brand {
     line-height:20px;
-    padding-top:15px;
-    padding-bottom:5px;
+    padding-top:20px;
+    /*padding-bottom:5px;*/
+
 }
 
 .navbar-brand small {
     display:block;
     font-size:15px;
+    padding-top:5px;
 }
 
-.w3-row-padding {
-    padding:40px;
+/* fix the navbar on the right */
+.navbar-right{
+    position:fixed;
+    right:40px;
+}
+
+
+/* image hover effect */
+
+.hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    /*text-align:center;*/
+    cursor: pointer;
+}
+
+.hovereffect .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color:rgba(0,0,0,0.2);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition: all 2s linear;
+    transition:all 2s linear;
+}
+
+.hovereffect h2 {
+    /*text-transform:uppercase;*/
+    color:#fff;
+    text-align:center;
+    position:relative;
+    font-size:17px;
+    /*background:rgba(0,0,0,0.6);*/
+    /*-webkit-transform:translatey(-100px);*/
+    /*-ms-transform:translatey(-100px);*/
+    /*transform:translatey(-100px);*/
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    padding:10px;
+
+    /* make the text center */
+    margin: 0;
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hovereffect:hover img {
+    -ms-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.hovereffect:hover .overlay {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+
+/* scroll to top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    /*border: none; !* Remove borders *!*/
+    /*outline: none; !* Remove outline *!*/
+    /*background-color: red; !* Set a background color *!*/
+    /*color: white; !* Text color *!*/
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    /*border-radius: 10px; !* Rounded corners *!*/
+    /*font-size: 18px; !* Increase font size *!*/
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
