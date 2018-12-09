@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ningyuan</title>
+    <title>Ning-Project1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -42,20 +42,32 @@
 
             </button>
 
-            <a class="navbar-brand" href="#">NINGYUAN XU</a>
+            <!--<a class="navbar-brand" href="index.html">NINGYUAN XU</a>-->
+            <!-- back window history -->
+            <div class="navbar-brand">
+                <button onclick="goBack()">Back</button>
+
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+            </div>
 
         </div>
 
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Projects</a></li>
-                <li><a href="#">Playground</a></li>
-                <li><a href="#">Info</a></li>
+                <li class="active"><a href="index.html#projects">Design</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="playground.html">Playground</a></li>
             </ul>
         </div>
 
     </div>
 </nav>
+
+
 
 <div class="parallax">
 

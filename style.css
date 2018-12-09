@@ -37,7 +37,7 @@ ul.nav a:hover {
 /* make title in two lines */
 .navbar-brand {
     line-height:20px;
-    padding-top:20px;
+    /*padding-top:20px;*/
     position: relative;
     /*padding-bottom:5px;*/
 
