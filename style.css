@@ -3,8 +3,8 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;}
 
 body{
-    padding-left:96px;
-    padding-right:96px;
+    padding-left:120px;
+    padding-right:120px;
 }
 
 /* navbar : when hover, no bg color */
@@ -164,30 +164,81 @@ ul.nav a:hover {
 }
 
 /* parallax effect */
+html {
+    /*overflow: hidden;*/
+}
 body, html {
     height: 100%;
+
+    /*overflow: hidden;*/
 }
 
-.parallax {
+body{
+
+    /*overflow-y: auto;*/
+
+    /*-webkit-perspective: 1px;*/
+    /*-moz-perspective: 1px;*/
+    /*perspective: 1px;*/
+    /*-webkit-transform-style: preserve-3d;*/
+    /*-moz-transform-style: preserve-3d;*/
+    /*transform-style: preserve-3d;*/
+
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+
+.parallax-container{
+    /* Define the height of the container
+    where the image will be */
+    height:75%;
+
+}
+
+.parallax-i{
+    /*position: absolute;*/
+    
     /* The image used */
-    background-image: url('wedding.jpg');
+    /*background-image: url('3qiro-1.jpg');*/
 
     /* Full height */
-    height: 80%;
+    /*height: 100%;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /*margin-left: 16px;*/
     /*margin-right: 16px;*/
 
+    /*-webkit-transform: translateZ(-1px) scale(2);*/
+    /*!*-moz-transform: translateZ(-1px) scale(2);*!*/
+    /*transform: translateZ(-1px) scale(2);*/
+    /*z-index: -99;*/
 }
 
-.parallax p{
+.bg1{
+    background-image: url('2shift-1.jpg');
+    height: 100%;
+    /*min-height:400px;*/
+}
+
+.bg2{
+    background-image: url('3qiro-1.jpg');
+    height: 100%;
+}
+
+.bg4{
+    background-image: url('4shift-1.jpg');
+    height: 100%;
+}
+
+.parallax-i p{
     text-align:center;
     position:relative;
+    color: white;
+    font-size: 10em;
 
     /* make the text center */
     margin: 0;
@@ -204,7 +255,6 @@ body, html {
         background-attachment: scroll;
     }
 }
-
 
 
 
@@ -291,5 +341,11 @@ body {
 .gl-button{
     margin:16px;
     border:none;
+    /*background-color:transparent;*/
+}
 
+
+video {
+    max-width: 100%;
+    height: auto;
 }
