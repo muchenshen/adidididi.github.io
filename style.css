@@ -191,7 +191,7 @@ body{
 .parallax-container{
     /* Define the height of the container
     where the image will be */
-    height:75%;
+    height:77%;
 
 }
 
@@ -209,6 +209,7 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 100%;
     /*margin-left: 16px;*/
     /*margin-right: 16px;*/
 
@@ -220,18 +221,14 @@ body{
 
 .bg1{
     background-image: url('2shift-1.jpg');
-    height: 100%;
-    /*min-height:400px;*/
 }
 
 .bg2{
     background-image: url('3qiro-1.jpg');
-    height: 100%;
 }
 
 .bg4{
     background-image: url('4shift-1.jpg');
-    height: 100%;
 }
 
 .parallax-i p{
@@ -344,6 +341,59 @@ body {
     /*background-color:transparent;*/
 }
 
+
+
+
+
+.p-title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+.p-sub {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 1.6rem;
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.428;
+}
+.p-subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    /*letter-spacing: 0.2rem;*/
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-top: 4rem;
+    padding-bottom: 1.6rem;
+}
+.p-text{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .project-picture-container {
+        padding-bottom: 5rem;
+        align-content: center;
+        align-self: center;
+    }
+}
+@media (min-width: 768px) {
+    .project-picture-container {
+        padding-bottom: 6rem;
+        align-content: center;
+        align-self: center;
+    }
+}
+
+.project-picture-spacing {
+    padding-bottom: 15px;;
+}
 
 video {
     max-width: 100%;
