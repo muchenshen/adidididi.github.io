@@ -7,7 +7,7 @@
 }
 
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 body, html{
@@ -109,6 +109,7 @@ body {
     /*   background-color: #000; */
     /*   color: grey; */
     /*   border-bottom: 1px solid rgba(0,0,0,0.2); */
+    margin-top: 30px;
     width: 100%;
     height: 80px;
     line-height: 80px;
@@ -133,24 +134,21 @@ body {
     color: grey;
 }
 .navbar a.navbar-brand {
-
+    color:#105a5f;
     /*   float: left; */
     text-align: center;
 
     height: inherit;
     line-height: inherit;
     padding: 0 24px;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 400;
+    font-size: 26px;
+    /*text-transform: uppercase;*/
+    font-weight: 800;
     letter-spacing: 2px;
 
-    margin-top: 2px;
+    /*margin-top: 2px;*/
 }
-/* .navbar-brand {
-  font-size: 50px;
-  font-weight: 700;
-} */
+
 
 .navbar ul {
     float: right;
@@ -163,6 +161,9 @@ body {
     display: inline-block;
 }
 .navbar ul li a {
+    font-weight: 600;
+    font-size:18px;
+    /*letter-spacing: 0px;*/
     transition: 0.3s;
     display: block;
     text-align: center;
@@ -170,7 +171,7 @@ body {
     padding: 0 5px;
 }
 .navbar ul li a:hover {
-    color: rgba(0,0,0,0.9);
+    color: #f27052;
 }
 .navbar .navbar-toggler {
     display: none;
@@ -228,6 +229,9 @@ body {
     }
     .navbar ul li a {
         padding: 0;
+        font-size: 36px;
+        font-weight: 800;
+
     }
     .navbar .navbar-toggler {
         display: block;
@@ -249,9 +253,9 @@ body {
     .navbar .navbar-toggler span::after {
         display: block;
         content: '';
-        background-color: grey;
+        background-color: #105a5f;
         height: 3px;
-        width: 28px;
+        width: 24px;
         /*border-radius: 4px;*/
         transition: all ease-in-out 0.3s;
     }
@@ -407,9 +411,10 @@ body {
     top:0;
     left:0;
     opacity:0;
-    background-color:rgba(0,0,0,0.2);
+    /*background-color:rgba(16, 90, 95, 0.5);*/
+    background-color:rgba(255, 255, 255, 0.65);
     -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out
+    transition:all .4s ease-in-out;
 }
 
 .hovereffect img {
@@ -421,10 +426,11 @@ body {
 
 .hovereffect h2 {
     /*text-transform:uppercase;*/
-    color:#fff;
+    color:#f27052;
     text-align:center;
     position:relative;
-    font-size:17px;
+    font-size:36px;
+    font-weight: 800;
     /*background:rgba(0,0,0,0.6);*/
     /*-webkit-transform:translatey(-100px);*/
     /*-ms-transform:translatey(-100px);*/
@@ -473,6 +479,7 @@ body {
 
 #myBtn:hover {
     /*background-color: #555; !* Add a dark-grey background on hover *!*/
+
     -ms-transform:scale(1.05);
     -webkit-transform:scale(1.05);
     transform:scale(1.05);
@@ -489,9 +496,11 @@ body {
 
 #bottom {
     letter-spacing: .04em;
-    font-size: small;
+    /*font-size: small;*/
+    font-size:16px;
     margin-top: 45px;
     margin-bottom: 24px;
+    color:lightgrey;
 }
 
 /* parallax effect */
