@@ -6,12 +6,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
     <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -19,111 +19,193 @@
 </head>
 <body>
 
+<!-- MAIN (Center website) -->
+<div class="main">
 
-
-<!-- this navbar is using bootstrap 3 -->
-<nav class="navbar ">
-    <div class="container-fluid">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="0 0 16 24" enable-background="new 0 0 16 24" xml:space="preserve">
-<rect x="20" y="5" width="5" height="2"></rect>
-<rect x="10" y="5" width="5" height="2"></rect>
-<rect y="5" width="5" height="2"></rect>
-<rect x="20" y="11" width="5" height="2"></rect>
-<rect x="10" y="11" width="5" height="2"></rect>
-<rect y="11" width="5" height="2"></rect>
-<rect x="20" y="17" width="5" height="2"></rect>
-<rect x="10" y="17" width="5" height="2"></rect>
-<rect y="17" width="5" height="2"></rect>
-</svg>
-            </button>
-
-            <a class="navbar-brand" href="index.html">NINGYUAN XU</a>
-            <!-- check if need <small>Product Interaction Designer</small> after my name -->
-
+<!--<div class="content">-->
+<!-- Navbar (sit on top) -->
+<div class="" >
+    <div class="top-nav" id="myNavbar">
+        <a href="#home" class="brands">Ningyuan Xu</a>
+        <!-- Right-sided navbar links -->
+        <div class="menu">
+            <a href="#about" class="items">Projects</a>
+            <a href="#team" class="items">Info</a>
+            <a href="#work" class="items ">Playground</a>
         </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#projects">Design</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="playground.html">Playground</a></li>
-            </ul>
-        </div>
-
+        <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium w3-padding-top" onclick="w3_open()">
+            <i class="material-icons">menu</i>
+        </a>
     </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav id="mySidebar" class="w3-bar-block w3-black w3-animate-right w3-hide-medium w3-hide-large w3-center" style="display:none" >
+    <a href="javascript:void(0)"  class="w3-bar-item  w3-large w3-padding-16" onclick="w3_close()"><i class="material-icons w3-right ">close</i></a>
+    <div class="m-content">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item ">Projects</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item ">Info</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item ">Playground</a>	</div>
 </nav>
+
+<script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+
+<!--&lt;!&ndash; this navbar is using bootstrap 3 &ndash;&gt;-->
+<!--<nav class="navbar ">-->
+    <!--<div class="container-fluid">-->
+
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                <!--<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="0 0 16 24" enable-background="new 0 0 16 24" xml:space="preserve">-->
+<!--<rect x="20" y="5" width="5" height="2"></rect>-->
+<!--<rect x="10" y="5" width="5" height="2"></rect>-->
+<!--<rect y="5" width="5" height="2"></rect>-->
+<!--<rect x="20" y="11" width="5" height="2"></rect>-->
+<!--<rect x="10" y="11" width="5" height="2"></rect>-->
+<!--<rect y="11" width="5" height="2"></rect>-->
+<!--<rect x="20" y="17" width="5" height="2"></rect>-->
+<!--<rect x="10" y="17" width="5" height="2"></rect>-->
+<!--<rect y="17" width="5" height="2"></rect>-->
+<!--</svg>-->
+            <!--</button>-->
+
+            <!--<a class="navbar-brand" href="index.html">NINGYUAN XU</a>-->
+            <!--&lt;!&ndash; check if need <small>Product Interaction Designer</small> after my name &ndash;&gt;-->
+
+        <!--</div>-->
+
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li class="active"><a href="#projects">Design</a></li>-->
+                <!--<li><a href="About.html">About</a></li>-->
+                <!--<li><a href="playground.html">Playground</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</nav>-->
 
 <!-- Page content -->
 
 <div class="parallax">
-    <p>This text is centered.</p>
+    <p></p>
 </div>
 
 <!-- width of the content -->
 <!--<div class="w3-content w3-padding" style="max-width:1564px">-->
 
     <!-- Project Section -->
-    <div class="w3-container w3-padding-16" id="projects">
-        <h3 class="w3-padding-16"> Projects </h3>
-    </div>
+
+
+    <!--<div class="w3-container w3-padding-32" id="projects">-->
+        <!--<h3 class="w3-padding-16">  </h3>-->
+    <!--</div>-->
+
 
     <!-- row 1 -->
-    <div class="w3-row-padding">
+    <div class="rows ">
 
-        <div class="w3-col l7 m7 w3-section">
-            <a href="project1.html" >
-            <div class="w3-display-container hovereffect">
-                <img src="wedding.jpg" alt="House"  style="width:100%">
-                <div class="w3-display-topleft w3-padding overlay ">
-                    <h2>Summer House</h2>
-                </div>
+        <div class="columns">
+            <div class="contents">
+                <a href="project1.html" >
+                    <div class="hovereffect">
+                        <img src="3qiro-9.jpg" alt="House"  style="width:100%">
+                        <div class="overlay ">
+                            <h2>Summer House</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            </a>
         </div>
 
-        <div class="w3-col l5 m5 w3-section">
-            <a href="project3.html" >
-            <div class="w3-display-container hovereffect">
-                <img src="3qiro-9.jpg" alt="House"  style="width:100%">
-                <div class="w3-display-topleft w3-padding overlay ">
-                    <h2>Qiro</h2>
-                </div>
+        <div class="columns">
+            <div class="contents">
+                <a href="project1.html" >
+                    <div class="hovereffect">
+                        <img src="3qiro-9.jpg" alt="House"  style="width:100%">
+                        <div class="overlay ">
+                            <h2>Summer House</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            </a>
+        </div>
+
+        <div class="columns">
+            <div class="contents">
+                <a href="project1.html" >
+                    <div class="hovereffect">
+                        <img src="3qiro-9.jpg" alt="House"  style="width:100%">
+                        <div class="overlay ">
+                            <h2>Summer House</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="contents">
+                <a href="project1.html" >
+                    <div class="hovereffect">
+                        <img src="3qiro-9.jpg" alt="House"  style="width:100%">
+                        <div class="overlay ">
+                            <h2>Summer House</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
     </div>
 
-    <!-- row 2 -->
 
-    <div class="w3-row-padding">
 
-        <div class="w3-col l5 m6 w3-section ">
-            <a href="project4.html" >
-            <div class="w3-display-container hovereffect">
-                <img src="4shift-11.jpg" alt="House"  style="width:100%">
-                <div class="w3-display-topleft w3-padding overlay ">
-                    <h2>Shift</h2>
-                </div>
-            </div>
-            </a>
-        </div>
+    <!--<div class="w3-row-padding">-->
 
-        <div class="w3-col l7 m6 w3-section ">
-            <a href="project1.html" >
-            <div class="w3-display-container hovereffect">
-                <img src="wedding.jpg"  alt="House" style="width:100%">
-                <div class="w3-display-topleft w3-padding overlay ">
-                    <h2>House</h2>
-                </div>
-            </div>
-            </a>
-        </div>
+        <!--<div class="w3-col l6 m6 w3-section ">-->
+            <!--<a href="project4.html" >-->
+            <!--<div class=" hovereffect">-->
+                <!--<img src="4shift-11.jpg" alt="House"  style="width:100%">-->
+                <!--<div class=" overlay ">-->
+                    <!--<h2>Shift</h2>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
 
-    </div>
+        <!--<div class="w3-col l6 m6 w3-section ">-->
+            <!--<a href="project1.html" >-->
+            <!--<div class="hovereffect">-->
+                <!--<img src="4shift-11.jpg"  alt="House" style="width:100%">-->
+                <!--<div class="overlay ">-->
+                    <!--<h2>House</h2>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
 
 
 
@@ -162,6 +244,9 @@
         <p id="bottom">© 2018 NINGYUAN XU</p>
     </div>
 </footer>
+
+<!-- END MAIN -->
+</div>
 
 </body>
 </html>

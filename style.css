@@ -1,59 +1,206 @@
 
-
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;}
-
-body{
-    padding-left:120px;
-    padding-right:120px;
+* {
+    box-sizing: border-box;
 }
 
-/* navbar : when hover, no bg color */
-ul.nav a:hover {
-    background-color:transparent;
-    color: black;
-    !important; }
-
-
-/* make navbar more space */
-.navbar {
-    padding-top: 20px;
-    z-index: 9999; /* OMG! this keeps navbar always on top */
-    /*padding-left: 20px;*/
-    /*padding-right: 10px;*/
-}
-.navbar-toggle {
-    /*padding-right: 0px;*/
-    padding-top: 4px;
-    position:fixed;
-    right:11px;
-    z-index: 9999;
-}
-.navbar-toggle:hover {
-    -ms-transform:scale(1.05);
-    -webkit-transform:scale(1.05);
-    transform:scale(1.05);
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* make title in two lines */
-.navbar-brand {
-    line-height:20px;
-    /*padding-top:20px;*/
+body, html{
+    height: 100%;
+    line-height: 1.8;
+    /*padding: 8px;*/
+
+    /*padding-left:120px;*/
+    /*padding-right:120px;*/
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Center website  image grid */
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.rows {
+    margin: 8px 0px;
+
+    /*display: -ms-flexbox; !* IE10 *!*/
+    /*display: flex;*/
+    /*-ms-flex-wrap: wrap; !* IE10 *!*/
+    /*flex-wrap: wrap;*/
+    /*padding: 0 4px;*/
+}
+
+/* Add padding BETWEEN each column */
+.rows,
+.rows > .columns {
+    padding: 12px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columns {
+    float: left;
+    width: 50%;
+
+    /*-ms-flex: 100%; !* IE10 *!*/
+    /*flex: 100%;*/
+    /*max-width: 100%;*/
+
+}
+
+/* Clear floats after rows */
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contents {
+    padding:8px 0;
+}
+
+/*.column img {*/
+    /*margin-top: 8px;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .columns {
+        width: 50%;
+
+        /*-ms-flex: 50%;*/
+        /*flex: 50%;*/
+        /*max-width: 50%;*/
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+
+        /*-ms-flex: 100%;*/
+        /*flex: 100%;*/
+        /*max-width: 100%;*/
+    }
+}
+/* image grid end */
+
+
+
+.top-nav {
+    overflow: hidden;
+    padding: 0;
+}
+
+.w3-bar-block {
+    height: 100%;
+}
+.brand{
+    font-size: 18px;
+}
+
+.menu {
+    overflow: hidden;
+    display: block;
+    float:right;
+
+}
+.menu a{
+    color:black;
+    transition: 0.3s;
+
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu a:hover {
+    color: dimgray;
+}
+
+.m-content{
     position: relative;
-    /*padding-bottom:5px;*/
-
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.m-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.m-content a:hover {
+    color: #818181;
 }
 
-.navbar-brand small {
-    display:block;
-    font-size:15px;
-    padding-top:5px;
-}
+/*!* navbar : when hover, no bg color *!*/
+/*ul.nav a:hover {*/
+    /*background-color:transparent;*/
+    /*color: black;*/
+    /*!important; }*/
 
-/* fix the navbar on the right */
-.navbar-right{
+
+/*!* make navbar more space *!*/
+/*.navbar {*/
+    /*padding-top: 20px;*/
+    /*padding-left: 0;*/
+    /*z-index: 9999; !* OMG! this keeps navbar always on top *!*/
+    /*!*padding-left: 20px;*!*/
+    /*!*padding-right: 10px;*!*/
+/*}*/
+
+/*.navbar-toggle {*/
+    /*!*padding-right: 0px;*!*/
+    /*padding-top: 4px;*/
     /*position:fixed;*/
-    /*right:36px;*/
-}
+    /*right:11px;*/
+    /*z-index: 9999;*/
+/*}*/
+/*.navbar-toggle:hover {*/
+    /*-ms-transform:scale(1.05);*/
+    /*-webkit-transform:scale(1.05);*/
+    /*transform:scale(1.05);*/
+/*}*/
+
+/*!* make title in two lines *!*/
+/*.navbar-brand {*/
+    /*margin-left: 0;*/
+    /*line-height:20px;*/
+    /*padding-top:15px;*/
+    /*position: relative;*/
+    /*!*padding-bottom:5px;*!*/
+
+/*}*/
+
+/*.navbar-brand small {*/
+    /*display:block;*/
+    /*font-size:15px;*/
+    /*padding-top:5px;*/
+/*}*/
+
+/*!* fix the navbar on the right *!*/
+/*.navbar-right{*/
+    /*!*position:fixed;*!*/
+    /*!*right:36px;*!*/
+/*}*/
+
+
 
 
 /* image hover effect */
@@ -164,29 +311,8 @@ ul.nav a:hover {
 }
 
 /* parallax effect */
-html {
-    /*overflow: hidden;*/
-}
-body, html {
-    height: 100%;
 
-    /*overflow: hidden;*/
-}
 
-body{
-
-    /*overflow-y: auto;*/
-
-    /*-webkit-perspective: 1px;*/
-    /*-moz-perspective: 1px;*/
-    /*perspective: 1px;*/
-    /*-webkit-transform-style: preserve-3d;*/
-    /*-moz-transform-style: preserve-3d;*/
-    /*transform-style: preserve-3d;*/
-
-    /*overflow-y: scroll;*/
-    /*overflow-x: hidden;*/
-}
 
 .parallax-container{
     /* Define the height of the container
@@ -320,14 +446,9 @@ body{
 
 
 /* playground switch between grid and line view mode */
-* {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-}
+
+
 
 /* control entire grid */
 .containerTab {
