@@ -24,49 +24,89 @@
 
 <!--<div class="content">-->
 <!-- Navbar (sit on top) -->
-<div class="" >
-    <div class="top-nav" id="myNavbar">
-        <a href="#home" class="brands">Ningyuan Xu</a>
-        <!-- Right-sided navbar links -->
-        <div class="menu">
-            <a href="#about" class="items">Projects</a>
-            <a href="#team" class="items">Info</a>
-            <a href="#work" class="items ">Playground</a>
+
+    <nav class="navbar">
+        <div class="topnav-centered">
+        <a href="#" class="navbar-brand">Ningyuan Xu</a>
+        <!--     <a href="#" class="navbar-brand"><img src="https://www.dropbox.com/s/zzwcz0xpj95sy7p/logo%20%2810%29.png?raw=1" style="width: 50px; vertical-align: middle;"></a> -->
         </div>
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium w3-padding-top" onclick="w3_open()">
-            <i class="material-icons">menu</i>
-        </a>
-    </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav id="mySidebar" class="w3-bar-block w3-black w3-animate-right w3-hide-medium w3-hide-large w3-center" style="display:none" >
-    <a href="javascript:void(0)"  class="w3-bar-item  w3-large w3-padding-16" onclick="w3_close()"><i class="material-icons w3-right ">close</i></a>
-    <div class="m-content">
-        <a href="#about" onclick="w3_close()" class="w3-bar-item ">Projects</a>
-        <a href="#team" onclick="w3_close()" class="w3-bar-item ">Info</a>
-        <a href="#work" onclick="w3_close()" class="w3-bar-item ">Playground</a>	</div>
-</nav>
+        <ul>
+            <li><a href="#html">Projects</a></li>
+            <li><a href="#css">Info</a></li>
+            <li><a href="#javascript">Playground</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
 
 <script>
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarMenu = document.querySelector(".navbar ul");
+    const navbarLinks = document.querySelectorAll(".navbar a");
 
-    function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-        } else {
-            mySidebar.style.display = 'block';
+    navbarToggler.addEventListener("click", navbarTogglerClick);
+
+    function navbarTogglerClick() {
+        navbarToggler.classList.toggle("open-navbar-toggler");
+        navbarMenu.classList.toggle("open");
+    }
+
+    // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+    function navbarLinkClick() {
+        if(navbarMenu.classList.contains("open")) {
+            navbarToggler.click();
         }
     }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-    }
 </script>
+
+
+
+<!--<div class="" >-->
+    <!--<div class="" >-->
+        <!--<a href="#home" class="brands">Ningyuan Xu</a>-->
+        <!--&lt;!&ndash; Right-sided navbar links &ndash;&gt;-->
+        <!--<div class="menu" id="myNavbar">-->
+            <!--<a href="#about" class="items">Projects</a>-->
+            <!--<a href="#team" class="items">Info</a>-->
+            <!--<a href="#work" class="items">Playground</a>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Hide right-floated links on small screens and replace them with a menu icon &ndash;&gt;-->
+
+        <!--<a href="javascript:void(0)" class="" onclick="menuopen()">-->
+            <!--<i class="material-icons">menu</i>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Sidebar on small screens when clicking the menu icon &ndash;&gt;-->
+<!--<nav id="mySidebar" class="" style="display:none" >-->
+    <!--<a href="javascript:void(0)"  class="" onclick="menuclose()"><i class="material-icons">close</i></a>-->
+    <!--<div class="m-content">-->
+        <!--<a href="#about" onclick="menuclose()" class="items">Projects</a>-->
+        <!--<a href="#team" onclick="menuclose()" class="items">Info</a>-->
+        <!--<a href="#work" onclick="menuclose()" class="items">Playground</a>	</div>-->
+<!--</nav>-->
+
+<!--<script>-->
+    <!--// Toggle between showing and hiding the sidebar when clicking the menu icon-->
+    <!--var mySidebar = document.getElementById("mySidebar");-->
+
+    <!--function menuopen() {-->
+        <!--if (mySidebar.style.display === 'block') {-->
+            <!--mySidebar.style.display = 'none';-->
+        <!--} else {-->
+            <!--mySidebar.style.display = 'block';-->
+        <!--}-->
+    <!--}-->
+
+    <!--// Close the sidebar with the close button-->
+    <!--function menuclose() {-->
+        <!--mySidebar.style.display = "none";-->
+    <!--}-->
+<!--</script>-->
 
 <!--&lt;!&ndash; this navbar is using bootstrap 3 &ndash;&gt;-->
 <!--<nav class="navbar ">-->
@@ -213,7 +253,7 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">
     <svg width="32px" height="20px" viewBox="0 0 32 18" xml:space="preserve">
         <!-- stroke-dasharray="5,5" -->
-    <polyline fill="none" stroke="black" stroke-width="2"  points="
+    <polyline fill="none" stroke="grey"  stroke-width="3"  points="
 	1,18 16,1 31,18 "/>
   </svg>
 </button>

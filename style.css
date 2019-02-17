@@ -1,5 +1,8 @@
 
 * {
+    padding: 0;
+    margin: 0;
+
     box-sizing: border-box;
 }
 
@@ -97,57 +100,238 @@ body {
 
 
 
-.top-nav {
-    overflow: hidden;
-    padding: 0;
-}
+/* navbar */
 
-.w3-bar-block {
-    height: 100%;
-}
-.brand{
-    font-size: 18px;
-}
+.navbar {
+    /*max-width: 1280px;*/
+    /*margin: auto;*/
 
-.menu {
-    overflow: hidden;
-    display: block;
-    float:right;
-
-}
-.menu a{
-    color:black;
-    transition: 0.3s;
-
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.menu a:hover {
-    color: dimgray;
-}
-
-.m-content{
-    position: relative;
-    top: 10%;
+    /*   background-color: #000; */
+    /*   color: grey; */
+    /*   border-bottom: 1px solid rgba(0,0,0,0.2); */
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
-.m-content a {
-    padding: 8px;
+
+.topnav-centered a {
+    float: left;
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.navbar a {
     text-decoration: none;
-    font-size: 36px;
-    color: white;
-    display: block;
+    color: grey;
+}
+.navbar a.navbar-brand {
+
+    /*   float: left; */
+    text-align: center;
+
+    height: inherit;
+    line-height: inherit;
+    padding: 0 24px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    margin-top: 2px;
+}
+/* .navbar-brand {
+  font-size: 50px;
+  font-weight: 700;
+} */
+
+.navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 20px;
+}
+.navbar ul li {
+    display: inline-block;
+}
+.navbar ul li a {
     transition: 0.3s;
+    display: block;
+    text-align: center;
+    min-width: 80px;
+    padding: 0 5px;
 }
-.m-content a:hover {
-    color: #818181;
+.navbar ul li a:hover {
+    color: rgba(0,0,0,0.9);
 }
+.navbar .navbar-toggler {
+    display: none;
+
+}
+@media (max-width: 991px) {
+    .navbar ul {
+        padding: 0 20px;
+    }
+    .navbar ul li a {
+        min-width: 80px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0;
+        background-color: rgba(255,255,255,0.9);
+    }
+    .navbar a{
+    text-align: center;
+    }
+
+    .topnav-centered a {
+        width: 100%;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(255,255,255,0.9);
+        /* height: auto; */
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+    .navbar ul.open {
+        max-height: 100vh;
+    }
+    .navbar ul li {
+        position: relative;
+        top: 25%;
+        /*text-align: center;*/
+        /*margin-top: 30px;*/
+
+        width: 100%;
+         /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
+    }
+    .navbar ul li a {
+        padding: 0;
+    }
+    .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        /*     color: grey; */
+        /*     border: 3px solid #fff; */
+        border: none;
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    .navbar .navbar-toggler span,
+    .navbar .navbar-toggler span::before,
+    .navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: grey;
+        height: 3px;
+        width: 28px;
+        /*border-radius: 4px;*/
+        transition: all ease-in-out 0.3s;
+    }
+    .navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+    }
+    .navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+    }
+
+    .navbar .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+}
+/* navbar end */
+
+
+
+
+/*.top-nav {*/
+    /*overflow: hidden;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.w3-bar-block {*/
+    /*height: 100%;*/
+/*}*/
+/*.brand{*/
+    /*font-size: 18px;*/
+/*}*/
+
+/*.menu {*/
+    /*overflow: hidden;*/
+    /*display: block;*/
+    /*float:right;*/
+
+/*}*/
+/*.menu a{*/
+    /*color:black;*/
+    /*transition: 0.3s;*/
+
+    /*float: left;*/
+    /*display: block;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+    /*font-size: 17px;*/
+/*}*/
+/*.menu a:hover {*/
+    /*color: dimgray;*/
+/*}*/
+
+/*.m-content{*/
+    /*position: relative;*/
+    /*top: 10%;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*margin-top: 30px;*/
+/*}*/
+/*.m-content a {*/
+    /*padding: 8px;*/
+    /*text-decoration: none;*/
+    /*font-size: 36px;*/
+    /*color: white;*/
+    /*display: block;*/
+    /*transition: 0.3s;*/
+/*}*/
+/*.m-content a:hover {*/
+    /*color: #818181;*/
+/*}*/
 
 /*!* navbar : when hover, no bg color *!*/
 /*ul.nav a:hover {*/
@@ -275,7 +459,7 @@ body {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 24px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
