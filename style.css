@@ -13,114 +13,65 @@ body,h1,h2,h3,h4,h5,h6 {
 body, html{
     height: 100%;
     line-height: 1.8;
-    /*padding: 8px;*/
-
-    /*padding-left:120px;*/
-    /*padding-right:120px;*/
 }
 
 body {
     margin: 0;
+    background-color: #fcfcfc;
 }
 
+h1 {
+    font-size: 48px;
+    color:#105a5f;
+    font-weight: 800;
+    line-height:50px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+.grey-text{
+    color:grey;
+}
+.project-text{
+    width:50%;
+}
 
-/* Center website  image grid */
-
+/* Center website  */
 .main {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
 }
-
-.rows {
-    margin: 8px 0px;
-
-    /*display: -ms-flexbox; !* IE10 *!*/
-    /*display: flex;*/
-    /*-ms-flex-wrap: wrap; !* IE10 *!*/
-    /*flex-wrap: wrap;*/
-    /*padding: 0 4px;*/
-}
-
-/* Add padding BETWEEN each column */
-.rows,
-.rows > .columns {
-    padding: 12px;
-}
-
-/* Create four equal columns that sits next to each other */
-.columns {
-    float: left;
-    width: 50%;
-
-    /*-ms-flex: 100%; !* IE10 *!*/
-    /*flex: 100%;*/
-    /*max-width: 100%;*/
+.nav-main {
+    /*padding-top:20px;*/
+    max-width: 1200px;
+    margin: auto;
 
 }
+header {
 
-/* Clear floats after rows */
-.rows:after {
-    content: "";
-    display: table;
-    clear: both;
 }
-
-.contents {
-    padding:8px 0;
+.project-main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 12px;
 }
-
-/*.column img {*/
-    /*margin-top: 8px;*/
-    /*vertical-align: middle;*/
-/*}*/
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-
-@media screen and (max-width: 800px) {
-    .columns {
-        width: 50%;
-
-        /*-ms-flex: 50%;*/
-        /*flex: 50%;*/
-        /*max-width: 50%;*/
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .columns {
-        width: 100%;
-
-        /*-ms-flex: 100%;*/
-        /*flex: 100%;*/
-        /*max-width: 100%;*/
-    }
-}
-/* image grid end */
-
-
+/* Center website END */
 
 /* navbar */
-
 .navbar {
-    /*max-width: 1280px;*/
-    /*margin: auto;*/
-
-    /*   background-color: #000; */
-    /*   color: grey; */
-    /*   border-bottom: 1px solid rgba(0,0,0,0.2); */
-    margin-top: 30px;
+    /*padding: 30px 0;*/
+    /*margin-bottom: 10px;*/
     width: 100%;
     height: 80px;
     line-height: 80px;
     font-size: 18px;
-    padding: 0 0px;
+    /*padding-top: 30px;*/
+    /*padding-bottom: 0px;*/
     position: relative;
     top: 0;
     left: 0;
     z-index: 10;
 }
-
+/* position brand */
 .topnav-centered a {
     float: left;
     position: absolute;
@@ -128,16 +79,12 @@ body {
     /*left: 50%;*/
     /*transform: translate(-50%, -50%);*/
 }
-
 .navbar a {
     text-decoration: none;
     color: grey;
 }
 .navbar a.navbar-brand {
     color:#105a5f;
-    /*   float: left; */
-    text-align: center;
-
     height: inherit;
     line-height: inherit;
     padding: 0 24px;
@@ -145,11 +92,8 @@ body {
     /*text-transform: uppercase;*/
     font-weight: 800;
     letter-spacing: 2px;
-
     /*margin-top: 2px;*/
 }
-
-
 .navbar ul {
     float: right;
     list-style: none;
@@ -178,6 +122,9 @@ body {
 
 }
 @media (max-width: 991px) {
+    .project-text{
+        width:100%;
+    }
     .navbar ul {
         padding: 0 20px;
     }
@@ -186,16 +133,21 @@ body {
         padding: 0 5px;
     }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+    h1{
+        font-size:36px;
+        line-height: 36px;
+    }
+    .project-text{
+        width:100%;
+    }
     .navbar {
         padding: 0;
-        background-color: rgba(255,255,255,0.9);
+        /*background-color: rgba(255,255,255,0.2);*/
     }
     .navbar a{
-    text-align: center;
+        text-align: center;
     }
-
     .topnav-centered a {
         width: 100%;
         float: none;
@@ -204,11 +156,10 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .navbar ul {
-        width: 100%;
+        width:100%;
         padding: 0;
-        background-color: rgba(255,255,255,0.9);
+        background-color: #fcfcfc;
         /* height: auto; */
         height: 100vh;
         max-height: 0;
@@ -225,13 +176,13 @@ body {
         /*margin-top: 30px;*/
 
         width: 100%;
-         /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
+        /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
     }
     .navbar ul li a {
-        padding: 0;
+        /*padding: 0;*/
+        /*padding-left:50px;*/
         font-size: 36px;
         font-weight: 800;
-
     }
     .navbar .navbar-toggler {
         display: block;
@@ -280,119 +231,97 @@ body {
         /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
     }
 }
-/* navbar end */
+/* navbar END */
+
+/* Homepage image grid */
+.rows {
+    margin: 4px 0;
+
+    /*display: -ms-flexbox; !* IE10 *!*/
+    /*display: flex;*/
+    /*-ms-flex-wrap: wrap; !* IE10 *!*/
+    /*flex-wrap: wrap;*/
+    /*padding: 0 4px;*/
+}
+
+/* Add padding BETWEEN each column */
+.rows,
+.rows > .columns {
+    padding: 12px 12px;
+}
+
+/* Create two equal columns that sits next to each other */
+.columns {
+    float: left;
+    width: 50%;
+
+    /*-ms-flex: 100%; !* IE10 *!*/
+    /*flex: 100%;*/
+    /*max-width: 100%;*/
+}
+
+/* Clear floats after rows */
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.image-small{
+    float: left;
+    width: 50%;
+padding-bottom: 12px;
+    /*margin:12px 0;*/
+}
+.image-big{
+    padding-bottom: 12px;
+
+    /*margin:12px 0;*/
+}
+.image-left {
+    padding-right: 12px;
+}
+.image-right {
+    padding-left: 12px;
+}
+/* Add padding BETWEEN each column */
 
 
-
-
-/*.top-nav {*/
-    /*overflow: hidden;*/
-    /*padding: 0;*/
+/*.contents {*/
+    /*padding:0 0;*/
 /*}*/
 
-/*.w3-bar-block {*/
-    /*height: 100%;*/
-/*}*/
-/*.brand{*/
-    /*font-size: 18px;*/
-/*}*/
+/* Responsive layout -  two column-layout */
+@media screen and (max-width: 800px) {
+    .columns {
+        width: 50%;
 
-/*.menu {*/
-    /*overflow: hidden;*/
-    /*display: block;*/
-    /*float:right;*/
+        /*-ms-flex: 50%;*/
+        /*flex: 50%;*/
+        /*max-width: 50%;*/
+    }
+}
+/* Responsive layout - one column */
+@media screen and (max-width: 600px) {
+    .image-small {
+        width: 100%;
+    }
+    .image-left {
+        padding-right: 0;
+    }
+    .image-right {
+        padding-left: 0;
+    }
+    .columns {
+        width: 100%;
 
-/*}*/
-/*.menu a{*/
-    /*color:black;*/
-    /*transition: 0.3s;*/
-
-    /*float: left;*/
-    /*display: block;*/
-    /*text-align: center;*/
-    /*padding: 14px 16px;*/
-    /*text-decoration: none;*/
-    /*font-size: 17px;*/
-/*}*/
-/*.menu a:hover {*/
-    /*color: dimgray;*/
-/*}*/
-
-/*.m-content{*/
-    /*position: relative;*/
-    /*top: 10%;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-    /*margin-top: 30px;*/
-/*}*/
-/*.m-content a {*/
-    /*padding: 8px;*/
-    /*text-decoration: none;*/
-    /*font-size: 36px;*/
-    /*color: white;*/
-    /*display: block;*/
-    /*transition: 0.3s;*/
-/*}*/
-/*.m-content a:hover {*/
-    /*color: #818181;*/
-/*}*/
-
-/*!* navbar : when hover, no bg color *!*/
-/*ul.nav a:hover {*/
-    /*background-color:transparent;*/
-    /*color: black;*/
-    /*!important; }*/
-
-
-/*!* make navbar more space *!*/
-/*.navbar {*/
-    /*padding-top: 20px;*/
-    /*padding-left: 0;*/
-    /*z-index: 9999; !* OMG! this keeps navbar always on top *!*/
-    /*!*padding-left: 20px;*!*/
-    /*!*padding-right: 10px;*!*/
-/*}*/
-
-/*.navbar-toggle {*/
-    /*!*padding-right: 0px;*!*/
-    /*padding-top: 4px;*/
-    /*position:fixed;*/
-    /*right:11px;*/
-    /*z-index: 9999;*/
-/*}*/
-/*.navbar-toggle:hover {*/
-    /*-ms-transform:scale(1.05);*/
-    /*-webkit-transform:scale(1.05);*/
-    /*transform:scale(1.05);*/
-/*}*/
-
-/*!* make title in two lines *!*/
-/*.navbar-brand {*/
-    /*margin-left: 0;*/
-    /*line-height:20px;*/
-    /*padding-top:15px;*/
-    /*position: relative;*/
-    /*!*padding-bottom:5px;*!*/
-
-/*}*/
-
-/*.navbar-brand small {*/
-    /*display:block;*/
-    /*font-size:15px;*/
-    /*padding-top:5px;*/
-/*}*/
-
-/*!* fix the navbar on the right *!*/
-/*.navbar-right{*/
-    /*!*position:fixed;*!*/
-    /*!*right:36px;*!*/
-/*}*/
-
-
-
+        /*-ms-flex: 100%;*/
+        /*flex: 100%;*/
+        /*max-width: 100%;*/
+    }
+}
+/* Homepage image grid END*/
 
 /* image hover effect */
-
 .hovereffect {
     width:100%;
     height:100%;
@@ -412,7 +341,7 @@ body {
     left:0;
     opacity:0;
     /*background-color:rgba(16, 90, 95, 0.5);*/
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(255, 255, 255, 0.8);
     -webkit-transition:all .4s ease-in-out;
     transition:all .4s ease-in-out;
 }
@@ -458,9 +387,9 @@ body {
     opacity:1;
     filter:alpha(opacity=100);
 }
+/* image hover effect END */
 
-
-/* scroll to top */
+/* scroll to top button */
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -484,6 +413,7 @@ body {
     -webkit-transform:scale(1.05);
     transform:scale(1.05);
 }
+/* scroll to top button END */
 
 /* footer and copyright */
 .containerCenter {
@@ -502,19 +432,47 @@ body {
     margin-bottom: 24px;
     color:lightgrey;
 }
+/* footer and copyright END */
+
+
 
 /* parallax effect */
-
-
 
 .parallax-container{
     /* Define the height of the container
     where the image will be */
-    height:77%;
-
+    height:85%;
+    margin: 0;
+}
+header {
+    width:100%;
+    background-color: grey;
+    height:100%;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100%;*/
+}
+.header-image1 {
+    background-image: url('2qiro-head.jpg');
 }
 
-.parallax-i{
+
+@media (max-width: 600px) {
+    header {
+
+        height:45%;
+        background-attachment: scroll;
+        /*background-size: contain;*/
+    }
+    .navbar {
+
+    }
+}
+
+.parallax-image{
     /*position: absolute;*/
     
     /* The image used */
@@ -571,8 +529,7 @@ body {
         background-attachment: scroll;
     }
 }
-
-
+/* parallax effect END */
 
 /* playground default-display grid */
 .row, .row-list{
@@ -613,7 +570,6 @@ body {
     padding: 0;
 }
 
-
 .column img {
     margin-top: 24px;
     vertical-align: middle;
@@ -636,12 +592,10 @@ body {
         max-width: 100%;
     }
 }
+/* playground default-display grid END */
 
 
 /* playground switch between grid and line view mode */
-
-
-
 
 /* control entire grid */
 .containerTab {
@@ -654,10 +608,6 @@ body {
     border:none;
     /*background-color:transparent;*/
 }
-
-
-
-
 
 .p-title {
     font-family: 'PT Sans', sans-serif;
@@ -704,12 +654,69 @@ body {
         align-self: center;
     }
 }
+/* playground switch between grid and line view mode END */
 
-.project-picture-spacing {
-    padding-bottom: 15px;;
-}
+/*.project-picture-spacing {*/
+    /*padding-bottom: 15px;;*/
+/*}*/
 
-video {
-    max-width: 100%;
-    height: auto;
-}
+/*video {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+/*.videos{*/
+    /*margin:0 12px;*/
+/*}*/
+
+
+/*!*.cover-55, .cover-55 .cover-image, .cover-55 .video-fadein {*!*/
+    /*!*background-color: #ffffff !important;*!*/
+/*!*}*!*/
+/*.fullscreen-cover {*/
+    /*width: 100%;*/
+    /*height: 70%;*/
+    /*background-color: #fff;*/
+    /*overflow: hidden;*/
+    /*opacity: 0;*/
+    /*position: relative;*/
+/*}*/
+
+/*.element.style {*/
+    /*background-position: 50% 0px;*/
+/*}*/
+/*.cover-55 .cover-image {*/
+    /*background-position: top center;*/
+/*}*/
+/*.cover-55 .cover-image {*/
+    /*background-size: cover;*/
+/*}*/
+/*!*.cover-55 .cover-image {*!*/
+    /*!*background-repeat: !important;*!*/
+/*!*}*!*/
+/*.cover-55 .cover-image {*/
+    /*opacity: 1;*/
+/*}*/
+/*.cover-55 .cover-image {*/
+    /*background-image: url(2shift-1.jpg);*/
+/*}*/
+/*!*.cover-55, .cover-55 .cover-image, .cover-55 .video-fadein {*!*/
+    /*!*background-color: #ffffff !important;*!*/
+/*!*}*!*/
+/*.fullscreen-cover .cover-image, .fullscreen-cover .cover-video-responsive {*/
+    /*text-align: center;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
+    /*line-height: 0;*/
+    /*overflow: hidden;*/
+    /*height: 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*transform: scale(1);*/
+/*}*/
+
+/*#wrapper {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*z-index: 1;*/
+/*}*/
