@@ -28,6 +28,25 @@ h1 {
     text-transform: uppercase;
     letter-spacing:2px;
 }
+.text-links{
+    max-width:1200px;
+    text-align: center;
+}
+.text-links a{
+    padding: 0 12px;
+    font-size: 20px;
+    color:lightgrey;
+    font-weight: 800;
+    line-height:36px;
+    letter-spacing:0px;
+    text-decoration: none;
+}
+.text-links a:hover{
+    color: #f27052;
+}
+a.active-links{
+    color: #f27052;
+}
 .grey-text{
     color:grey;
 }
