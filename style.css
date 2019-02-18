@@ -40,6 +40,7 @@ h1 {
     line-height:36px;
     letter-spacing:0px;
     text-decoration: none;
+    white-space: pre;
 }
 .text-links a:hover{
     color: #f27052;
@@ -153,6 +154,12 @@ header {
     }
 }
 @media (max-width: 600px) {
+    .text-links a {
+        padding: 0 6px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     h1{
         font-size:36px;
         line-height: 36px;
