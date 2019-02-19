@@ -486,12 +486,12 @@ padding-bottom: 12px;
 
 /* parallax effect */
 
-.parallax-container{
-    /* Define the height of the container
-    where the image will be */
-    height:85%;
-    margin: 0;
-}
+/*.parallax-container{*/
+    /*!* Define the height of the container*/
+    /*where the image will be *!*/
+    /*height:85%;*/
+    /*margin: 0;*/
+/*}*/
 header {
     width:100%;
     background-color: grey;
@@ -509,6 +509,9 @@ header {
 .header-image2 {
     background-image: url('4shift-0.jpg');
 }
+.header-image3 {
+    background-image: url('3sound-1.jpg');
+}
 
 
 @media (max-width: 600px) {
@@ -518,68 +521,66 @@ header {
         background-attachment: scroll;
         /*background-size: contain;*/
     }
-    .navbar {
-
-    }
 }
 
-.parallax-image{
-    /*position: absolute;*/
-    
-    /* The image used */
-    /*background-image: url('3qiro-1.jpg');*/
+/*.parallax-image{*/
+    /*!*position: absolute;*!*/
+    /**/
+    /*!* The image used *!*/
+    /*!*background-image: url('3qiro-1.jpg');*!*/
 
-    /* Full height */
+    /*!* Full height *!*/
+    /*!*height: 100%;*!*/
+
+    /*!* Create the parallax scrolling effect *!*/
+    /*background-attachment: fixed;*/
+    /*background-position: center top;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
     /*height: 100%;*/
+    /*!*margin-left: 16px;*!*/
+    /*!*margin-right: 16px;*!*/
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    /*margin-left: 16px;*/
-    /*margin-right: 16px;*/
+    /*!*-webkit-transform: translateZ(-1px) scale(2);*!*/
+    /*!*!*-moz-transform: translateZ(-1px) scale(2);*!*!*/
+    /*!*transform: translateZ(-1px) scale(2);*!*/
+    /*!*z-index: -99;*!*/
+/*}*/
 
-    /*-webkit-transform: translateZ(-1px) scale(2);*/
-    /*!*-moz-transform: translateZ(-1px) scale(2);*!*/
-    /*transform: translateZ(-1px) scale(2);*/
-    /*z-index: -99;*/
-}
+/*.bg1{*/
+    /*background-image: url('2shift-1.jpg');*/
+/*}*/
 
-.bg1{
-    background-image: url('2shift-1.jpg');
-}
+/*.bg2{*/
+    /*background-image: url('3qiro-1.jpg');*/
+/*}*/
 
-.bg2{
-    background-image: url('3qiro-1.jpg');
-}
+/*.bg4{*/
+    /*background-image: url('4shift-1.jpg');*/
+/*}*/
 
-.bg4{
-    background-image: url('4shift-1.jpg');
-}
+/*.parallax-i p{*/
+    /*text-align:center;*/
+    /*position:relative;*/
+    /*color: white;*/
+    /*font-size: 10em;*/
 
-.parallax-i p{
-    text-align:center;
-    position:relative;
-    color: white;
-    font-size: 10em;
+    /*!* make the text center *!*/
+    /*margin: 0;*/
+    /*!*position: absolute;*!*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+/*}*/
 
-    /* make the text center */
-    margin: 0;
-    /*position: absolute;*/
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+/*!* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed *!*/
+/*@media only screen and (max-device-width: 1366px) {*/
+    /*.parallax {*/
+        /*background-attachment: scroll;*/
+    /*}*/
+/*}*/
 
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
 /* parallax effect END */
 
 /* playground default-display grid */
