@@ -28,6 +28,13 @@ h1 {
     text-transform: uppercase;
     letter-spacing:2px;
 }
+h2{
+    color:#105a5f;
+    letter-spacing:1px;
+}
+span.orange-subtitle{
+    color: #f27052;
+}
 .text-links{
     max-width:1200px;
     text-align: center;
@@ -52,6 +59,7 @@ a.active-links{
     color:grey;
 }
 .project-text{
+    padding-top: 18px;
     width:50%;
 }
 
@@ -102,6 +110,10 @@ header {
 .navbar a {
     text-decoration: none;
     color: grey;
+}
+.navbar a.navbar-white {
+    text-decoration: none;
+    color: lightgrey;
 }
 .navbar a.navbar-brand {
     color:#105a5f;
@@ -164,6 +176,10 @@ header {
         font-size:36px;
         line-height: 36px;
     }
+    h2{
+        font-size:22px;
+        line-height: 20px;
+    }
     .project-text{
         width:100%;
     }
@@ -174,14 +190,20 @@ header {
     .navbar a{
         text-align: center;
     }
-    .topnav-centered a {
-        width: 100%;
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .navbar a.navbar-white {
+        color: grey;
     }
+
+    /* I was trying so hard to make the brand center in mobile screens !!! now I decide to make it left..... life is not easy ...*/
+    /*.topnav-centered a {*/
+        /*width: 100%;*/
+        /*float: none;*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+    /*}*/
+
     .navbar ul {
         width:100%;
         padding: 0;
@@ -484,6 +506,9 @@ header {
 .header-image1 {
     background-image: url('2qiro-head.jpg');
 }
+.header-image2 {
+    background-image: url('4shift-0.jpg');
+}
 
 
 @media (max-width: 600px) {
@@ -680,69 +705,14 @@ header {
         align-self: center;
     }
 }
-/* playground switch between grid and line view mode END */
 
-/*.project-picture-spacing {*/
-    /*padding-bottom: 15px;;*/
-/*}*/
+video {
+    width: 100%;
+    height: auto;
+}
 
-/*video {*/
-    /*max-width: 100%;*/
-    /*height: auto;*/
-/*}*/
-/*.videos{*/
-    /*margin:0 12px;*/
-/*}*/
-
-
-/*!*.cover-55, .cover-55 .cover-image, .cover-55 .video-fadein {*!*/
-    /*!*background-color: #ffffff !important;*!*/
-/*!*}*!*/
-/*.fullscreen-cover {*/
-    /*width: 100%;*/
-    /*height: 70%;*/
-    /*background-color: #fff;*/
-    /*overflow: hidden;*/
-    /*opacity: 0;*/
-    /*position: relative;*/
-/*}*/
-
-/*.element.style {*/
-    /*background-position: 50% 0px;*/
-/*}*/
-/*.cover-55 .cover-image {*/
-    /*background-position: top center;*/
-/*}*/
-/*.cover-55 .cover-image {*/
-    /*background-size: cover;*/
-/*}*/
-/*!*.cover-55 .cover-image {*!*/
-    /*!*background-repeat: !important;*!*/
-/*!*}*!*/
-/*.cover-55 .cover-image {*/
-    /*opacity: 1;*/
-/*}*/
-/*.cover-55 .cover-image {*/
-    /*background-image: url(2shift-1.jpg);*/
-/*}*/
-/*!*.cover-55, .cover-55 .cover-image, .cover-55 .video-fadein {*!*/
-    /*!*background-color: #ffffff !important;*!*/
-/*!*}*!*/
-/*.fullscreen-cover .cover-image, .fullscreen-cover .cover-video-responsive {*/
-    /*text-align: center;*/
-    /*width: 100%;*/
-    /*bottom: 0;*/
-    /*line-height: 0;*/
-    /*overflow: hidden;*/
-    /*height: 100%;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*transform: scale(1);*/
-/*}*/
-
-/*#wrapper {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*z-index: 1;*/
+/*.video-small{*/
+    /*float: left;*/
+    /*width: 50%;*/
+    /*!*padding-bottom: 12px;*!*/
 /*}*/
