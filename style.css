@@ -113,7 +113,8 @@ header {
 }
 .navbar a.navbar-white {
     text-decoration: none;
-    color: lightgrey;
+    color: #e3e3e3;
+    /*color: white;*/
 }
 .navbar a.navbar-brand {
     color:#105a5f;
@@ -511,6 +512,9 @@ header {
 }
 .header-image3 {
     background-image: url('3sound-1.jpg');
+}
+.header-image4 {
+    background-image: url('7eattea-1.jpg');
 }
 
 

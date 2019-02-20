@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eat Tea - Space Design</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="header-image4">
+    <nav class="navbar nav-main">
+        <div class="topnav-centered">
+            <a href="index.html" class="navbar-brand">ningyuan xu</a>
+            <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="navbar-white">Projects</a></li>
+            <li><a href="About.html" class="navbar-white" >About</a></li>
+            <li><a href="playground.html" class="navbar-white" >Playground</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
+
+
+
+    <!-- Navbar toggler script-->
+    <script>
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector(".navbar ul");
+        const navbarLinks = document.querySelectorAll(".navbar a");
+
+        navbarToggler.addEventListener("click", navbarTogglerClick);
+
+        function navbarTogglerClick() {
+            navbarToggler.classList.toggle("open-navbar-toggler");
+            navbarMenu.classList.toggle("open");
+        }
+
+        // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+        function navbarLinkClick() {
+            if(navbarMenu.classList.contains("open")) {
+                navbarToggler.click();
+            }
+        }
+    </script>
+</header>
+<!-- Navbar END -->
+
+
+<!-- MAIN (Center website) -->
+<br>
+<div class="project-main">
+<!-- Page content -->
+<br>
+    <!-- row1 text -->
+    <div class="rows">
+        <div class="project-title">
+            <h1>
+                Eat Tea -<br>Space Design
+
+            </h1>
+        </div>
+        <br>
+        <div class="project-text">
+            <p class="grey-text">
+                Teamwork: Lixin Huo, Bihong Tang, Ningyuan Xu<br>
+                Material:
+            </p>
+            <br>
+            <p>
+                Nowadays more and more young people  prefer to drink tee, but the most tea house are too traditional and strict. But acutually the spirit of tee-drinking is the freedom. “Isoland” is aim to create a leisure atmosphere, distinguished from the modern fast life, here is a isolate place that people can relax, and meditate.
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-3.jpg" alt="Shift - Record1"  style="width:100%">
+    </div>
+
+    <br>
+    <div class="">
+        <h2><span class="orange-subtitle">Step 1</span> - Record the movement with the therapist</h2>
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="4shift-2.jpg" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="4shift-34.jpg" alt="Shift - Record3"  style="width:100%">
+    </div>
+
+    <!--<br>-->
+    <!--<div class="image-big">-->
+        <!--<img src="4shift-10.jpg" alt="Shift - Record"  style="width:100%">-->
+    <!--</div>-->
+
+    <br>
+    <div class="">
+        <h2><span class="orange-subtitle"></span> Record Prototype in Unity </h2>
+    </div>
+
+    <br>
+    <div class="image-big">
+        <video src="4shift-6.mp4" controls="">
+        </video>
+    </div>
+
+    <br>
+    <div class="">
+        <h2><span class="orange-subtitle">Step 2</span>- Exercise at home</h2>
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="4shift-5.jpg" alt="Shift - Exercise"  style="width:100%">
+    </div>
+
+    <br>
+    <div >
+        <h2><span class="orange-subtitle"></span>Background Patterns</h2>
+        <p class="project-text">Pre-programmed background patterns will be randamly applied to exercises. An internal counter is embedded in the pattern to prevent overstraining your hand. The pattern is changing in accordance with the movement to help you optimizeing the exercises.</p>
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="4shift-6789-2.jpg" alt="Shift - Background Patterns"  style="width:100%">
+    </div>
+
+
+    <br>
+    <div class="">
+        <h2><span class="orange-subtitle"></span> Comparision Prototype in Unity </h2>
+    </div>
+
+    <br>
+    <div class="image-big">
+        <video src="4shift-10.mp4" class="" controls="">
+        </video>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="text-links">
+        <a href="index.html" >All</a>
+        <a href="index.html" >21C Stationary</a>
+        <a href="index.html" >Qiro - Bluetooth Speaker</a>
+        <a href="index.html" >Sound Jacket</a>
+        <a href="index.html" >Shift - Virtual Hand Therapy</a>
+        <a href="index.html" >Bio Leather</a>
+        <a href="index.html" >Mirror</a>
+        <a href="index.html" >Yin Yun - Plant Dye</a>
+        <a href="index.html" class="active-links">Eat Tea - Space Design</a>
+        <a href="index.html" >Playground</a>
+    </div>
+
+<!-- MAIN END -->
+</div>
+
+    <!-- Page content END -->
+
+
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve">
+            <!-- stroke-dasharray="5,5" -->
+        <polyline fill="none" stroke="#105a5f"  stroke-width="3"  points="
+        1,18 16,1 31,18 "/>
+        </svg>
+    </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <br>
+        <div class="containerCenter">
+            <p id="bottom">© 2019 NINGYUAN XU</p>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+
+
+
+</body>
+</html>
