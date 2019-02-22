@@ -505,22 +505,33 @@ header {
     /*height: 100%;*/
 }
 .header-image1 {
-    background-image: url('2qiro-head.jpg');
+    background-image: url('1neos-0.jpg');
 }
 .header-image2 {
-    background-image: url('4shift-0.jpg');
+    background-image: url('2qiro-head.jpg');
 }
 .header-image3 {
     background-image: url('3sound-1.jpg');
 }
 .header-image4 {
+    background-image: url('4shift-0.jpg');
+}
+.header-image5 {
+     background-image: url('5material-0.jpg');
+ }
+.header-image6 {
+    background-image: url('6yinyun-0-2.jpg');
+}
+.header-image7 {
     background-image: url('7eattea-1.jpg');
+}
+.header-image8 {
+    background-image: url('8mirror.jpg');
 }
 
 
 @media (max-width: 600px) {
     header {
-
         height:45%;
         background-attachment: scroll;
         /*background-size: contain;*/

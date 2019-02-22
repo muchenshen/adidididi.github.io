@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yin Yun - Plant Dye</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="header-image6">
+    <nav class="navbar nav-main">
+        <div class="topnav-centered">
+            <a href="index.html" class="navbar-brand">ningyuan xu</a>
+            <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="navbar-white">Projects</a></li>
+            <li><a href="About.html"  class="navbar-white">About</a></li>
+            <li><a href="playground.html" class="navbar-white">Playground</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
+
+
+
+    <!-- Navbar toggler script-->
+    <script>
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector(".navbar ul");
+        const navbarLinks = document.querySelectorAll(".navbar a");
+
+        navbarToggler.addEventListener("click", navbarTogglerClick);
+
+        function navbarTogglerClick() {
+            navbarToggler.classList.toggle("open-navbar-toggler");
+            navbarMenu.classList.toggle("open");
+        }
+
+        // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+        function navbarLinkClick() {
+            if(navbarMenu.classList.contains("open")) {
+                navbarToggler.click();
+            }
+        }
+    </script>
+</header>
+<!-- Navbar END -->
+
+
+<!-- MAIN (Center website) -->
+<br>
+<div class="project-main">
+<!-- Page content -->
+<br>
+    <!-- row1 text -->
+    <div class="rows">
+        <div class="project-title">
+            <h1>
+                Yin Yun -<br>Plant Dye
+
+            </h1>
+        </div>
+        <br>
+        <div class="project-text">
+            <p class="grey-text">
+                Teamwork: Bihong Tang, Ningyuan Xu<br>
+                Material: Chinese plant medicine, dyeing, sewing
+            </p>
+            <br>
+            <p>
+                “Qi Turbulence” is a eco-frendly experiment. In this project I tried to redesign clothes and accessories out of recycled materials, dye with natural plant’s extraction, so the color extraction is also recycled from the nature.
+                The goal is, to solve the waste-pollution with design-thinking, to extend the lifespan of a product, and to awoke the awareness of culture, history and nature, on which we should have taken more attention.
+                The name “Qi Turbulence” expresses the dynamic dye-process.
+
+            </p>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-3.jpg" alt="Shift - Record1" style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-5.jpg" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+    <!--<br>-->
+    <!--<div class="">-->
+        <!--<h2><span class="orange-subtitle">Step 1</span> - Record the movement with the therapist</h2>-->
+    <!--</div>-->
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-2.jpg" alt="Shift - Record1" style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-6.jpg" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-4.jpg" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-7.jpg" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+    <br>
+    <div class="image-big">
+        <img src="7eattea-8-2.JPG" alt="Shift - Record2"  style="width:100%">
+    </div>
+
+
+    <!--<br>-->
+    <!--<div class="image-small image-left">-->
+        <!--<img src="7eattea-2.jpg" alt="Eat Tea - Record3"  style="width:100%">-->
+    <!--</div>-->
+
+    <!--<div class="image-small image-right">-->
+        <!--<img src="7eattea-6.jpg" alt="Eat Tea - Record3"  style="width:100%">-->
+    <!--</div>-->
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="text-links">
+        <a href="index.html" >All</a>
+        <a href="index.html" >21C Stationary</a>
+        <a href="index.html" >Qiro - Bluetooth Speaker</a>
+        <a href="index.html" >Sound Jacket</a>
+        <a href="index.html" >Shift - Virtual Hand Therapy</a>
+        <a href="index.html" >Bio Leather</a>
+        <a href="index.html" >Mirror</a>
+        <a href="index.html" class="active-links">Yin Yun - Plant Dye</a>
+        <a href="index.html" >Eat Tea - Space Design</a>
+        <a href="index.html" >Playground</a>
+    </div>
+
+<!-- MAIN END -->
+</div>
+
+    <!-- Page content END -->
+
+
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve">
+            <!-- stroke-dasharray="5,5" -->
+        <polyline fill="none" stroke="#105a5f"  stroke-width="3"  points="
+        1,18 16,1 31,18 "/>
+        </svg>
+    </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <br>
+        <div class="containerCenter">
+            <p id="bottom">© 2019 NINGYUAN XU</p>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+
+
+
+</body>
+</html>
