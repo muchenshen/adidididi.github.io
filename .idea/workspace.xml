@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/1neos.html" afterPath="$PROJECT_DIR$/1neos.html" />
-      <change beforePath="$PROJECT_DIR$/5material.html" afterPath="$PROJECT_DIR$/5material.html" />
-      <change beforePath="$PROJECT_DIR$/6mirror.html" afterPath="$PROJECT_DIR$/6mirror.html" />
-      <change beforePath="$PROJECT_DIR$/7yinyun.html" afterPath="$PROJECT_DIR$/7yinyun.html" />
+      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,7 +58,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="7yinyun.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="7yinyun.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/7yinyun.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-121">
@@ -71,7 +68,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="6mirror.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="6mirror.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/6mirror.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="573">
@@ -88,8 +85,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="528" column="32" lean-forward="false" selection-start-line="528" selection-start-column="32" selection-end-line="528" selection-end-column="32" />
+                <state relative-caret-position="358">
+                  <caret line="519" column="41" lean-forward="false" selection-start-line="519" selection-start-column="41" selection-end-line="519" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -140,11 +137,11 @@
         <option value="$PROJECT_DIR$/4shift.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/8space.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/7yinyun.html" />
         <option value="$PROJECT_DIR$/5material.html" />
         <option value="$PROJECT_DIR$/1neos.html" />
         <option value="$PROJECT_DIR$/6mirror.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -250,12 +247,12 @@
       <workItem from="1550707020347" duration="4239000" />
       <workItem from="1550777328338" duration="7437000" />
       <workItem from="1551359810468" duration="1245000" />
-      <workItem from="1551389946781" duration="9899000" />
+      <workItem from="1551389946781" duration="10157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261832000" />
+    <option name="totallyTimeSpent" value="262090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1402" height="877" extended-state="0" />
@@ -470,26 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="528" column="32" lean-forward="false" selection-start-line="528" selection-start-column="32" selection-end-line="528" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5material.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7yinyun.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -514,6 +495,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="110" column="8" lean-forward="true" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="519" column="41" lean-forward="false" selection-start-line="519" selection-start-column="41" selection-end-line="519" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7yinyun.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding />
         </state>
       </provider>
