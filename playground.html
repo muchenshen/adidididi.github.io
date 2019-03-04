@@ -2,228 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ning-Playground</title>
+    <title>Playground</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="style.css">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
 
 </head>
 <body>
 
-<!-- this navbar is using bootstrap 3 -->
-<nav class="navbar">
-    <div class="container-fluid">
+<!-- MAIN (Center website) -->
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="0 0 16 24" enable-background="new 0 0 16 24" xml:space="preserve">
-<rect x="20" y="5" width="5" height="2"></rect>
-<rect x="10" y="5" width="5" height="2"></rect>
-<rect y="5" width="5" height="2"></rect>
-<rect x="20" y="11" width="5" height="2"></rect>
-<rect x="10" y="11" width="5" height="2"></rect>
-<rect y="11" width="5" height="2"></rect>
-<rect x="20" y="17" width="5" height="2"></rect>
-<rect x="10" y="17" width="5" height="2"></rect>
-<rect y="17" width="5" height="2"></rect>
-</svg>
-            </button>
 
-            <a class="navbar-brand" href="index.html">NINGYUAN XU</a>
-
+<!-- Navbar -->
+<section class="nav-main">
+    <nav class="navbar">
+        <div class="topnav-centered">
+            <a href="index.html" class="navbar-brand" >ningyuan xu</a>
+            <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
         </div>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html#projects">Design</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="playground.html">Playground</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="playground.html">Playground</a></li>
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+    </nav>
 
-    </div>
-</nav>
+    <!-- Navbar toggler script-->
+    <script>
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector(".navbar ul");
+        const navbarLinks = document.querySelectorAll(".navbar a");
 
+        navbarToggler.addEventListener("click", navbarTogglerClick);
 
-<div class="parallax">
-    <p>This text is centered.</p>
-</div>
-
-
-
-
-
-<!-- content -->
-
-<div style="text-align:center">
-    <h2>Playground</h2>
-    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-
-
-<!-- two buttons -->
-<div class="">
-    <button class="gl-button" onclick="openTab('b1');" style="background:transparent;" id="defaultOpen" >
-        gridview
-    </button>
-    <button class="gl-button" onclick="openTab('b2');" style="background:transparent;">
-        listview
-    </button>
-</div>
-</div>
-
-<!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="display:none;background:transparent">
-    <!-- if add the close button -->
-    <!--<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
-
-    <!-- Photo Grid -->
-    <div class="row">
-        <div class="column">
-            <div>
-                <img src="/w3images/wedding.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/rocks.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/falls2.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-        </div>
-        <div class="column">
-            <div>
-                <img src="/w3images/underwater.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/ocean.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/wedding.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-        </div>
-        <div class="column">
-            <div>
-                <img src="/w3images/wedding.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/rocks.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/falls2.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-        </div>
-        <div class="column">
-            <div>
-                <img src="/w3images/wedding.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/rocks.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-            <div>
-                <img src="/w3images/falls2.jpg" style="width:100%">
-                <p>come here</p>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-<div id="b2" class="containerTab" style="display:none;background:transparent">
-    <!--<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
-
-    <!-- half text half pic Section -->
-    <div class="row-list" >
-        <div class="column-text">
-            <hr>
-            <h1 class="">Our Menu</h1><br>
-            <h4>Bread Basket</h4>
-            <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-            <h4>Honey Almond Granola with Fruits</h4>
-            <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-        </div>
-        <div class="column-pic">
-            <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%;">
-        </div>
-    </div>
-
-</div>
-
-<script>
-    function openTab(tabName) {
-        var i, x;
-        x = document.getElementsByClassName("containerTab");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        function navbarTogglerClick() {
+            navbarToggler.classList.toggle("open-navbar-toggler");
+            navbarMenu.classList.toggle("open");
         }
-        document.getElementById(tabName).style.display = "block";
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
+        // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
 
-
-
-<!-- content over -->
-
-<!-- scroll to top button -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-    <svg width="32px" height="20px" viewBox="0 0 32 18" xml:space="preserve">
-        <!-- stroke-dasharray="5,5" -->
-    <polyline fill="none" stroke="black" stroke-width="2"  points="
-	1,18 16,1 31,18 "/>
-  </svg>
-</button>
-<script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
+        function navbarLinkClick() {
+            if(navbarMenu.classList.contains("open")) {
+                navbarToggler.click();
+            }
         }
-    }
+    </script>
+</section>
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+<!-- Navbar END -->
 
-<!-- empty space and footer -->
-<div class="w3-container w3-padding-16"></div>
+<div class="main">
+    <!-- Page content -->
 
-<footer>
-    <div class="containerCenter">
-        <p id="bottom">© 2018 NINGYUAN XU</p>
+    <div class="side-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
     </div>
-</footer>
+
+    <div class="play-content">
+        <!-- Playground content -->
+        <!--<h2>Auto Sidebar</h2>-->
+
+
+
+
+            <br>
+            <br>
+
+            <!-- Project1 -->
+            <div class="columns">
+                <div class="">
+                    <img src="1neos-3.jpg" alt="Neos - Tangible Apps Kit"  style="width:100%">
+                </div>
+            </div>
+
+            <!-- Project2 -->
+            <div class="columns">
+                <div class="">
+                    <a href="2speaker.html" >
+                        <div class="hovereffect">
+                            <img src="2qiro-2.jpg" alt="Qiro"  style="width:100%">
+                            <div class="overlay ">
+                                <h2>Qiro</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+        <p>Scroll down the page to see the result.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Page content END -->
+
+    <br>
+    <br>
+
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve">
+            <!-- stroke-dasharray="5,5" -->
+        <polyline fill="none" stroke="#105a5f"  stroke-width="3"  points="
+        1,18 16,1 31,18 "/>
+        </svg>
+    </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <div class="containerCenter">
+            <p id="bottom">© 2019 NINGYUAN XU</p>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+    <!-- MAIN END -->
+</div>
 
 </body>
 </html>
