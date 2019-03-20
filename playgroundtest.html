@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playground</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #272727;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<!-- MAIN (Center website) -->
+
+
+<!-- Navbar -->
+<div class="nav-main">
+    <nav class="navbar">
+        <div class="topnav-centered">
+            <a href="index.html" class="navbar-brand" style="color:#f27052;" >playground</a>
+            <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="navbar-white">Projects</a></li>
+            <li><a href="About.html" class="navbar-white">About</a></li>
+            <li><a href="playground.html" class="navbar-white">Playground</a></li>
+        </ul>
+        <button class="navbar-toggler" >
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Navbar toggler script-->
+    <script>
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector(".navbar ul");
+        const navbarLinks = document.querySelectorAll(".navbar a");
+
+        navbarToggler.addEventListener("click", navbarTogglerClick);
+
+        function navbarTogglerClick() {
+            navbarToggler.classList.toggle("open-navbar-toggler");
+            navbarMenu.classList.toggle("open");
+        }
+
+        // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+        function navbarLinkClick() {
+            if(navbarMenu.classList.contains("open")) {
+                navbarToggler.click();
+            }
+        }
+    </script>
+</div>
+
+<!-- Navbar END -->
+
+<div class="main">
+    <!-- Page content -->
+
+    <ul class="scroll-indicator">
+        <li class="you-are-here"></li>
+        <li>My Website</li>
+        <li>Grow & Swing</li>
+        <li>Touch Tracker</li>
+        <li>Patient!</li>
+        <li>Bitcoin Wallet</li>
+        <li>Thermochronic</li>
+        <li>Glove</li>
+        <li>Guess Images</li>
+        <!--<li>Thermochronic</li>-->
+    </ul>
+
+
+    <div class="play-content">
+        <!-- Playground content -->
+        <!--<h2>Auto Sidebar</h2>-->
+<section >
+        <div class="fun">
+
+                Get hands dirty,<br>
+                Make some fun.
+
+        </div>
+</section>
+
+        <br>
+        <!-- Play1 -->
+        <!--<section>-->
+
+        <!--</section>-->
+
+        <!-- Play1 -->
+        <section>
+        <div class="rows" >
+            <div class="play-text" >
+                <h4 class="play-title">My Website</h4><br>
+                <p>
+                    <!--Material:<br>-->
+                    Github, Html, CSS, Javascript<br><br>
+
+                    This website is written by myself without using frameworks. It's a challenge for me to get along with web and code, but it's quite fun to have the freedom to place the elements where I want.
+                </p>
+            </div>
+            <div class="play-left">
+                <div class="">
+                    <img src="play-1web6.gif" alt="My Website" style="width:100%;" >
+
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <br><br>
+        <!-- Play2 -->
+        <section>
+        <div class="rows">
+            <div class="play-text">
+                <h4 class="play-title">Grow & Swing</h4><br>
+                <p>
+                    Rhino, Grasshopper, Arduino, eTextile, Microphone<br>
+                    Jhu-Ting & Ningyuan
+                    <br><br>
+                    The grass is 3D modeled in Rhino, it will grow and expand if your palm and fingers stretch out. If there's a blow, the grass will swing with the wind.
+                </p>
+            </div>
+
+            <div class="play-left">
+                    <div class="" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/144794717?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+        </section>
+
+
+        <br><br>
+        <!-- Play3 -->
+        <section>
+        <div class="rows">
+            <div class="play-text">
+                <h4 class="play-title">Touch Tracker </h4><br>
+                <p>
+
+                    eTextile, Capacitive Sensor, Arduino<br><br>
+
+                    This is a tryout to simulate the tactile function of the skin. The light indicates the location where have been touched.
+                </p>
+            </div>
+
+            <div class="play-left">
+                <div class="" style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/143578410?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+            </div>
+        </div>
+        </section>
+
+
+        <br><br>
+        <!-- Play4 -->
+        <section>
+        <div class="rows">
+            <div class="play-text">
+                <h4 class="play-title">Patient!</h4><br>
+                <p>
+                    Copper tape, LED, Arduino<br>
+                    Ylenia & Ningyuan
+                    <br><br>
+                    Add some fun to the building block toy!
+                </p>
+            </div>
+            <div class="play-left">
+                <div class="" style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/161566445?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+        </section>
+
+
+        <br><br>
+        <!-- Play6 -->
+        <section>
+        <div class="rows">
+            <div class="play-text">
+                <h4 class="play-title">Bitcoin Wallet</h4><br>
+                <p>
+                    LongHash Hackathon Winner<br>
+                    Xinyue & Ningyuan<br><br>
+
+                    Design for the bitcoin Wallet, it can be attached to the phone case. Although the bitcoin market is broken up...... :(
+                </p>
+            </div>
+            <div class="play-left">
+                <div class="" style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/321769631?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+        </section>
+
+
+        <br><br>
+        <!-- Play7 -->
+        <section>
+        <div class="rows">
+            <div class="play-text">
+                <h4 class="play-title">Thermochromic</h4><br>
+                <p>
+                    Thermochromic inks, Screen printing<br>
+                    Xinyue & Ningyuan,<br>
+                    by Prof. Mika Satomi & Louise Drubigny<br><br>
+
+                    Thermochromic inks change color from color to colorless when it reaches certain temperature. We decided the color we want and mixed up the thermochromic ink and normal ink to create the color changing effect that we expected for.
+                </p>
+            </div>
+            <div class="play-left">
+                <div class="">
+                    <div class="play-slides" style="padding-top: 48px">
+                        <video autoplay="autoplay" loop="loop" muted="muted" width="100%">
+                            <source src="termochromic.mp4" type="video/mp4"></video>
+                    </div>
+                    <!--<img class="play-slides" src="play-2thermo4.gif" alt="thermo1" style="width:100%; margin-left: -8px;" >-->
+                    <img class="play-slides" src="play-2thermo3.jpg" alt="thermo2" style="width:100%; " >
+                    <img class="play-slides" src="play-2thermo2.jpg" alt="thermo3" style="width:100%; " >
+                    <img class="play-slides" src="play-2thermo1.jpg" alt="thermo4" style="width:100%; " >
+
+                    <!--<div class="play-slides" style="padding:56.25% 0 0 0;position:relative;">-->
+                        <!--<iframe src="https://player.vimeo.com/video/222038876?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>-->
+                        <!--</iframe>-->
+                    <!--</div>-->
+                    <!--<script src="https://player.vimeo.com/api/player.js"></script>-->
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <br><br>
+        <!-- Play8 -->
+        <section>
+            <div class="rows">
+                <div class="play-text">
+                    <h4 class="play-title">Glove</h4><br>
+                    <p>
+                        eTextile, LED, Arduino<br>
+                        by Prof. Mika Satomi <br><br>
+                        With this glove, you can use hand gestures to control LEDs.
+
+                    </p>
+                </div>
+                <div class="play-left" style="text-align: center">
+                    <div>
+                        <video autoplay="autoplay" loop="loop" muted="muted" width="70%">
+                            <source src="play-5glove.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br><br>
+        <!-- Play9 -->
+        <section>
+            <div class="rows">
+                <div class="play-text">
+                    <h4 class="play-title">Guess Images</h4><br>
+                    <p>
+                        p5.js, Google image API<br>
+                        Simon Ertl & Ningyuan,
+                        by Prof. Julian Adenauer  <br><br>
+                        You type in a topic - images are shown - you say what you see. If your guess is right, you get another image.
+                        <!--So you learn language through pictures and guessing.-->
+                    </p>
+                </div>
+                <div class="play-left" style="text-align: center;" >
+                    <div class="" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/325416576?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+    <!-- play content END -->
+
+
+
+    <br>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("play-slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds -2280
+        }
+    </script>
+
+    <script>
+        // scroll indicator
+        const sections = document.querySelectorAll('section')
+        const windowHeight = window.innerHeight
+        const scrollIndicator = document.querySelector('.scroll-indicator')
+
+        console.log(windowHeight)
+
+        function reset() {
+            for (var i = 0; i < scrollIndicator.children.length; i++) {
+                scrollIndicator.children[i].classList.remove('you-are-here')
+            }
+        }
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.scrollY
+            sections.forEach(function(section, i){
+                if (section.offsetTop < scrollTop + windowHeight/2 && scrollTop < section.offsetTop + windowHeight/2) {
+                    reset()
+                    scrollIndicator.children[i].classList.add('you-are-here')
+                }
+            })
+        })
+
+        document.querySelectorAll('.scroll-indicator li').forEach(function(item, i) {
+            item.addEventListener('click', function(){
+                window.scrollTo({
+                    top: i * windowHeight,
+                    behavior: 'smooth'
+                })
+            })
+        })
+        // end scroll indicator
+    </script>
+
+
+    <!--<script>-->
+        <!--//sticky nav-->
+        <!--window.onscroll = function() {myFunction()};-->
+
+        <!--var indicator = document.getElementById("scroll-indicator");-->
+        <!--var sticky = indicator.offsetTop;-->
+
+        <!--function myFunction() {-->
+            <!--if (window.pageYOffset >= sticky) {-->
+                <!--indicator.classList.add("sticky")-->
+            <!--} else {-->
+                <!--indicator.classList.remove("sticky");-->
+            <!--}-->
+        <!--}-->
+    <!--</script>-->
+
+
+
+
+
+
+
+
+
+    <!-- Page content END -->
+
+    <br>
+    <br>
+
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" >
+        <svg width="30px" height="20px" viewBox="0 0 32 18" xml:space="preserve" >
+            <!-- stroke-dasharray="5,5" -->
+        <polyline fill="none" stroke="#1f7b82"  stroke-width="3"  points="
+        1,18 16,1 31,18 "/>
+        </svg>
+    </button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <div class="containerCenter" style="width: 100%">
+            <p id="bottom" style="color:dimgray;">© 2019 NINGYUAN XU</p>
+        </div>
+    </footer>
+    <!-- footer END -->
+
+    <!-- MAIN END -->
+</div>
+
+</body>
+</html>
