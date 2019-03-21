@@ -778,6 +778,8 @@ min-height: 200px;
 
     z-index: 9999;
     color: #1f7b82;
+    /*text-shadow: 0 0 10px lightgray;*/
+    /*color:lightgray;*/
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
