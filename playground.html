@@ -23,78 +23,95 @@
 
 <!-- MAIN (Center website) -->
 
+<!-- The video -->
+
+
+
 
 <!-- Navbar -->
-<div class="nav-main">
+<header>
+    <div class="videoHeader">
     <nav class="navbar">
-        <div class="topnav-centered">
-            <a href="index.html" class="navbar-brand" style="color:#f27052;" >playground</a>
-            <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+        <div class="nav-main">
+            <div class="topnav-centered">
+                <a href="index.html" class="navbar-brand" style="color:#f27052;" >playground</a>
+                <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
+            </div>
+
+            <ul>
+                <li><a href="index.html" class="navbar-white">Projects</a></li>
+                <li><a href="about.html" class="navbar-white">About</a></li>
+                <li><a href="playground.html" class="navbar-white">Playground</a></li>
+            </ul>
+            <button class="navbar-toggler" >
+                <span></span>
+            </button>
         </div>
 
-        <ul>
-            <li><a href="index.html" class="navbar-white">Projects</a></li>
-            <li><a href="about.html" class="navbar-white">About</a></li>
-            <li><a href="playground.html" class="navbar-white">Playground</a></li>
-        </ul>
-        <button class="navbar-toggler" >
-            <span></span>
-        </button>
+        <!-- Navbar toggler script-->
+        <script>
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarMenu = document.querySelector(".navbar ul");
+            const navbarLinks = document.querySelectorAll(".navbar a");
+
+            navbarToggler.addEventListener("click", navbarTogglerClick);
+
+            function navbarTogglerClick() {
+                navbarToggler.classList.toggle("open-navbar-toggler");
+                navbarMenu.classList.toggle("open");
+            }
+
+            // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+            function navbarLinkClick() {
+                if(navbarMenu.classList.contains("open")) {
+                    navbarToggler.click();
+                }
+            }
+        </script>
+
     </nav>
 
-    <!-- Navbar toggler script-->
-    <script>
-        const navbarToggler = document.querySelector(".navbar-toggler");
-        const navbarMenu = document.querySelector(".navbar ul");
-        const navbarLinks = document.querySelectorAll(".navbar a");
+    <div class="fun">
 
-        navbarToggler.addEventListener("click", navbarTogglerClick);
+        Get hands dirty,<br>
+        Make some fun.
 
-        function navbarTogglerClick() {
-            navbarToggler.classList.toggle("open-navbar-toggler");
-            navbarMenu.classList.toggle("open");
-        }
+    </div>
 
-        // navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="play-muscle.mp4" type="video/mp4">
+        </video>
+    </div>
 
-        function navbarLinkClick() {
-            if(navbarMenu.classList.contains("open")) {
-                navbarToggler.click();
-            }
-        }
-    </script>
-</div>
+    </div>
+</header>
 
 <!-- Navbar END -->
 
-<div class="main">
-    <!-- Page content -->
+<div class="main wrapper">
+    <!-- Page main content -->
 
-    <ul class="scroll-indicator">
-        <li class="you-are-here"></li>
-        <li>My Website</li>
-        <li>Grow & Swing</li>
-        <li>Touch Tracker</li>
-        <li>Patient!</li>
-        <li>Bitcoin Wallet</li>
-        <li>Thermochronic</li>
-        <li>Glove</li>
-        <li>Guess Images</li>
-        <!--<li>Thermochronic</li>-->
-    </ul>
+    <div class="sidebar " >
+        <ul class="scroll-indicator" >
 
+            <li class="you-are-here">My Website</li>
+            <li >Grow & Swing</li>
+            <li>Touch Tracker</li>
+            <li>Patient!</li>
+            <li>Bitcoin Wallet</li>
+            <li>Thermochronic</li>
+            <li>Glove</li>
+            <li>Guess Images</li>
+            <!--<li>Thermochronic</li>-->
+        </ul>
+    </div>
 
-    <div class="play-content">
+    <div class="play-content" >
         <!-- Playground content -->
         <!--<h2>Auto Sidebar</h2>-->
-<section >
-        <div class="fun">
 
-                Get hands dirty,<br>
-                Make some fun.
-
-        </div>
-</section>
 
         <br>
         <!-- Play1 -->
@@ -104,7 +121,7 @@
 
         <!-- Play1 -->
         <section>
-        <div class="rows" >
+        <div class="" >
             <div class="play-text" >
                 <h4 class="play-title">My Website</h4><br>
                 <p>
@@ -306,14 +323,12 @@
             </div>
         </section>
 
-
-
     </div>
     <!-- play content END -->
 
 
 
-    <br>
+
 
     <script>
         var myIndex = 0;
@@ -359,7 +374,7 @@
         document.querySelectorAll('.scroll-indicator li').forEach(function(item, i) {
             item.addEventListener('click', function(){
                 window.scrollTo({
-                    top: i * windowHeight,
+                    top: (i+1) * windowHeight,
                     behavior: 'smooth'
                 })
             })
@@ -368,34 +383,14 @@
     </script>
 
 
-    <!--<script>-->
-        <!--//sticky nav-->
-        <!--window.onscroll = function() {myFunction()};-->
-
-        <!--var indicator = document.getElementById("scroll-indicator");-->
-        <!--var sticky = indicator.offsetTop;-->
-
-        <!--function myFunction() {-->
-            <!--if (window.pageYOffset >= sticky) {-->
-                <!--indicator.classList.add("sticky")-->
-            <!--} else {-->
-                <!--indicator.classList.remove("sticky");-->
-            <!--}-->
-        <!--}-->
-    <!--</script>-->
-
-
-
-
-
-
+    <!-- MAIN END -->
+</div>
 
 
 
     <!-- Page content END -->
 
-    <br>
-    <br>
+
 
     <!-- scroll to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top" >
@@ -427,14 +422,13 @@
 
     <!-- footer -->
     <footer>
-        <div class="containerCenter" style="width: 100%">
+        <div class="containerCenter" >
             <p id="bottom" style="color:dimgray;">© 2019 NINGYUAN XU</p>
         </div>
     </footer>
     <!-- footer END -->
 
-    <!-- MAIN END -->
-</div>
+
 
 </body>
 </html>
