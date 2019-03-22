@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/1neos.html" afterPath="$PROJECT_DIR$/1neos.html" />
-      <change beforePath="$PROJECT_DIR$/2speaker.html" afterPath="$PROJECT_DIR$/2speaker.html" />
-      <change beforePath="$PROJECT_DIR$/3jacket.html" afterPath="$PROJECT_DIR$/3jacket.html" />
-      <change beforePath="$PROJECT_DIR$/4shift.html" afterPath="$PROJECT_DIR$/4shift.html" />
-      <change beforePath="$PROJECT_DIR$/5material.html" afterPath="$PROJECT_DIR$/5material.html" />
-      <change beforePath="$PROJECT_DIR$/6mirror.html" afterPath="$PROJECT_DIR$/6mirror.html" />
-      <change beforePath="$PROJECT_DIR$/7yinyun.html" afterPath="$PROJECT_DIR$/7yinyun.html" />
-      <change beforePath="$PROJECT_DIR$/8space.html" afterPath="$PROJECT_DIR$/8space.html" />
-      <change beforePath="$PROJECT_DIR$/aboutme.html" afterPath="$PROJECT_DIR$/aboutme.html" />
       <change beforePath="$PROJECT_DIR$/playground.html" afterPath="$PROJECT_DIR$/playground.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -79,7 +70,6 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/aboutme.html" />
-        <option value="$PROJECT_DIR$/playground.html" />
         <option value="$PROJECT_DIR$/1neos.html" />
         <option value="$PROJECT_DIR$/2speaker.html" />
         <option value="$PROJECT_DIR$/3jacket.html" />
@@ -88,6 +78,7 @@
         <option value="$PROJECT_DIR$/6mirror.html" />
         <option value="$PROJECT_DIR$/7yinyun.html" />
         <option value="$PROJECT_DIR$/8space.html" />
+        <option value="$PROJECT_DIR$/playground.html" />
       </list>
     </option>
   </component>
@@ -98,6 +89,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="39" />
     <option name="y" value="23" />
     <option name="width" value="1402" />
     <option name="height" value="877" />
@@ -199,13 +191,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373287000" />
+    <option name="totallyTimeSpent" value="373451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1402" height="877" extended-state="0" />
+    <frame x="39" y="23" width="1402" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16405135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16405135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -417,19 +409,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playground.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="11" column="70" lean-forward="false" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aboutme.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="344" column="8" lean-forward="false" selection-start-line="344" selection-start-column="12" selection-end-line="365" selection-end-column="22" />
+          <folding>
+            <marker date="1553257571591" expanded="false" signature="13838:13876" ph="..." />
+            <marker date="1553257571591" expanded="false" signature="14173:14191" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
