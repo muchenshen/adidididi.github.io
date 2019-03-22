@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fc7a440-e5d6-484c-963a-1a0c741883fb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/1neos.html" afterPath="$PROJECT_DIR$/1neos.html" />
-      <change beforePath="$PROJECT_DIR$/2speaker.html" afterPath="$PROJECT_DIR$/2speaker.html" />
-      <change beforePath="$PROJECT_DIR$/3jacket.html" afterPath="$PROJECT_DIR$/3jacket.html" />
-      <change beforePath="$PROJECT_DIR$/4shift.html" afterPath="$PROJECT_DIR$/4shift.html" />
-      <change beforePath="$PROJECT_DIR$/5material.html" afterPath="$PROJECT_DIR$/5material.html" />
       <change beforePath="$PROJECT_DIR$/6mirror.html" afterPath="$PROJECT_DIR$/6mirror.html" />
-      <change beforePath="$PROJECT_DIR$/7yinyun.html" afterPath="$PROJECT_DIR$/7yinyun.html" />
-      <change beforePath="$PROJECT_DIR$/8space.html" afterPath="$PROJECT_DIR$/8space.html" />
-      <change beforePath="$PROJECT_DIR$/aboutme.html" afterPath="$PROJECT_DIR$/aboutme.html" />
-      <change beforePath="$PROJECT_DIR$/playground.html" afterPath="$PROJECT_DIR$/playground.html" />
+      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +16,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="6mirror.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/6mirror.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="467">
+                  <caret line="586" column="79" lean-forward="false" selection-start-line="586" selection-start-column="79" selection-end-line="586" selection-end-column="79" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +83,6 @@
         <option value="$PROJECT_DIR$/material.html" />
         <option value="$PROJECT_DIR$/playtest.html" />
         <option value="$PROJECT_DIR$/playgroundtest.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/about2.html" />
         <option value="$PROJECT_DIR$/About.html" />
         <option value="$PROJECT_DIR$/about.html" />
@@ -74,9 +94,10 @@
         <option value="$PROJECT_DIR$/3jacket.html" />
         <option value="$PROJECT_DIR$/4shift.html" />
         <option value="$PROJECT_DIR$/5material.html" />
-        <option value="$PROJECT_DIR$/6mirror.html" />
         <option value="$PROJECT_DIR$/7yinyun.html" />
         <option value="$PROJECT_DIR$/8space.html" />
+        <option value="$PROJECT_DIR$/6mirror.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -188,12 +209,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369486000" />
+    <option name="totallyTimeSpent" value="370120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1402" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16405135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16405135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -320,14 +342,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project4.html" />
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="786" column="0" lean-forward="false" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -405,14 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6mirror.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/7yinyun.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -425,6 +431,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6mirror.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="586" column="79" lean-forward="false" selection-start-line="586" selection-start-column="79" selection-end-line="586" selection-end-column="79" />
           <folding />
         </state>
       </provider>

@@ -578,11 +578,13 @@ header {
     background-image: url('7eattea-1.jpg');
 }
 .header-image8 {
-    background-image: url('play-muscle.mp4');
+    background-image: url('8mirror.jpg');
 }
+
 /*.header-image8 {*/
-    /*background-image: url('8mirror.jpg');*/
+/*background-image: url('play-muscle.mp4');*/
 /*}*/
+/* somehow the above video header parallax is working in safari but not chrome */
 
 @media (max-width: 600px) {
     header {
