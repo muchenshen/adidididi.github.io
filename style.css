@@ -27,7 +27,7 @@ h1 {
     /* color:#1f7b82; */
     color:black;
     font-weight: 600;
-    line-height:50px;
+    line-height:60px;
     /* text-transform: uppercase; */
     letter-spacing:2px;
 }
@@ -38,6 +38,7 @@ h2, h3{
     letter-spacing:1px;
     text-align: center;
     font-weight: 400;
+    line-height:42px;
     /*margin:auto;*/
 }
 p{
@@ -162,7 +163,7 @@ header {
     padding: 0 24px;
     font-size: 26px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     /*margin-top: 2px;*/
 }
@@ -175,6 +176,8 @@ header {
 }
 .navbar ul li {
     display: inline-block;
+    padding: 0 0;
+    /* here to control the space between each menu */
 }
 .navbar ul li a {
     font-weight: 300;
