@@ -401,6 +401,37 @@ padding-bottom: 12px;
 /* Add padding BETWEEN each column */
 
 
+
+/*  play page image grid, copy from home page */ 
+
+.playrow {
+    margin: 4px 0;
+}
+
+/* Add padding BETWEEN each column */
+.playrow,
+.playrow > .playcolumn {
+    /* do not understand, why use ">" */
+    padding: 12px 12px;
+}
+
+/* Create two equal columns that sits next to each other */
+.playcolumn {
+    float: left;
+    width: 33.3%;
+    padding-left: 0;
+}
+
+/* Clear floats after rows */
+.playrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
 /*.contents {*/
     /*padding:0 0;*/
 /*}*/
