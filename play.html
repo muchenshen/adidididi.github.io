@@ -12,7 +12,8 @@
 
     <style>
         body{
-            background-color: #272727;
+            /*background-color: black;*/
+            /* background-color: #272727; */
         }
     </style>
     
@@ -26,7 +27,7 @@
 <div class="nav-main">
     <nav class="navbar">
         <div class="topnav-centered">
-        <a href="index.html" class="navbar-brand">ningyuan xu</a>
+            <a href="index.html" class="navbar-brand" >XUXU <span style="color:#f27052">Playground</span></a>
             <!--<a href="#" class="navbar-brand"><img src="" style="width: 50px; vertical-align: middle;">ningyuan xu</a>-->
         </div>
 
@@ -67,178 +68,137 @@
 
 <div class="main">
 <!-- Page content -->
+<br>
 
 
+    <div id="myBtnContainer">
+        <button class="p-btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="p-btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="p-btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="p-btn" onclick="filterSelection('people')"> People</button>
+    </div>
 
-
-    <div class="playrow">
-
-        <!-- Project1 -->
-        <div class="playcolumn ">
-            <div class="contents">
-                <a href="1neos.html" >
-                    <div class="hovereffect">
-                        <img src="1neos-3.jpg" alt="Neos - Tangible Apps Kit"  style="width:100%">
-                        <div class="overlay ">
-                            <h2 >NEOs - Tangible Apps Kit<br>
-                                <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Inclusive Design</span>
-                            
-                            </h2>
-                            
-                        </div>
-                    </div>
-                </a>
+    <!-- Portfolio Gallery Grid -->
+    <div class="p-rows">
+        <div class="p-columns nature">
+            <div class="p-contents">
+                <img src="p-mmi.png" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="p-columns nature">
+            <div class="p-contents">
+                <img src="p-website.png" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="p-columns nature">
+            <div class="p-contents">
+                <img src="p-nike.JPG" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
             </div>
         </div>
 
-        <!-- Project2 -->
-        <div class="playcolumn ">
-            <div class="contents">
-                <a href="2speaker.html" >
-                    <div class="hovereffect">
-                        <img src="2qiro-2.jpg" alt="Qiro"  style="width:100%">
-                        <div class="overlay ">
-                            <h2>Qiro - Puppet Speaker<br>
-                                <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Body Language of Machine</span>
-                            
-                            </h2>
-                        </div>
-                    </div>
-                </a>
+        <div class="p-columns cars">
+            <div class="p-contents">
+                <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="p-columns cars">
+            <div class="p-contents">
+                <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="p-columns cars">
+            <div class="p-contents">
+                <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
             </div>
         </div>
 
-        <!-- Project4 -->
-        <div class="playcolumn">
-            <div class="contents">
-                <a href="4shift.html" >
-                    <div class="hovereffect">
-                        <img src="4shift.jpg" alt="Shift"  style="width:100%">
-                        <div class="overlay ">
-                            <h2>Shift - Virtual Hand Therapy
-                                <br>
-                                <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Mixed Reality</span>
-                            
-                            </h2>
-                        </div>
-                    </div>
-                </a>
+        <div class="p-columns people">
+            <div class="p-contents">
+                <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
             </div>
         </div>
-
-         <!-- Project9 -->
- <div class="playcolumn ">
-    <div class="contents">
-        <a href="9mini.html" >
-            <div class="hovereffect">
-                <img src="9mini-head1.jpg" alt="MINI"  style="width:100%">
-                <div class="overlay">
-                    <h2>MINI - Service Now App
-                        <br>
-                        <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Mobile UX&UI Conception</span>
-                            
-                    </h2>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-
-   <!-- Project3 -->
-   <div class="playcolumn ">
-    <div class="contents">
-        <a href="3jacket.html" >
-            <div class="hovereffect">
-                <img src="3soundjacket.jpg" alt="Sound Jacket"  style="width:100%">
-                <div class="overlay ">
-                    <h2>Sound Jacket - Music from Body
-                        <br>
-                        <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Wearable computing | Music</span>
-                          
-                    </h2>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-
-
-        <!-- Project6 -->
-        <div class="playcolumn ">
-            <div class="contents">
-                <a href="6mirror.html" >
-                    <div class="hovereffect">
-                        <img src="8mirror.jpg" alt="Mirror"  style="width:100%">
-                        <div class="overlay ">
-                            <h2>MOom - Adaptable Mirror
-                                <br>
-                        <span style="color:#777777; font-size:18px; font-weight:300;"> Interaction | Interior</span>
-                          
-                            </h2>
-                        </div>
-                    </div>
-                </a>
+        <div class="p-columns people">
+            <div class="p-contents">
+                <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
             </div>
         </div>
-
-   <!-- Project7 -->
-   <div class="playcolumn ">
-    <div class="contents">
-        <a href="7yinyun.html" >
-            <div class="hovereffect">
-                <img src="6yinyun.jpg" alt="Yin Yun"  style="width:100%">
-                <div class="overlay ">
-                    <h2>Yin Yun - Plant Dyestuff
-                        <br>
-                        <span style="color:#777777; font-size:18px; font-weight:300;"> Experiment | Sustainability</span>
-                          
-                    </h2>
-                </div>
+        <div class="p-columns people">
+            <div class="p-contents">
+                <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
             </div>
-        </a>
+        </div>
+        <!-- END GRID -->
     </div>
-</div>
 
- <!-- Project5 -->
- <div class="playcolumn ">
-    <div class="contents">
-        <a href="5material.html" >
-            <div class="hovereffect">
-                <img src="5material.jpg" alt="Bio Leather"  style="width:100%">
-                <div class="overlay ">
-                    <h2>Bio Leather - from Food Waste
-                        <br>
-                        <span style="color:#777777; font-size:18px; font-weight:300;"> Experiment | Sustainability</span>
-                          
-                    </h2>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
+    <script>
+        filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("p-column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
 
-     
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
 
-        <!-- Project8 -->
-        <!-- <div class="columns">
-            <div class="contents">
-                <a href="8space.html" >
-                    <div class="hovereffect">
-                        <img src="7space.jpg" alt="Eat Tea"  style="width:100%">
-                        <div class="overlay ">
-                            <h2>Eat Tea</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> -->
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
 
-       
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("p-btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 
 
-
-
-    </div>
 
 <!-- Page content END -->
 

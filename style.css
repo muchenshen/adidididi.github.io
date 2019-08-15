@@ -92,12 +92,12 @@ a.active-links{
 
 /* Center website  */
 .main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 .nav-main {
     /*padding-top:20px;*/
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 
 }
@@ -105,7 +105,7 @@ header {
 
 }
 .project-main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 12px;
 }
@@ -402,32 +402,70 @@ padding-bottom: 12px;
 
 
 
-/*  play page image grid, copy from home page */ 
-
-.playrow {
-    margin: 4px 0;
+/*  play page image grid, copy from home page */
+.p-rows {
+    margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column */
-.playrow,
-.playrow > .playcolumn {
-    /* do not understand, why use ">" */
-    padding: 12px 12px;
+/* Add padding BETWEEN each column (if you want) */
+.p-rows,
+.p-rows > .p-columns {
+    padding: 8px;
 }
 
-/* Create two equal columns that sits next to each other */
-.playcolumn {
+/* Create three equal columns that floats next to each other */
+.p-columns {
     float: left;
-    width: 33.3%;
+    width: 33.33%;
     padding-left: 0;
+    /*display: none; !* Hide columns by default *!*/
 }
 
 /* Clear floats after rows */
-.playrow:after {
+.p-rows:after {
     content: "";
     display: table;
     clear: both;
 }
+
+/* Content */
+.p-contents {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.p-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.p-btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.p-btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 
 
